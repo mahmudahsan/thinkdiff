@@ -4,3 +4,5 @@
 [পাইথনে কমেন্ট, ভেরিয়েবল এবং অপারেটর ](https://youtu.be/wYN5ohMh_O4)
 
 [পাইথনে স্টেটমেন্ট, এক্সপ্রেশন এবং স্ট্রিং](https://youtu.be/aZSap9MNWlM)
+
+[পাইথনে কিভাবে কনডিশন এবং লুপ](https://youtu.be/kk6UdrnV-lY)
