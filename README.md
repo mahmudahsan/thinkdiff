@@ -6,3 +6,5 @@
 [পাইথনে স্টেটমেন্ট, এক্সপ্রেশন এবং স্ট্রিং](https://youtu.be/aZSap9MNWlM)
 
 [পাইথনে কিভাবে কনডিশন এবং লুপ](https://youtu.be/kk6UdrnV-lY)
+
+[পাইথনে লিস্ট কি কেন এবং কিভাবে](https://youtu.be/ddshuxxM8a4)
