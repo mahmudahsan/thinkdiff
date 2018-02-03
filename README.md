@@ -10,3 +10,5 @@
 [পাইথনে লিস্ট কি কেন এবং কিভাবে](https://youtu.be/ddshuxxM8a4)
 
 [পাইথনে টাপল এবং ডিকশনারি কি এবং কিভাবে](https://youtu.be/4KAwZRWSbko)
+
+[পাইথনে ফাংশন এবং ল‍্যাম্বডা কি এবং কিভাবে](https://youtu.be/KlbIbhAQu_g)
