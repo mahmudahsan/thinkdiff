@@ -9,4 +9,4 @@
 
 [পাইথনে লিস্ট কি কেন এবং কিভাবে](https://youtu.be/ddshuxxM8a4)
 
-(পাইথনে টাপল এবং ডিকশনারি কি এবং কিভাবে)[https://youtu.be/4KAwZRWSbko]
+[পাইথনে টাপল এবং ডিকশনারি কি এবং কিভাবে](https://youtu.be/4KAwZRWSbko)
