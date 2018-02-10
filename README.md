@@ -3,9 +3,13 @@
 
 [Python 3 Tutorial for Everyone Chapter 1: Welcome | Setup | Overview](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-1-welcome-setup-overview/)
 
+------------------------------------------------------------------------------------
+
 [পাইথনে কমেন্ট, ভেরিয়েবল এবং অপারেটর ](https://youtu.be/wYN5ohMh_O4)
 
 [Python 3 Tutorial for Everyone Chapter 2: Comments | Variable | Operators](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-2-comments-variable-operators/)
+
+------------------------------------------------------------------------------------
 
 [পাইথনে স্টেটমেন্ট, এক্সপ্রেশন এবং স্ট্রিং](https://youtu.be/aZSap9MNWlM)
 
@@ -17,13 +21,13 @@
 
 [পাইথনে ফাংশন এবং ল‍্যাম্বডা কি এবং কিভাবে](https://youtu.be/KlbIbhAQu_g)
 
-[পাইথনে ক্লাস দিয়ে অবজেক্ট অরিয়েন্টেড প্রোগ্রামিং](https://youtu.be/xA43kBnuglE)
+[পাইথনে ক্লাস দিয়ে অবজেক্ট অরিয়েন্টেড প্রোগ্রামিং](https://youtu.be/xA43kBnuglE)
 
-[পাইথনে মডিউল, নেমস্পেস, ইমপোর্ট, প‍্যাকেজ এবং স্ট‍্যান্ডার্ড লাইবেরি কি এবং কিভাবে](https://youtu.be/cdBiyCxmeRg)
+[পাইথনে মডিউল, নেমস্পেস, ইমপোর্ট, প‍্যাকেজ এবং স্ট‍্যান্ডার্ড লাইবেরি কি এবং কিভাবে](https://youtu.be/cdBiyCxmeRg)
 
-[পাইথনে কিভাবে এক্সসেপশন হ‍্যান্ডেলিং করা হয়](https://youtu.be/sUWaEBe7UfU)
+[পাইথনে কিভাবে এক্সসেপশন হ‍্যান্ডেলিং করা হয়](https://youtu.be/sUWaEBe7UfU)
 
 [পাইথনে স্ক্রীপ্ট আর্গুমেন্ট, সেট, কনডিশনাল এক্সপ্রেশন এবং কমপ্রিহেনশন সিনট‍্যাক্স কি কেন কিভাবে](https://youtu.be/nVKf9_PSPXU)
 
-# পাইথন ৩ অ‍্যাডভান্সড | Python 3 Advanced
+# পাইথন ৩ এডভান্সড | Python 3 Advanced
 [পাইথনে ফাইলস, টেক্সট, বাইনারি, সিএসভি এবং জেসন ডাটা কি এবং কিভাবে](https://youtu.be/k1rFag1W2WM)
