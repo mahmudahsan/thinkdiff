@@ -44,6 +44,8 @@ print ( number_of_items, type(number_of_items) )
 number_of_items = int(number_of_items)
 print ( number_of_items, type(number_of_items) )
 
+## Division
+
 x = 10
 y = 2
 result = x / 2
@@ -56,6 +58,7 @@ y = 3
 result = x / y
 print (result)
 
+## Remainder opertor
 result = int (x / y)
 print (result)
 
@@ -64,3 +67,23 @@ print (x, y, x % y)
 x = 10.0
 y = 3.0
 print (x, y, x % y)
+
+## Negative value 
+x = 10
+x = -x
+print (x)
+
+## Divmod
+x = 10
+y = 3
+result = divmod(x, y)
+print (result)
+
+## Exponential
+
+x = 2
+result = x ** 4
+print (result)
+
+result = pow (2, 4)
+print (result)
