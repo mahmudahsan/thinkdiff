@@ -1,7 +1,11 @@
-# পাইথন ৩ প্রোগ্রামিং কোর্স
+# পাইথন ৩ প্রোগ্রামিং কোর্স | Python 3 for Everyone
 [পাইথন কি, কিভাবে পাইথন সেটআপ করতে হয়, কিভাবে কোড লিখে রান করতে হয়](https://www.youtube.com/watch?v=qcRlYt28WPM)
 
+[Python 3 Tutorial for Everyone Chapter 1: Welcome | Setup | Overview](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-1-welcome-setup-overview/)
+
 [পাইথনে কমেন্ট, ভেরিয়েবল এবং অপারেটর ](https://youtu.be/wYN5ohMh_O4)
+
+[Python 3 Tutorial for Everyone Chapter 2: Comments | Variable | Operators](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-2-comments-variable-operators/)
 
 [পাইথনে স্টেটমেন্ট, এক্সপ্রেশন এবং স্ট্রিং](https://youtu.be/aZSap9MNWlM)
 
@@ -20,3 +24,6 @@
 [পাইথনে কিভাবে এক্সসেপশন হ‍্যান্ডেলিং করা হয়](https://youtu.be/sUWaEBe7UfU)
 
 [পাইথনে স্ক্রীপ্ট আর্গুমেন্ট, সেট, কনডিশনাল এক্সপ্রেশন এবং কমপ্রিহেনশন সিনট‍্যাক্স কি কেন কিভাবে](https://youtu.be/nVKf9_PSPXU)
+
+# পাইথন ৩ অ‍্যাডভান্সড | Python 3 Advanced
+[পাইথনে ফাইলস, টেক্সট, বাইনারি, সিএসভি এবং জেসন ডাটা কি এবং কিভাবে](https://youtu.be/k1rFag1W2WM)
