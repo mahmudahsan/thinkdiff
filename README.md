@@ -13,7 +13,15 @@
 
 [পাইথনে স্টেটমেন্ট, এক্সপ্রেশন এবং স্ট্রিং](https://youtu.be/aZSap9MNWlM)
 
+[Python 3 Tutorial for Everyone Chapter 3: Statement | Expression | String](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-3-statement-expression-string/)
+
+------------------------------------------------------------------------------------
+
 [পাইথনে কিভাবে কনডিশন এবং লুপ](https://youtu.be/kk6UdrnV-lY)
+
+[Python 3 Tutorial for Everyone Chapter 4: Condition | Iteration](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-4-condition-iteration/)
+
+------------------------------------------------------------------------------------
 
 [পাইথনে লিস্ট কি কেন এবং কিভাবে](https://youtu.be/ddshuxxM8a4)
 
@@ -32,6 +40,6 @@
 # পাইথন ৩ এডভান্সড | Python 3 Advanced
 [পাইথনে ফাইলস, টেক্সট, বাইনারি, সিএসভি এবং জেসন ডাটা কি এবং কিভাবে](https://youtu.be/k1rFag1W2WM)
 
-[পাইথনে ফাংশন এবং ক্লাসের মেথড যেভাবে ইউনিট টেস্টিং করা হয় ](https://youtu.be/UhIwkjwz6Ek)
+[পাইথনে ফাংশন এবং ক্লাসের মেথড যেভাবে ইউনিট টেস্টিং করা হয় ](https://youtu.be/UhIwkjwz6Ek)
 
-[পাইথনে রেগুলার এক্সপ্রেশন অথবা রেজেক্স যেভাবে ব‍্যবহার করা হয়](https://youtu.be/yygyryPAJH0)
+[পাইথনে রেগুলার এক্সপ্রেশন অথবা রেজেক্স যেভাবে ব‍্যবহার করা হয়](https://youtu.be/yygyryPAJH0)
