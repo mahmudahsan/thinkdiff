@@ -1,0 +1,12 @@
+h1 {
+    color: blue;
+}
+
+.h1up {
+    color: red;
+}
+
+#h1id {
+    font-size: 20px;
+    color: cadetblue;
+}
