@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Bangladesh</title>
+        
+        <style>
+            /*
+            div {
+                color: green;
+                background-color: beige;
+            } */
+            
+            /* Combination of Selectors */
+            /* 0-0-1 + 0-0-1 = 0-0-2 = 2 */
+            div p {
+                color: green;
+                background-color: beige;
+            }
+            
+            /* Class Key Selector */
+            /* 0-0-1 + 0-1-1 = 0-1-2 = 12 */
+            div p.warning {
+                color: red;
+            }
+            
+            /* Best Practice */
+            /* 0-1-0 + 0-1-0 = 0-2-0 = 20 */
+            .details .warning {
+                color:blue;
+            }
+            
+            /* ID Key Selector */
+            /* 1-0-1 = 101 */
+            p#bd {
+                color: deepskyblue;
+            }
+            
+            /* 0-0-1 + 1-0-1 = 102 */
+            div p#bd {
+                color: red;
+            }
+            
+        </style>
+    </head>
+    
+    <body>
+        <!-- Division -->
+        <div class="details" id="div_top">
+            <p>
+                <b>Bangladesh</b> is a middle power and a developing nation. Listed as one of the Next Eleven, its economy ranks 46th in terms of nominal gross domestic product (GDP) and 29th in terms of purchasing power parity (PPP).
+            </p>
+            <p class="warning">
+                <strong>Warning: </strong> It has been raining
+            </p>
+            <p id="bd">
+                <b>Code</b>: BD is a short form of Bangladesh.
+            </p>
+            <p>
+                The etymology of Bangladesh (Country of Bengal) can be traced to the early 20th century, when Bengali patriotic songs, such as Namo Namo Namo Bangladesh Momo by Kazi Nazrul Islam and Aaji Bangladesher Hridoy by Rabindranath Tagore, used the term.
+            </p>
+            <p>
+                <!-- Span -->
+                Bangladesh is divided into <i>eight administrative divisions</i>, each named after their respective divisional headquarters: <em><span class="divisions">Barisal, Chittagong, Dhaka, Khulna, Mymensingh, Rajshahi, Rangpur, and Sylhet.</span></em>
+            </p>
+        </div>
+        <div>
+            <p>
+                I sing in Bangla. I love Bangla.
+            </p>
+        </div>
+    </body>
+</html>
