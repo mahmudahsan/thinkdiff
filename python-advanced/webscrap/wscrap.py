@@ -93,7 +93,7 @@ class NewsScraper:
         self.__soup = BeautifulSoup(self.__data, "html.parser")
         
     def parse_soup_to_simple_html(self):
-        news_list = self.__soup.find_all(['h1', 'h2']) # h1
+        news_list = self.__soup.find_all(['h1', 'h2', 'h3', 'h4', 'h5', 'h6']) # h1
         
         #print (news_list)
         
