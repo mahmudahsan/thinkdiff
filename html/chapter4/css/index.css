@@ -1,0 +1,54 @@
+.container {
+    margin: 0 auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    max-width: 960px;
+}
+
+header {
+    text-align: center;
+}
+
+header nav {
+    background-color: aliceblue;
+    border-radius: 5px;
+}
+
+header a {
+    background-color: dimgrey;
+    color: skyblue;
+    margin:10px;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    width: 80px;
+}
+
+header a:hover {
+    background-color: brown;
+}
+
+footer {
+    background-color: gray;
+    border-radius:5px;
+    margin-top: 20px;
+    margin-bottom: 2px;
+    text-align: center;
+    color: white;
+}
+
+footer nav {
+    padding: 10px;
+}
+
+footer nav a {
+    color: lightsteelblue;
+    text-decoration: none;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+    font-weight: bold;
+}
