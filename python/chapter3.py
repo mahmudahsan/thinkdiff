@@ -71,10 +71,6 @@ sentence = "A quick brown fox jumps over the lazy dog"
 sentence = sentence.replace('fox', 'tiger')
 print ( sentence )
 
-sentence = "A quick brown fox jumps over the lazy fox"
-sentence = sentence.replace('fox', 'tiger')
-print ( sentence )
-
 # Print separator
 x = 'Dhaka'
 y = 'Bogra'
