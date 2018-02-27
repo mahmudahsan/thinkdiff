@@ -48,7 +48,7 @@
 
 [পাইথন দিয়ে ওয়েব পেজের তথ‍্য যেভাবে স্ক্র‍্যাপিং করে দরকারি ডাটা কালেক্ট করা হয় ](https://youtu.be/3YLyT4LRJUc)
 
-[HOW TO DO WEB SCRAPING USING PYTHON – URLLIB BEAUTIFULSOUP LOGGING](http://thinkdiff.net/web-development/how-to-do-web-scraping-using-python-urllib-beautifulsoup-logging/)
+[How To Do Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/web-development/how-to-do-web-scraping-using-python-urllib-beautifulsoup-logging/)
 
 ------------------------------------------------------------------------------------
 
