@@ -1,6 +1,8 @@
 # পাইথন ৩ প্রোগ্রামিং কোর্স | Python 3 for Everyone
 [পাইথন কি, কিভাবে পাইথন সেটআপ করতে হয়, কিভাবে কোড লিখে রান করতে হয়](https://www.youtube.com/watch?v=qcRlYt28WPM)
 
+[পাইথন ৩ উইন্ডোজ মেশিনে যেভাবে ইনস্টোল করব](https://www.youtube.com/watch?v=1m-kyQISM74)
+
 [Python 3 Tutorial for Everyone Chapter 1: Welcome | Setup | Overview](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-1-welcome-setup-overview/)
 
 ------------------------------------------------------------------------------------
