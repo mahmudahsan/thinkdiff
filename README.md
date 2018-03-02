@@ -3,6 +3,8 @@
 
 [পাইথন ৩ উইন্ডোজ মেশিনে যেভাবে ইনস্টোল করব](https://www.youtube.com/watch?v=1m-kyQISM74)
 
+[PyCharm IDE উইন্ডোজে যেভাবে ইনস্টল করে পাইথন ব‍্যবহার করব](https://youtu.be/YUZZBgKmqO4)
+
 [Python 3 Tutorial for Everyone Chapter 1: Welcome | Setup | Overview](http://thinkdiff.net/python/python-3-tutorial-for-everyone-chapter-1-welcome-setup-overview/)
 
 ------------------------------------------------------------------------------------
@@ -54,7 +56,7 @@
 
 ------------------------------------------------------------------------------------
 
-[পাইথন দিয়ে এসকিউএল ডাটা যেভাবে ব‍্যবহার করতে হয়](https://youtu.be/kmB315icVlw)
+[পাইথন দিয়ে এসকিউএল ডাটা যেভাবে ব‍্যবহার করতে হয়](https://youtu.be/kmB315icVlw)
 
 # HTML and CSS | ওয়েবপেজ ডিজাইন
 [এইচটিএমএল এবং সিএসএস দিয়ে ওয়েবপেজ ডিজাইন করার প্রথম পর্ব](https://youtu.be/4uRN0-XOOJ0)
