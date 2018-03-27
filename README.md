@@ -58,6 +58,11 @@
 
 [পাইথন দিয়ে এসকিউএল ডাটা যেভাবে ব‍্যবহার করতে হয়](https://youtu.be/kmB315icVlw)
 
+[How to use Python SQLite3 using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
+
+------------------------------------------------------------------------------------
+
+
 # HTML and CSS | ওয়েবপেজ ডিজাইন
 [এইচটিএমএল এবং সিএসএস দিয়ে ওয়েবপেজ ডিজাইন করার প্রথম পর্ব](https://youtu.be/4uRN0-XOOJ0)
 
