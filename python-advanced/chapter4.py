@@ -20,6 +20,9 @@ except Exception as e:
 '''
 
 news_scrap = wscrap.NewsScraper(wscrap.url_aj, wlog)
+
+## UNCOMMENT THE FOLLOWING 2 LINES OF CODE TO GET SITE'S LATEST DATA
+## OTHERWISE THIS PROGRAM PARSE DATA FROM DISK FILE RETRIEVED PREVIOUSLY
 #news_scrap.retrieve_webpage()
 #news_scrap.write_webpage_as_html()
 
