@@ -57,17 +57,3 @@ print(next(gen_obj)) # for loop catch the exception and terminate
 # A function can not have both return and yield keywords
 # yield is like return. The difference is when the function
 # call again execution starts from the last call to yield statement
-
-
-
-
-
-
-
-
-
-
-
-
-
-
