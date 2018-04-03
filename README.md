@@ -11,7 +11,7 @@
 
 - [পাইথন ৩ বিগিনার](#পাইথন-৩-বিগিনার-সিরিজ)
 - [পাইথন ৩ এডভান্সড](#পাইথন-৩-এডভান্সড)
-- [এইচটিএমএল সিএসএস দিয়ে ওয়েবপেজ ডিজাইন](#html-and-css)
+- [এইচটিএমএল সিএসএস দিয়ে ওয়েবপেজ ডিজাইন](#ওয়েবপেজ-ডিজাইন)
 - [Python 3 Tutorials in English](#python-3-english-tutorials)
 
 ## পাইথন ৩ বিগিনার সিরিজ
@@ -81,10 +81,6 @@
 * [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
 
 
-
-
-
-## HTML and CSS
 ## ওয়েবপেজ ডিজাইন
 
 1. [ওয়েবপেজ ডিজাইন করার প্রথম পর্ব](https://youtu.be/4uRN0-XOOJ0)
