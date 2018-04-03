@@ -1,10 +1,11 @@
 # পাইথন | এইচটিএমএল | সিএসএসএস
 
-> বাংলায় প্রোগ্রামিং এবং সফটওয়‍্যার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
+> বাংলায় প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
 > এই প্রজেক্টের মাধ‍্যমে নতুন যারা প্রোগ্রামিং এ আসতে চায় তাদের জন‍্য আমি ভিডিও টিউটোরিয়াল শেয়ার করি। 
 > এই পেজে আমি সেসব টিউটোরিয়ালের লিংক নোট আকারে গুছিয়ে রাখি।
 > আমার ভিডিও টিউটোরিয়ালগুলোর কোডও এখানে পাওয়া যাবে। 
-> Programming and software development related tutorials in Bangla. I also have some English written tutorial of different topics which I also mentioned here.
+>
+> Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
 ## Table of Contents
 
