@@ -7,7 +7,7 @@
 >
 > Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
-## Table of Contents
+# Table of Contents
 
 - [পাইথন ৩ বিগিনার](#পাইথন-৩-বিগিনার-সিরিজ)
 - [পাইথন ৩ এডভান্সড](#পাইথন-৩-এডভান্সড)
