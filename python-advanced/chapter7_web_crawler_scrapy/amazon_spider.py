@@ -21,9 +21,15 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 '''
+# author: Mahmud Ahsan
+# github: https://github.com/mahmudahsan
+# blog: http://thinkdiff.net
+# youtube: https://www.youtube.com/c/mahmudahsanthinkdiff
+# License: MIT License
+# https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+
 # --------------------------
 #      Web Crawler Bot
-#      Mahmud Ahsan
 # --------------------------
 import scrapy
 
