@@ -1,18 +1,21 @@
-# পাইথন | এইচটিএমএল | সিএসএসএস
+# বাংলায় পাইথন ৩ | Python 3 in Bangla
 
-> বাংলায় প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
+> বাংলায় পাইথন প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
 > এই প্রজেক্টের মাধ‍্যমে নতুন যারা প্রোগ্রামিং এ আসতে চায় তাদের জন‍্য আমি ভিডিও টিউটোরিয়াল শেয়ার করি। 
 > এই পেজে আমি সেসব টিউটোরিয়ালের লিংক নোট আকারে গুছিয়ে রাখি।
 > আমার ভিডিও টিউটোরিয়ালগুলোর কোডও এখানে পাওয়া যাবে। 
 >
-> Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
+> Bangla Python Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
-# Table of Contents
+# Table of Contents [ পাইথন | Python ]
 
 - [পাইথন ৩ বিগিনার](#পাইথন-৩-বিগিনার-সিরিজ)
 - [পাইথন ৩ এডভান্সড](#পাইথন-৩-এডভান্সড)
-- [এইচটিএমএল সিএসএস দিয়ে ওয়েবপেজ ডিজাইন](#ওয়েবপেজ-ডিজাইন)
 - [Python 3 Tutorials in English](#python-3-english-tutorials)
+
+# Table of Contents [ এইচটিএমএল সিএসএস | HTML CSS ]
+
+- [এইচটিএমএল সিএসএস দিয়ে ওয়েবপেজ ডিজাইন](#ওয়েবপেজ-ডিজাইন)
 
 ## পাইথন ৩ বিগিনার সিরিজ
 
