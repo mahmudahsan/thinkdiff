@@ -58,17 +58,17 @@
 4. [জেনারেটর এক্সপ্রেশন কি, কিভাবে কাজ করে এবং কেন দরকার।](https://youtu.be/TQo81PSwiy0)
 
 ### ফাইলস এবং ডাটাবেজ
-1. [পাইথনে ফাইলস, টেক্সট, বাইনারি, সিএসভি এবং জেসন ডাটা কি এবং কিভাবে](https://youtu.be/k1rFag1W2WM)
+5. [পাইথনে ফাইলস, টেক্সট, বাইনারি, সিএসভি এবং জেসন ডাটা কি এবং কিভাবে](https://youtu.be/k1rFag1W2WM)
 
-2. [পাইথন দিয়ে এসকিউএল ডাটা যেভাবে ব‍্যবহার করতে হয়](https://youtu.be/kmB315icVlw)
+6. [পাইথন দিয়ে এসকিউএল ডাটা যেভাবে ব‍্যবহার করতে হয়](https://youtu.be/kmB315icVlw)
 
 ### ওয়েব পেজ স্ক্র‍্যাপিং
-1. [পাইথন দিয়ে ওয়েব পেজের তথ‍্য যেভাবে স্ক্র‍্যাপিং করে দরকারি ডাটা কালেক্ট করা হয় ](https://youtu.be/3YLyT4LRJUc)
+7. [পাইথন দিয়ে ওয়েব পেজের তথ‍্য যেভাবে স্ক্র‍্যাপিং করে দরকারি ডাটা কালেক্ট করা হয় ](https://youtu.be/3YLyT4LRJUc)
 
-2. [স্ক‍্র‍্যাপি ফ্রেমওয়ার্ক ব‍্যবহার করে ওয়েব স্পাইডার বানিয়ে আমাজন ওয়েব সাইটের বইয়ের বিভাগ ক্রোল করা](https://youtu.be/1jfoCkbncUE)
+8. [স্ক‍্র‍্যাপি ফ্রেমওয়ার্ক ব‍্যবহার করে ওয়েব স্পাইডার বানিয়ে আমাজন ওয়েব সাইটের বইয়ের বিভাগ ক্রোল করা](https://youtu.be/1jfoCkbncUE)
 
 ### উইন্ডোজ এক্সিকিউটেবল প্রোগ্রাম
-1. [পাইথন দিয়ে ওয়েব ব্রাউজার ওপেন করে ওয়েবসাইট লোড করা এবং পাইথন স্ক্রীপ্টকে উইন্ডোজের এক্সকিউটেবল এপ্লিকেশন হিসেবে কনভার্ট করা](https://youtu.be/2Ksw5Xlg6PM)
+9. [পাইথন দিয়ে ওয়েব ব্রাউজার ওপেন করে ওয়েবসাইট লোড করা এবং পাইথন স্ক্রীপ্টকে উইন্ডোজের এক্সকিউটেবল এপ্লিকেশন হিসেবে কনভার্ট করা](https://youtu.be/2Ksw5Xlg6PM)
 
 
 ## Python 3 English Tutorials
@@ -84,11 +84,11 @@
 
 ### Web Scraping
 
-* [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
+5. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
 
 ### Database
 
-* [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
+6. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
 
 
 ## ওয়েবপেজ ডিজাইন
