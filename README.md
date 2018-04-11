@@ -13,7 +13,7 @@
 - [পাইথন ৩ এডভান্সড](#পাইথন-৩-এডভান্সড)
 - [Python 3 Tutorials in English](#python-3-english-tutorials)
 
-# Table of Contents [ এইচটিএমএল সিএসএস | HTML CSS ]
+# Other Contents [ HTML CSS ]
 
 - [এইচটিএমএল সিএসএস দিয়ে ওয়েবপেজ ডিজাইন](#ওয়েবপেজ-ডিজাইন)
 
