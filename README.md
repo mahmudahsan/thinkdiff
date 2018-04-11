@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="cover.png" width="700" max-width="70%" alt="Python Bangla Tutorial" />
+    <img src="cover.png" width="500" max-width="70%" alt="Python Bangla Tutorial" />
 </p>
 # বাংলায় পাইথন ৩ | Python 3 in Bangla
 
