@@ -1,3 +1,6 @@
+<p align="center">
+    <img src="cover.png" width="700" max-width="70%" alt="Python Bangla Tutorial" />
+</p>
 # বাংলায় পাইথন ৩ | Python 3 in Bangla
 
 > বাংলায় পাইথন প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
