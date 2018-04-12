@@ -24,3 +24,4 @@
 
 *.css linguist-language=Python
 *.html linguist-language=Python
+html/chapter2/*.html linguist-language=html
