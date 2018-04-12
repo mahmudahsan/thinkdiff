@@ -22,4 +22,4 @@
 # ``shelve``, ``marshal``, ``anydbm``, & ``bsddb``
 # (among others).
 
-*.html linguist-language=Java
+*.css linguist-language=Python
