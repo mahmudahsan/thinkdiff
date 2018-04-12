@@ -23,5 +23,8 @@
 # (among others).
 
 *.css linguist-language=Python
-*.html linguist-language=Python
-html/chapter2/*.html linguist-language=html
+html/chapter2/*.html linguist-language=Python
+html/chapter3/*.html linguist-language=Python
+html/chapter4/*.html linguist-language=Python
+html/chapter5/*.html linguist-language=Python
+html/chapter6/*.html linguist-language=Python
