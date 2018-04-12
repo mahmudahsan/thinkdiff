@@ -23,6 +23,6 @@
 # (among others).
 
 html/* linguist-vendored
-html/css* linguist-vendored
-html/chapter2* linguist-vendored
-html/chapter4* linguist-vendored
+html/css/* linguist-vendored
+html/chapter2/* linguist-vendored
+html/chapter4/* linguist-vendored
