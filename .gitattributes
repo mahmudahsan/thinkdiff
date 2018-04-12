@@ -31,4 +31,4 @@ html/chapter6/*.html linguist-language=Python
 html/chapter7/*.html linguist-language=Python
 html/chapter8/*.html linguist-language=Python
 html/*.html linguist-language=Python
-html/css/* linguist-language=Python
+html/css/*.* linguist-language=Python
