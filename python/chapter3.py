@@ -1,4 +1,10 @@
-# author Mahmud Ahsan
+# author: Mahmud Ahsan
+# github: https://github.com/mahmudahsan
+# blog: http://thinkdiff.net
+# Web: http://pythonbangla.com
+# youtube: https://www.youtube.com/c/mahmudahsanthinkdiff
+# License: MIT License
+# https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
 
 # Statement
 # প্রোগ্রামিংয়োর ভাষায় কোডের ক্ষুদ্রতম অংশ যা পাইথন ইনটারপেটার এক্সকিউট করতে পারে সেটাই স্টেটমেন্ট

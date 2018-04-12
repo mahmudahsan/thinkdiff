@@ -1,4 +1,11 @@
-# author Mahmud Ahsan
+# author: Mahmud Ahsan
+# github: https://github.com/mahmudahsan
+# blog: http://thinkdiff.net
+# Web: http://pythonbangla.com
+# youtube: https://www.youtube.com/c/mahmudahsanthinkdiff
+# License: MIT License
+# https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+
 # Comments
 
 """ 
