@@ -11,15 +11,15 @@
 >
 > Bangla Python Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
-# Table of Contents [ পাইথন | Python ]
+# Table of Contents
 
 - [পাইথন ৩ বিগিনার সিরিজ](#পাইথন-৩-বিগিনার-সিরিজ)
 - [পাইথন ৩ এডভান্সড সিরিজ](#পাইথন-৩-এডভান্সড)
 - [Python 3 Tutorials in English](#python-3-english-tutorials)
 
-# Other Contents [ HTML CSS ]
+# Bonus Contents
 
-- [এইচটিএমএল সিএসএস দিয়ে ওয়েবপেজ ডিজাইন সিরিজ](#ওয়েবপেজ-ডিজাইন)
+- [HTML CSS দিয়ে ওয়েবপেজ ডিজাইন সিরিজ](#ওয়েবপেজ-ডিজাইন)
 
 ## পাইথন ৩ বিগিনার সিরিজ
 
