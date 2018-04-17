@@ -2,7 +2,7 @@
 # github: https://github.com/mahmudahsan
 # blog: http://thinkdiff.net
 # Web: http://pythonbangla.com
-# youtube: https://www.youtube.com/c/mahmudahsanthinkdiff
+# youtube: https://www.youtube.com/c/banglaprogramming
 # License: MIT License
 # https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
 
