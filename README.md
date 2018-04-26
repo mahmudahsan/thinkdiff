@@ -90,13 +90,15 @@
 
 4. [How to Write if-else Conditions and For-in, While loop](http://thinkdiff.net/python/python-tutorial-beginner/)
 
+5. [How to Install Python VirtualEnv in Windows](http://thinkdiff.net/python/how-to-install-python-virtualenv-in-windows/)
+
 ### Web Scraping
 
-5. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
+6. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
 
 ### Database
 
-6. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
+7. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
 
 
 ## ওয়েবপেজ ডিজাইন
