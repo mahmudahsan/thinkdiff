@@ -92,13 +92,15 @@
 
 5. [How to Install Python VirtualEnv in Windows](http://thinkdiff.net/python/how-to-install-python-virtualenv-in-windows/)
 
+6. [How to Install Python Officially Recommended Pipenv Packaing Tool](http://thinkdiff.net/python/python-official-pipenv-packaging-tool-for-virtualenv-and-pip-in-mac-and-windows/)
+
 ### Web Scraping
 
-6. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
+7. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
 
 ### Database
 
-7. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
+8. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
 
 
 ## ওয়েবপেজ ডিজাইন
