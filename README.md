@@ -9,6 +9,8 @@
 > এই পেজে আমি সেসব টিউটোরিয়ালের লিংক নোট আকারে গুছিয়ে রাখি।
 > আমার ভিডিও টিউটোরিয়ালগুলোর কোডও এখানে পাওয়া যাবে। 
 >
+> সব ভিডিও প্লেলিস্ট আকারে পেতে চাইলে ভিজিট করুন [PythonBangla.com](http://pythonbangla.com)
+>
 > Bangla Python Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
 # Table of Contents
