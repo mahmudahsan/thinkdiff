@@ -9,6 +9,8 @@
 > এই পেজে আমি সেসব টিউটোরিয়ালের লিংক নোট আকারে গুছিয়ে রাখি।
 > আমার ভিডিও টিউটোরিয়ালগুলোর কোডও এখানে পাওয়া যাবে। 
 >
+> সব ভিডিও প্লেলিস্ট আকারে পেতে চাইলে ভিজিট করুন [PythonBangla.com](http://pythonbangla.com)
+>
 > Bangla Python Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
 # Table of Contents
@@ -91,6 +93,8 @@
 4. [যেভাবে মডেল, ডাটাবেজ, বুটস্ট‍্র‍্যাপ এবং জ‍্যাঙ্গোর এডমিন প‍্যানেল ব‍্যবহার করতে পারি](https://youtu.be/3eFWuFuC9u4)
 
 5. [জ‍্যাঙ্গো ওয়েব ফের্মওয়ার্কে যেভাবে পোস্টগ্রেএসকিউএল ডাটাবেজ ব‍্যবহার করতে হয়](https://youtu.be/P-j0bCFQTTs)
+
+6. [জ‍্যাঙ্গো ওয়েব ফের্মওয়ার্কে যেভাবে স্ট‍্যাটিক ফাইলস ইমেজ, সিএসএস এবং জাভাস্ক্রীপ্ট হ‍্যান্ডেল করা হয়](https://youtu.be/FQXlFrkRxRc)
 
 ## Python 3 English Tutorials
 
