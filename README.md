@@ -2,16 +2,16 @@
     <img src="cover.png" width="500" max-width="70%" alt="Python Bangla Tutorial" />
 </p>
 
-# বাংলায় পাইথন ৩ | Python 3 in Bangla
+# বাংলায় পাইথন ৩ | সি প্রোগ্রামিং  | Python 3 in Bangla | C Programming
 
-> বাংলায় পাইথন প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
+> বাংলায় পাইথন প্রোগ্রামিং, সি প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
 > এই প্রজেক্টের মাধ‍্যমে নতুন যারা প্রোগ্রামিং এ আসতে চায় তাদের জন‍্য আমি ভিডিও টিউটোরিয়াল শেয়ার করি। 
 > এই পেজে আমি সেসব টিউটোরিয়ালের লিংক নোট আকারে গুছিয়ে রাখি।
 > আমার ভিডিও টিউটোরিয়ালগুলোর কোডও এখানে পাওয়া যাবে। 
 >
-> সব ভিডিও প্লেলিস্ট আকারে পেতে চাইলে ভিজিট করুন [PythonBangla.com](http://pythonbangla.com)
+> পাইথনের সব ভিডিও প্লেলিস্ট আকারে পেতে চাইলে ভিজিট করুন [PythonBangla.com](http://pythonbangla.com)
 >
-> Bangla Python Programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
+> Bangla Python programming, C programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
 
 # Table of Contents
 
@@ -21,8 +21,8 @@
 - [ক‍্যারিয়ার জব ফ্রিলান্স](#জব-এবং-ফ্রিলান্স)
 - [Python 3 Tutorials in English](#python-3-english-tutorials)
 
-# Bonus Contents
-
+# Other Contents
+- [C প্রোগ্রামিং বাংলা](#c-প্রোগ্রামিং-বাংলা)
 - [HTML CSS দিয়ে ওয়েবপেজ ডিজাইন সিরিজ](#ওয়েবপেজ-ডিজাইন)
 
 ## পাইথন ৩ বিগিনার সিরিজ
@@ -139,3 +139,7 @@
 7. [ব‍্যাকগ্রাউন্ড ইমেজ, গ্র‍্যাডিয়েন্ট যেভাবে ব‍্যবহার করতে হয় এবং লিস্ট কে মডিফাই করে যেভাবে মেনু বানানো যায়](https://youtu.be/iWYl2pSV1Hg)
 
 8. [এডভান্সড ওয়েবপেজ ডিজাইন শেখার জন‍্য যে সাইটগুলা আমাদের কাজে লাগে](https://youtu.be/zVuyIBM0uHE)
+
+## C প্রোগ্রামিং বাংলা
+
+1. [সি প্রোগ্রামিং কেন শেখা দরকার, কিভাবে সেটআপ করতে হয়](https://youtu.be/c2cpvQNEeKs)
