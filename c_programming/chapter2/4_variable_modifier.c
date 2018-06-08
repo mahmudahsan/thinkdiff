@@ -3,12 +3,16 @@
  * long
  * signed    +/-
  * unsigned
+ * value range n=bits: -2^n-1 to (+2^n-1)-1
  */
 
 #include <stdio.h>
 
 int main(){
+    // n=32, -2^31 to (+2^31)-1
+    // -2147483648 to 2147483647
     int intNum = 2147483647; 
+
     signed int sIntNum = -2147483648;
     unsigned int uIntNum = 4147483647;
     short int shortIntNum = 32767;
