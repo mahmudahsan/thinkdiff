@@ -9,7 +9,7 @@ I am proud for my country.
 ## Challenge 2
 #### Write down a complete C program and create 4 variables: (1) an integer (2) a float (3) a double (4) a character. Now assign some values to each variable and print all the values and size of the variable data type.
 
-> Sample Output:
+> Sample Output (Your one may a bit different):
 ```
 Integer: 45 and Size: 4 bytes
 Float: 3030.33 and Size: 4 bytes
