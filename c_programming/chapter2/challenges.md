@@ -17,3 +17,10 @@ Double: 4.335 and Size: 8 bytes
 Character: C and Size: 1 byte
 ```
 
+## Challenge 3
+#### Write a program that perform the following calculation: 3x + 5 + 25.5 where x = 5 and print the output. (hint: use %.2f in printf() to show only 2 digit after . )
+
+> Sample Output
+```
+Result: 45.50
+```
