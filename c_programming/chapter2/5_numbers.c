@@ -8,7 +8,8 @@
  * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
  */
  
- /* Numbers
+/* 
+ * Numbers
  * Base 10 or Decimal
  * Base 2 or Binary
  * Base 16 or Hexadecimal

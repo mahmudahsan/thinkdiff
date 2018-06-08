@@ -8,7 +8,8 @@
  * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
  */
  
- /* Variable Names
+/* 
+ * Variable Names
  * 1. can start with _ or character
  * 2. can't have space between words
  * 3. can't be C lanuage keywords

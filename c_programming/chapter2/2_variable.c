@@ -8,7 +8,8 @@
  * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
  */
  
- /* Variable
+/* 
+ * Variable
  * a variable is like a container which holds a value
  * an expression replace the variable by value
  * 5 common variables types

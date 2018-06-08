@@ -8,7 +8,8 @@
  * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
  */
  
- /* Variable Modifiers
+/* 
+ * Variable Modifiers
  * short
  * long
  * signed    +/-
