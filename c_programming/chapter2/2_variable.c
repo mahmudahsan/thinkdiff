@@ -1,4 +1,14 @@
-/* Variable
+/*
+ * author: Mahmud Ahsan
+ * github: https://github.com/mahmudahsan
+ * blog: http://thinkdiff.net
+ * Web: http://banglaprogramming.com
+ * youtube: https://www.youtube.com/c/banglaprogramming
+ * License: MIT License
+ * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+ */
+ 
+ /* Variable
  * a variable is like a container which holds a value
  * an expression replace the variable by value
  * 5 common variables types

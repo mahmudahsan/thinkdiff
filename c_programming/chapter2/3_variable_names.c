@@ -1,4 +1,14 @@
-/* Variable Names
+/*
+ * author: Mahmud Ahsan
+ * github: https://github.com/mahmudahsan
+ * blog: http://thinkdiff.net
+ * Web: http://banglaprogramming.com
+ * youtube: https://www.youtube.com/c/banglaprogramming
+ * License: MIT License
+ * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+ */
+ 
+ /* Variable Names
  * 1. can start with _ or character
  * 2. can't have space between words
  * 3. can't be C lanuage keywords
