@@ -22,7 +22,7 @@ int main(){
     
     _Bool isEven = number % 2 == 0 ? 1 : 0;
     /*
-      #include <stdio.h>
+      #include <stdbool.h>
       bool isEven = number % 2 == 0 ? true : false; 
     */
     
