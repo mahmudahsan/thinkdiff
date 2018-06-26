@@ -20,7 +20,7 @@
 #include <stdio.h>
 
 int main(){
-    // initialization
+    // creating array
     int scores[10]; // 10 integer elements array
 
     // Indexing or Subscripting
