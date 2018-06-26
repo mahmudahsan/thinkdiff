@@ -19,9 +19,9 @@
  */
 
 #include <stdio.h>
-#define MAX_FIB 20 // Defining a Constant value
 
 int main(){
+    const int MAX_FIB  = 20; // Defining a Constant value
     int fibs[MAX_FIB];
     fibs[0] = 0;
     fibs[1] = 1;
