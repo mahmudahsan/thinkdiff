@@ -40,7 +40,7 @@ int main(){
 void swap(int n1, int n2){
     int temp = n1;
     n1 = n2;
-    n2 = n1;
+    n2 = temp;
 }
 
 void swapArrayValues(int array[], int pos1, int pos2){
