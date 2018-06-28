@@ -155,3 +155,7 @@
 6. [break এবং continue স্টেটমেন্ট দিয়ে যেভাবে লুপ কন্ট্রোল করা যায়](https://youtu.be/U2bQcR3D0qU)
 
 7. [Array কি কেন দরকার এবং যেভাবে সি প্রোগ্রামিং এ ব‍্যবহার করা যায়](https://youtu.be/M9ZivawTilI)
+
+8.1. [Function কি কেন দরকার কিভাবে ডিফাইন করতে হয়](https://youtu.be/f3s83f7jAe4)
+
+8.2. [Array যেভাবে Function argument হিসেবে পাঠানো যায়।](https://youtu.be/t5j74wPHjtA)
