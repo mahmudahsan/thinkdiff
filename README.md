@@ -156,6 +156,10 @@
 
 7. [Array কি কেন দরকার এবং যেভাবে সি প্রোগ্রামিং এ ব‍্যবহার করা যায়](https://youtu.be/M9ZivawTilI)
 
-8.1. [Function কি কেন দরকার কিভাবে ডিফাইন করতে হয়](https://youtu.be/f3s83f7jAe4)
+8.1 [Function কি কেন দরকার কিভাবে ডিফাইন করতে হয়](https://youtu.be/f3s83f7jAe4)
 
-8.2. [Array যেভাবে Function argument হিসেবে পাঠানো যায়।](https://youtu.be/t5j74wPHjtA)
+8.2 [Array যেভাবে Function argument হিসেবে পাঠানো যায়।](https://youtu.be/t5j74wPHjtA)
+
+8.3 [গ্লোবাল ভ‍্যারিয়েবল এবং স্ট‍্যাটিক ভ‍্যারিয়েবল কি এবং কেন দরকার](https://youtu.be/UcCeJem2K9E)
+
+8.4 [রিকারশন এবং রিকারসিভ ফাংশন কি এবং কেন](https://youtu.be/fngZneI2F3Q)
