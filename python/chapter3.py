@@ -7,6 +7,7 @@
 # https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
 
 # Statement
+# The smallest part of codes that python interpreter can execute is called statement
 # প্রোগ্রামিংয়োর ভাষায় কোডের ক্ষুদ্রতম অংশ যা পাইথন ইনটারপেটার এক্সকিউট করতে পারে সেটাই স্টেটমেন্ট
 
 print ("Hello World")
@@ -15,6 +16,7 @@ x = 2 + 1
 
 
 # Expression
+# The combination of value, variable and operators are called expression
 # ভ‍্যালু, ভ‍্যারিয়েবল এবং অপারেটর এর কম্বিনেশন কেই এক্সপ্রেশন বলে
 x = 17
 y = x + 2 
