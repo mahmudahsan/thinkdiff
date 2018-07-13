@@ -64,7 +64,7 @@ print(shop_name)
 shop_name = 'Rahim\'s Shop'
 print(shop_name)
 
-# Matching text at star and at the end
+# Matching text at start and at the end
 filename = 'bigdata.txt'
 print ( filename.endswith('.txt') )
 print ( filename.startswith('bi') )
@@ -72,7 +72,7 @@ print ( filename.startswith('bi') )
 # Find word in sentence
 sentence = "A quick brown fox jumps over the lazy dog"
 print ( sentence.find('fox') )
-print ( sentence.find('foxs') ) # -1 the valu not found
+print ( sentence.find('foxs') ) # -1 the value not found
 
 # Replace text
 sentence = "A quick brown fox jumps over the lazy dog"
