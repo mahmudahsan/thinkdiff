@@ -2,7 +2,7 @@
     <img src="cover.png" width="500" max-width="70%" alt="Python Bangla Tutorial" />
 </p>
 
-# বাংলায় পাইথন ৩ | সি প্রোগ্রামিং  | Python 3 in Bangla | C Programming
+# Python 3 in English &amp; বাংলা || সি প্রোগ্রামিং এবং আরো
 
 > বাংলায় পাইথন প্রোগ্রামিং, সি প্রোগ্রামিং এবং সফটওয়ার ডেভলপমেন্ট রিলেটেড টিউটোরিয়াল আমার একটা শখের প্রজেক্ট। 
 > এই প্রজেক্টের মাধ‍্যমে নতুন যারা প্রোগ্রামিং এ আসতে চায় তাদের জন‍্য আমি ভিডিও টিউটোরিয়াল শেয়ার করি। 
@@ -11,17 +11,21 @@
 >
 > পাইথনের সব ভিডিও প্লেলিস্ট আকারে পেতে চাইলে ভিজিট করুন [PythonBangla.com](http://pythonbangla.com)
 >
-> Bangla Python programming, C programming and software development related tutorials is my hobby project. In this project, I mostly publish Bangla language base video tutorials and English written tutorials. All the codes and notes are mentioned here.
+> [Table of Contents in Bangla ](#table-of-contents-in-bangla)
 
-# Table of Contents
+# Python 3 in English
+
+> In this section I listed the Python programming related English tutorials both video and blog post created by me.
+>
+- [Python 3 English Tutorials](#python-3-english-tutorials)
+- [Python 3 English Video Tutorials](#python-3-english-video-tutorials)
+
+# Table of Contents in Bangla
 
 - [পাইথন ৩ বিগিনার সিরিজ](#পাইথন-৩-বিগিনার-সিরিজ)
 - [পাইথন ৩ এডভান্সড সিরিজ](#পাইথন-৩-এডভান্সড)
 - [পাইথন জ‍্যাঙ্গো ওয়েব ফের্মওয়ার্ক সিরিজ](#পাইথন-django-ওয়েব-ফের্মওয়ার্ক-সিরিজ)
 - [ক‍্যারিয়ার জব ফ্রিলান্স](#জব-এবং-ফ্রিলান্স)
-- [Python 3 Tutorials in English](#python-3-english-tutorials)
-
-# Other Contents
 - [C প্রোগ্রামিং বাংলা](#c-প্রোগ্রামিং-বাংলা)
 - [HTML CSS দিয়ে ওয়েবপেজ ডিজাইন সিরিজ](#ওয়েবপেজ-ডিজাইন)
 
@@ -98,30 +102,6 @@
 
 7. [জ‍্যাঙ্গো ওয়েব ফের্মওয়ার্কে স্ট‍্যাটিক ফাইলস ব‍্যবহার করলে কিভাবে তা হেরুকু বা অ‍্যামাজন সিডিএন সার্ভারে ডেপ্লয় করতে হয়](https://youtu.be/vZTFEwfkTe8)
 
-## Python 3 English Tutorials
-
-### Basics
-1. [How to Setup Python 3 in Mac or Windows and Hello World](http://thinkdiff.net/python/python-tutorial-for-beginners-learn-how-to-setup-python/)
-
-2. [How to Write Comments Variable Operators](http://thinkdiff.net/python/python-tutorial-for-beginner-learn-comments-variables-operators/)
-
-3. [What is Statements Expression and Strings](http://thinkdiff.net/python/python-tutorial-for-beginner-statement-expression-string/)
-
-4. [How to Write if-else Conditions and For-in, While loop](http://thinkdiff.net/python/python-tutorial-beginner/)
-
-5. [How to Install Python VirtualEnv in Windows](http://thinkdiff.net/python/how-to-install-python-virtualenv-in-windows/)
-
-6. [How to Install Python Officially Recommended Pipenv Packaing Tool](http://thinkdiff.net/python/python-official-pipenv-packaging-tool-for-virtualenv-and-pip-in-mac-and-windows/)
-
-### Web Scraping
-
-7. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
-
-### Database
-
-8. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
-
-
 ## ওয়েবপেজ ডিজাইন
 
 1. [ওয়েবপেজ ডিজাইন করার প্রথম পর্ব](https://youtu.be/4uRN0-XOOJ0)
@@ -163,3 +143,38 @@
 8.3 [গ্লোবাল ভ‍্যারিয়েবল এবং স্ট‍্যাটিক ভ‍্যারিয়েবল কি এবং কেন দরকার](https://youtu.be/UcCeJem2K9E)
 
 8.4 [রিকারশন এবং রিকারসিভ ফাংশন কি এবং কেন](https://youtu.be/fngZneI2F3Q)
+
+
+## Python 3 English Tutorials
+
+### Basics
+1. [How to Setup Python 3 in Mac or Windows and Hello World](http://thinkdiff.net/python/python-tutorial-for-beginners-learn-how-to-setup-python/)
+
+2. [How to Write Comments Variable Operators](http://thinkdiff.net/python/python-tutorial-for-beginner-learn-comments-variables-operators/)
+
+3. [What is Statements Expression and Strings](http://thinkdiff.net/python/python-tutorial-for-beginner-statement-expression-string/)
+
+4. [How to Write if-else Conditions and For-in, While loop](http://thinkdiff.net/python/python-tutorial-beginner/)
+
+5. [How to Install Python VirtualEnv in Windows](http://thinkdiff.net/python/how-to-install-python-virtualenv-in-windows/)
+
+6. [How to Install Python Officially Recommended Pipenv Packaing Tool](http://thinkdiff.net/python/python-official-pipenv-packaging-tool-for-virtualenv-and-pip-in-mac-and-windows/)
+
+### Web Scraping
+
+7. [Aljazeera News Site Web Scraping Using Python – Urllib BeautifulSoup Logging](http://thinkdiff.net/python/web-scraping-python-beautifulsoup-tutorial/)
+
+### Database
+
+8. [How to Use Python SQLite3 Using SQLAlchemy](http://thinkdiff.net/python/how-to-use-python-sqlite3-using-sqlalchemy/)
+
+
+## Python 3 English Video Tutorials
+
+1. [Introduction to Python Programming Course](https://www.youtube.com/watch?v=mEv3cBZf1sc)
+
+2. [What is Variable and Operators in Python Programming Language](https://www.youtube.com/watch?v=VCnd9Vdf_2o&t=39s)
+
+
+### Other
+1. [Python Programming Career: Freelancing Jobs | Upwork Linkedin](https://www.youtube.com/watch?v=0Xoh3p4xsuI&t=1s)
