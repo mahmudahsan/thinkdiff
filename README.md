@@ -144,6 +144,10 @@
 
 8.4 [রিকারশন এবং রিকারসিভ ফাংশন কি এবং কেন](https://youtu.be/fngZneI2F3Q)
 
+9. [Structure এবং Typedef কিভাবে ব‍্যবহার করতে হয়](https://youtu.be/mLBbHhH1XCc)
+
+10. [স্ট্রিং বা ক‍্যারেক্টার অ‍্যারে এবং পয়েন্টার কি এবং কিভাবে ব‍্যবহার করা হয়](https://youtu.be/Sj-nQHNlhsE)
+
 
 ## Python 3 English Tutorials
 
