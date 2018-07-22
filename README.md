@@ -177,7 +177,15 @@
 
 1. [Introduction to Python Programming Course](https://www.youtube.com/watch?v=mEv3cBZf1sc)
 
-2. [What is Variable and Operators in Python Programming Language](https://www.youtube.com/watch?v=VCnd9Vdf_2o&t=39s)
+2. [What is Variable and Operators](https://www.youtube.com/watch?v=VCnd9Vdf_2o&t=39s)
+
+3. [What is Statement and How to Use String](https://www.youtube.com/watch?v=i8i-Fz-oBRs)
+
+4. [If Else Tutorial and For While Loop](https://www.youtube.com/watch?v=jzKM7ZCJQaw)
+
+5. [How to Use List or Dynamic Array](https://www.youtube.com/watch?v=xxmG5UNCa10)
+
+6. [How to use Tuple and Dictionary in Python Programming](https://www.youtube.com/watch?v=9GXF56NpzTc)
 
 
 ### Other
