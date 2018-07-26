@@ -88,12 +88,24 @@ print (x + '| ' + y + '| ' + z)
 print (x, y, z, sep='| ')
 
 # String interpolation
+# Old style
+person = '%s\'s age is %d'
+print(person % ('Bill', 55) )
+
+# New style
 person = '{name}\'s age is {age}'
 print(person.format(name='Bill', age=55))
 print(person.format(name='Steve', age=50))
 
-person = '%s\'s age is %d'
-print(person % ('Bill', 55) )
+print()
+
+# Formatted string literal Python 3.6+ 
+name = 'Mark'
+age  = 30
+person = f'{name}\'s age is {age}'
+print(person)
+
+print()
 
 # String slice
 name = "Taylor Swift"
