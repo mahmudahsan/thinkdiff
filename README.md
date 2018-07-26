@@ -144,6 +144,10 @@
 
 8.4 [রিকারশন এবং রিকারসিভ ফাংশন কি এবং কেন](https://youtu.be/fngZneI2F3Q)
 
+9. [Structure এবং Typedef কিভাবে ব‍্যবহার করতে হয়](https://youtu.be/mLBbHhH1XCc)
+
+10. [স্ট্রিং বা ক‍্যারেক্টার অ‍্যারে এবং পয়েন্টার কি এবং কিভাবে ব‍্যবহার করা হয়](https://youtu.be/Sj-nQHNlhsE)
+
 
 ## Python 3 English Tutorials
 
@@ -173,7 +177,15 @@
 
 1. [Introduction to Python Programming Course](https://www.youtube.com/watch?v=mEv3cBZf1sc)
 
-2. [What is Variable and Operators in Python Programming Language](https://www.youtube.com/watch?v=VCnd9Vdf_2o&t=39s)
+2. [What is Variable and Operators](https://www.youtube.com/watch?v=VCnd9Vdf_2o&t=39s)
+
+3. [What is Statement and How to Use String](https://www.youtube.com/watch?v=i8i-Fz-oBRs)
+
+4. [If Else Tutorial and For While Loop](https://www.youtube.com/watch?v=jzKM7ZCJQaw)
+
+5. [How to Use List or Dynamic Array](https://www.youtube.com/watch?v=xxmG5UNCa10)
+
+6. [How to use Tuple and Dictionary in Python Programming](https://www.youtube.com/watch?v=9GXF56NpzTc)
 
 
 ### Other
