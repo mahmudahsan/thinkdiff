@@ -32,7 +32,7 @@ max(2, 4)
 
 # Parameter
 def welcome(name): # name is parameter
-    print ("Welcome {name}".format(name=name))
+    print (f"Welcome {name}")
     
 welcome('Bill') # 'Bill' is argument
 welcome('Steve')
@@ -50,7 +50,7 @@ def person_details(name, age, country):
     
 ## argument order doesn't matter
 person_details(name='Bill', age=55, country='US')
-person_details(name='Swift', age=40, country='Canada')
+person_details(age=40, country='Canada', name='Swift')
 
 # Default value 
 def person_details(name, age, country='Bangladesh'):
@@ -90,13 +90,45 @@ def get_name(first_name, last_name, middle_name=''):
 print ( get_name('Bill', 'Gates') )
 print ( get_name('Bill', 'Gates', 'S') )
 
+print()
+# Function are first-class object 
+def str_upper(str):
+    return str.upper()
+
+print(str_upper("hello"))
+stup = str_upper
+print(stup("hello"))
+
+
+## function can be passed as argument
+def greetings(func):
+    greet = func("Welcome, Nice to meet you")
+    print(greet)
+    
+greetings(str_upper)
+
+## Functional programming
+up_list = list(map(str_upper, ["life", "is", "Cool"]))
+print(up_list)
+
+print()
+## Nested Function
+def hello_world(str):
+    def print_upper(s):
+        return s.upper()
+        
+    print(print_upper(str))
+
+hello_world("mango")
+
+print()
 # Reference type parameter
 
 ## Value Type
 num = 100
-def change_num(num):
-    num += 100 
-    print ( "Inner num: {num}".format(num=num) )
+def change_num(n):
+    n += 100 
+    print ( f"Inner num: {n}")
 change_num(num)
 print ( 'Outside num: ' + str(num))
 
