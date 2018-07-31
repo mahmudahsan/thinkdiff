@@ -265,3 +265,37 @@ class Math:
 
 math = Math(2, 4)
 print ( math._x )
+
+print()
+# Object comparison '==' vs 'is'
+# == is used to check equality
+# 'is' is used to check identity
+
+x = [1, 2, 3]
+xx = x
+
+print(x == xx)
+print(x is xx)
+
+y = list(x)
+print(x == y)
+print(x is y)
+
+print()
+# String conversion of a class by __str__ method
+l = [1, 2, 3]
+print(l)
+
+class Person:
+    def __init__(self, name):
+        self.name = name 
+        
+    def __str__(self):
+        return f'{self.__class__.__name__} class, obj name:  {self.name}'
+        
+p1 = Person("Bill")
+p2 = Person("Steve")
+
+print(p1)
+print(p2)
+
