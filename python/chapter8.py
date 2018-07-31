@@ -33,38 +33,43 @@ another_restaurant()
 # Syntax 
 '''
 class ClassName (ParentClass):
-    variables
-    methods
+    class variables
+    instance methods
 '''
 
 class Restaurant: # () parentheses optional
-    name  = ''
-    owner = ''
-
-    def details(self): # method
+    def details(self): # instance method
         print (self.name , self.owner)
         
     def details_with_address(self, address):
         # Local variable
-        print (self.name , self.owner)
+        self.details()
         print (address)
         
 ## Instantiation
 restaurant1 = Restaurant()
-restaurant1.name  = '7 Eleven' # Value access
+# creating instance variable
+restaurant1.name  = '7 Eleven'
 restaurant1.owner = 'Rahim'
-restaurant1.details()  # method call
+
+# calling instance method will replacee self argument by
+# instance object here restaurant1
+restaurant1.details()  
 restaurant1.details_with_address('Bogra')
+# checking object type
 print ( type(restaurant1) )
 
-## Another example 
+print()
+## Second example 
 class Person:
-    def __init__(self, name, age):
-        # constructor
+    def __init__(self, name="", age=0):
+        # constructor when an instance created
+        # if defined calls automatically during instantiation
+        # used fo setting up initial configuration
         # self is required as first parameter
         # self.variable available all methods
         # variables called attributes in class
-        # __init__ is called magic method
+        # __init__ is called magic method or dunder method
         self.name = name 
         self.age  = age 
         
@@ -73,14 +78,18 @@ class Person:
     def details(self):
         print (self.name, self.age, sep=' | ')
         
-bill = Person('Bill', 55) # self pass automatically
-bill.details()
-print ( bill.name, bill.age)
+bill1 = Person()
+bill1.details()
+
+bill2 = Person('Bill', 55) # self pass automatically
+bill2.details()
+print ( bill2.name, bill2.age)
 '''
-The first argument of every class method, including init, is always a reference to the current instance of the class. By convention, this argument is always named self
+The first argument of every class method, including init, is always a reference to the current instance of the class. By convention, this argument is always named self but anything else can also be used
 '''
 
-## Another example
+print()
+## Third example
 people_list = []
 for x in range(0,3):
     person = Person("Person "+str(x), 30+x)
@@ -89,6 +98,43 @@ for x in range(0,3):
 for x in people_list:
     x.details()
     
+print()
+#-------------------------------------------
+# Class variable and Instance variable Details
+class Alien:
+    legs = 5 # class variable
+    
+    def __init__(self, name):
+        self.name = name # instance variable
+        
+## Instantiation
+alien1 = Alien('Maven')
+alien2 = Alien('Woven')
+
+print(alien1.name, alien2.name) # accessing instance variable
+print(alien1.legs, alien2.legs) # accessing class variable
+
+## Updating class variable
+Alien.legs = 10
+print(alien1.legs, alien2.legs)
+
+## Updating instance variable by class
+# Dog.name = 'XXXXX' # error: class doesn't know instance variables
+
+## Updating class variable by instance
+alien1.legs = 1 # it creates a shadow instance variable
+print(alien1.legs, alien2.legs) # alien1 now using instance variable
+
+## removing shadow instance variable from instance
+del alien1.legs
+    
+## Proper way to update class variable by instance
+alien1.__class__.legs = 99
+print(alien1.legs, alien2.legs)
+
+#-------------------------------------------
+
+print()
 # Attribute value modification
 
 class Person:
@@ -131,7 +177,7 @@ def hello():
     y = X('hello_Y')
 hello()
 
-##  Python garbage collection (by reference counting)
+##  Python garbage collection happens (by reference counting)
 
 # Inheritence
 class Math: # Parent class
