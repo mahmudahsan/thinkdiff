@@ -5,21 +5,23 @@
 # youtube: https://www.youtube.com/c/banglaprogramming
 # License: MIT License
 # https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+# Object-oriented programming or in short OOP is a computer programming paradigm where 
+# data and related methods are encapsulated together.
 
 # --------------------
 #      class
 # --------------------
 
 # Global varible
-restaurant_name  = 'দই ঘর'
-restaurant_owner = 'রহিম'
+restaurant_name  = '7 Eleven'
+restaurant_owner = 'Rahim'
 
 def restaurant_details(): # function
     print (restaurant_name , restaurant_owner)
     
 def another_restaurant():
     # Local variable
-    restaurant_address = 'বগুড়া'
+    restaurant_address = 'Bogra'
     print (restaurant_name , restaurant_owner)
     print (restaurant_address)
 
@@ -49,10 +51,10 @@ class Restaurant: # () parentheses optional
         
 ## Instantiation
 restaurant1 = Restaurant()
-restaurant1.name  = 'দই ঘর' # Value access
-restaurant1.owner = 'রহিম'
+restaurant1.name  = '7 Eleven' # Value access
+restaurant1.owner = 'Rahim'
 restaurant1.details()  # method call
-restaurant1.details_with_address('বগুড়া')
+restaurant1.details_with_address('Bogra')
 print ( type(restaurant1) )
 
 ## Another example 
