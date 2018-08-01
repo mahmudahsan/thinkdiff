@@ -118,8 +118,6 @@ print(alien1.legs, alien2.legs) # accessing class variable
 Alien.legs = 10
 print(alien1.legs, alien2.legs)
 
-## Updating instance variable by class
-# Dog.name = 'XXXXX' # error: class doesn't know instance variables
 
 ## Updating class variable by instance
 alien1.legs = 1 # it creates a shadow instance variable
