@@ -85,6 +85,9 @@ print ( msmath.multiplication(2, 2))
 msstring.print_chracters("BANGLADESH")
 
 ## import all modules in a package
+# Write the following line in __init__.py file
+# __all__ = ["msmath", "msstring"] 
+
 from mspack import *
 
 print ( msmath.sum(10, 2) )
