@@ -10,11 +10,11 @@
 #      Metaprogramming: Decorator
 # --------------------------
 
-# Decorator is a callable that takes function as argument.
+# Decorator is a callable that takes callable as argument and returns another callable
 # The function which is passed as argument is called decorated function.
 # It can process, change the decorated function 
 # It either returns the original function or replace it with another function
-# A decorator usually replace a function with different one
+# A decorator usually replace a function with different one which is part of metaprogramming
 
 # Example 1
 def decor(decoratedFunc):
@@ -22,18 +22,37 @@ def decor(decoratedFunc):
         print("Inner Function")
     return inner 
     
-@decor
 def testFunc():
     print("Test Func")
     
-def testAnotherFunc():
-    print("Test Another")
+decorated_func = decor(testFunc)
+decorated_func()
+
+print()
+## syntactic sugar 
+@decor
+def testFunc1():
+    print("Test Func1")
     
+testFunc1()
+    
+
 print(testFunc)
-testFunc()
+print(testFunc1)
 
-testAnotherFunc()
-test_another = decor(testAnotherFunc)
-test_another()
+## Example 2 Uppercase
+def uppercase(function):
+    def decorated(*args):
+        result = function(*args)
+        result_upper = result.upper()
+        return result_upper 
+    return decorated
+    
+@uppercase 
+def person_name(name):
+    return name
+    
+upper_name = person_name("mahmud ahsan")
+print(upper_name)
 
-# Decorator is called syntactic sugar. It is convenient when doing metaprogramming the way to change a program behavior at runtime.
+print(person_name("bill gates"))
