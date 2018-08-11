@@ -13,6 +13,10 @@
 >
 > [Table of Contents in Bangla ](#table-of-contents-in-bangla)
 
+### Other Python Projects
+- [Bank Rates](https://github.com/mahmudahsan/bankrates)
+- [Pythonbangla.com Webapp](https://github.com/mahmudahsan/pythonbangla.com)
+
 # Python 3 in English
 
 > In this section I listed the Python programming related English tutorials both video and blog post created by me.
