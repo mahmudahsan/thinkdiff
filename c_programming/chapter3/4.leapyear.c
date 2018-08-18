@@ -1,13 +1,11 @@
 /*
  * author: Mahmud Ahsan
- * github: https://github.com/mahmudahsan
+ * https://github.com/mahmudahsan
  * blog: http://thinkdiff.net
- * Web: http://banglaprogramming.com
- * youtube: https://www.youtube.com/c/banglaprogramming
+ * http://banglaprogramming.com
  * License: MIT License
- * https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
  */
- 
+
 /* 
  * Leap Year
  * year % 4 == 0 && year % 100 != 0
