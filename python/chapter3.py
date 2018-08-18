@@ -1,10 +1,8 @@
 # author: Mahmud Ahsan
-# github: https://github.com/mahmudahsan
+# code: https://github.com/mahmudahsan/thinkdiff
 # blog: http://thinkdiff.net
-# Web: http://pythonbangla.com
-# youtube: https://www.youtube.com/c/banglaprogramming
-# License: MIT License
-# https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+# http://pythonbangla.com
+# MIT License
 
 # Statement
 # The smallest part of codes that python interpreter can execute is called statement

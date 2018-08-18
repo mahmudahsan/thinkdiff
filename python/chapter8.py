@@ -1,10 +1,10 @@
 # author: Mahmud Ahsan
-# github: https://github.com/mahmudahsan
+# code: https://github.com/mahmudahsan/thinkdiff
 # blog: http://thinkdiff.net
-# Web: http://pythonbangla.com
-# youtube: https://www.youtube.com/c/banglaprogramming
-# License: MIT License
-# https://github.com/mahmudahsan/thinkdiff/blob/master/LICENSE 
+# http://pythonbangla.com
+# MIT License
+
+
 # Object-oriented programming or in short OOP is a computer programming paradigm where 
 # data and related methods are encapsulated together.
 
