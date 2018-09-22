@@ -18,7 +18,7 @@ import requests
 SOURCE_URL = "http://flags.fmcdn.net/data/flags/w1160"
 FILE_EXT   = ".png"
 SAVE_DIR   = "images/"
-COUNTRIES  = "bd br gb us in my th pk fr sn hk gr".split()
+COUNTRIES  = "bd br gb us in my th pk fr sn sa gr".split()
 
 def save_image(image, name):
     path = os.path.join(SAVE_DIR, name)
