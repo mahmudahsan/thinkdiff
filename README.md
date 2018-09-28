@@ -1,4 +1,5 @@
-# ✓ LEARN COMPUTER PROGRAMMING IN BANGLA | বাংলায় কম্পিউটার প্রোগ্রামিং
+# LEARN COMPUTER PROGRAMMING IN BANGLA
+## বাংলায় কম্পিউটার প্রোগ্রামিং
 <p align="center">
     <a href="http://thinkdiff.net/">
         <img src="https://img.shields.io/badge/thinkdiff.net-brightgreen.svg" alt="thinkdiff.net" />
