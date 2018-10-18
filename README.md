@@ -40,12 +40,16 @@
 
 → [Django Web](https://bit.ly/2M8XBiq)
 
-# Mixed &amp; Web
+# Mixed | Web | Business | Vlog
 → [Mixed Programming](https://bit.ly/2QcCZJx)
 
 → [Technology](https://bit.ly/2oMS73V)
 
 → [HTML | CSS](https://bit.ly/2KGu1oQ)
+
+→ [Business](https://bit.ly/2QgUAzm)
+
+→ [Vlog](https://bit.ly/2Omvn9Y)
 
 # C Programming
 → [C Programming](https://bit.ly/2CtlNMT)
