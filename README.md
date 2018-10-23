@@ -23,11 +23,15 @@
 </p>
 
 
-> [PythonBangla.com](http://pythonbangla.com)
+> [PythonBangla.com](http://pythonbangla.com) | বাংলা
 
-> [Learn Fundamental Python in 50 Minutes](https://youtu.be/TNV72_aaHwM)
+> [Learn Fundamental Python in 50 Minutes](https://youtu.be/TNV72_aaHwM) | English
+
+> **My Udemy Courses**
 
 > [Python Programming in 5 Hours on Udemy](https://bit.ly/2PHnA2Z)
+
+> [Web Scraping in Python on Udemy](https://www.udemy.com/web-scraping-in-python/)
 
 # Python 3
 → [Python Beginner](https://bit.ly/2NTi9xm)
