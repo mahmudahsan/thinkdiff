@@ -23,9 +23,9 @@
 </p>
 
 
-> [PythonBangla.com](http://pythonbangla.com) | বাংলা
+> [PythonBangla.com 🇧🇩](http://pythonbangla.com) | বাংলা
 
-> [Learn Fundamental Python in 50 Minutes](https://youtu.be/TNV72_aaHwM) | English
+> [Learn Python Programming 🔥 Full Course ✌️ Absolute Beginners](https://www.youtube.com/watch?v=llbgjR_tL2k | English
 
 > **My Udemy Courses**
 
