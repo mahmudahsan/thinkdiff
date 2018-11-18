@@ -25,7 +25,7 @@
 
 > [PythonBangla.com 🇧🇩](http://pythonbangla.com) | বাংলা
 
-> [Learn Python Programming 🔥 Full Course ✌️ Absolute Beginners](https://www.youtube.com/watch?v=llbgjR_tL2k | English
+> [Learn Python Programming 🔥 Full Course ✌️ Absolute Beginners](https://www.youtube.com/watch?v=llbgjR_tL2k) | English
 
 > **My Udemy Courses**
 
