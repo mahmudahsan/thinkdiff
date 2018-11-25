@@ -7,12 +7,6 @@
     <a href="http://pythonbangla.com">
         <img src="https://img.shields.io/badge/pythonbangla.com-red.svg" alt="facebook" />
     </a>
-    <a href="https://facebook.com/thinkdiff.net">
-        <img src="https://img.shields.io/badge/facebook-blue.svg" alt="facebook" />
-    </a>
-    <a href="https://linkedin.com/in/mahmudahsan/">
-        <img src="https://img.shields.io/badge/linkedin-yellow.svg" alt="facebook" />
-    </a>
     <a href="https://twitter.com/mahmudahsan">
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
     </a>
