@@ -23,6 +23,9 @@
 > [Web Scraping in Python on Udemy](https://www.udemy.com/web-scraping-in-python/)
 
 # Python 3 বাংলা টিউটোরিয়াল
+
+[বাংলা প্রোগ্রামিং টিউটোরিয়াল🔥পাইথন বাংলা 🚀 জ‍্যাঙ্গো বাংলা 💯 ওয়েব স্ক্র‍্যাপিং](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg/playlists?view=50&shelf_id=17&sort=dd)
+
 → [Python Beginner](https://bit.ly/2NTi9xm)
 
 → [Python Advanced](https://bit.ly/2oOwi3N)
