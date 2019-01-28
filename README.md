@@ -4,9 +4,6 @@
     <a href="http://thinkdiff.net/">
         <img src="https://img.shields.io/badge/thinkdiff.net-brightgreen.svg" alt="thinkdiff.net" />
     </a>
-    <a href="http://pythonbangla.com">
-        <img src="https://img.shields.io/badge/pythonbangla.com-red.svg" alt="facebook" />
-    </a>
     <a href="https://twitter.com/mahmudahsan">
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
     </a>
@@ -17,8 +14,6 @@
 </p>
 
 
-> [PythonBangla.com 🇧🇩](http://pythonbangla.com) | বাংলা
-
 > [Learn Python Programming 🔥 Full Course ✌️ Absolute Beginners](https://www.youtube.com/watch?v=llbgjR_tL2k) | English
 
 > **My Udemy Courses**
@@ -27,7 +22,7 @@
 
 > [Web Scraping in Python on Udemy](https://www.udemy.com/web-scraping-in-python/)
 
-# Python 3
+# Python 3 বাংলা টিউটোরিয়াল
 → [Python Beginner](https://bit.ly/2NTi9xm)
 
 → [Python Advanced](https://bit.ly/2oOwi3N)
