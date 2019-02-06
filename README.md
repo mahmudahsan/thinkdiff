@@ -26,6 +26,10 @@
 
 [বাংলা প্রোগ্রামিং টিউটোরিয়াল🔥পাইথন বাংলা 🚀 জ‍্যাঙ্গো বাংলা 💯 ওয়েব স্ক্র‍্যাপিং](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg/playlists?view=50&shelf_id=17&sort=dd)
 
+OR visit
+
+[পাইথন বাংলা](http://pythonbangla.com)
+
 → [Python Beginner](https://bit.ly/2NTi9xm)
 
 → [Python Advanced](https://bit.ly/2oOwi3N)
