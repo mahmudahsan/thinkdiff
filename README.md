@@ -24,35 +24,10 @@
 
 # Python 3 বাংলা টিউটোরিয়াল
 
-[বাংলা প্রোগ্রামিং টিউটোরিয়াল🔥পাইথন বাংলা 🚀 জ‍্যাঙ্গো বাংলা 💯 ওয়েব স্ক্র‍্যাপিং](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg/playlists?view=50&shelf_id=17&sort=dd)
+1. [পাইথন বাংলা](http://pythonbangla.com)
 
-OR visit
+2. [বাংলা প্রোগ্রামিং টিউটোরিয়াল🔥পাইথন বাংলা 🚀 জ‍্যাঙ্গো বাংলা 💯 ওয়েব স্ক্র‍্যাপিং](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg/playlists?view=50&shelf_id=17&sort=dd)
 
-[পাইথন বাংলা](http://pythonbangla.com)
-
-→ [Python Beginner](https://bit.ly/2NTi9xm)
-
-→ [Python Advanced](https://bit.ly/2oOwi3N)
-
-→ [Python Projects](https://bit.ly/2NwBbgD)
-
-→ [Python Web Scrap](https://bit.ly/2OxKdpV)
-
-→ [Django Web](https://bit.ly/2M8XBiq)
-
-# Mixed | Web | Business | Vlog
-→ [Mixed Programming](https://bit.ly/2QcCZJx)
-
-→ [Technology](https://bit.ly/2oMS73V)
-
-→ [HTML | CSS](https://bit.ly/2KGu1oQ)
-
-→ [Business](https://bit.ly/2QgUAzm)
-
-→ [Vlog](https://bit.ly/2Omvn9Y)
-
-# C Programming
-→ [C Programming](https://bit.ly/2CtlNMT)
 
 ## Other Python Projects
 - [Bank Rates](https://github.com/mahmudahsan/bankrates)
