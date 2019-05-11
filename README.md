@@ -4,15 +4,6 @@
     <a href="http://thinkdiff.net/">
         <img src="https://img.shields.io/badge/thinkdiff.net-brightgreen.svg" alt="thinkdiff.net" />
     </a>
-    <a href="http://pythonbangla.com">
-        <img src="https://img.shields.io/badge/pythonbangla.com-red.svg" alt="facebook" />
-    </a>
-    <a href="https://facebook.com/thinkdiff.net">
-        <img src="https://img.shields.io/badge/facebook-blue.svg" alt="facebook" />
-    </a>
-    <a href="https://linkedin.com/in/mahmudahsan/">
-        <img src="https://img.shields.io/badge/linkedin-yellow.svg" alt="facebook" />
-    </a>
     <a href="https://twitter.com/mahmudahsan">
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
     </a>
@@ -23,9 +14,7 @@
 </p>
 
 
-> [PythonBangla.com](http://pythonbangla.com) | বাংলা
-
-> [Learn Fundamental Python in 50 Minutes](https://youtu.be/TNV72_aaHwM) | English
+> [Learn Python Programming 🔥 Full Course ✌️ Absolute Beginners](https://www.youtube.com/watch?v=llbgjR_tL2k) | English
 
 > **My Udemy Courses**
 
@@ -33,30 +22,12 @@
 
 > [Web Scraping in Python on Udemy](https://www.udemy.com/web-scraping-in-python/)
 
-# Python 3
-→ [Python Beginner](https://bit.ly/2NTi9xm)
+# Python 3 বাংলা টিউটোরিয়াল
 
-→ [Python Advanced](https://bit.ly/2oOwi3N)
+1. [পাইথন বাংলা](http://pythonbangla.com)
 
-→ [Python Projects](https://bit.ly/2NwBbgD)
+2. [বাংলা প্রোগ্রামিং টিউটোরিয়াল🔥পাইথন বাংলা 🚀 জ‍্যাঙ্গো বাংলা 💯 ওয়েব স্ক্র‍্যাপিং](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg/playlists?view=50&shelf_id=17&sort=dd)
 
-→ [Python Web Scrap](https://bit.ly/2OxKdpV)
-
-→ [Django Web](https://bit.ly/2M8XBiq)
-
-# Mixed | Web | Business | Vlog
-→ [Mixed Programming](https://bit.ly/2QcCZJx)
-
-→ [Technology](https://bit.ly/2oMS73V)
-
-→ [HTML | CSS](https://bit.ly/2KGu1oQ)
-
-→ [Business](https://bit.ly/2QgUAzm)
-
-→ [Vlog](https://bit.ly/2Omvn9Y)
-
-# C Programming
-→ [C Programming](https://bit.ly/2CtlNMT)
 
 ## Other Python Projects
 - [Bank Rates](https://github.com/mahmudahsan/bankrates)
