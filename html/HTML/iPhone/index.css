@@ -1,0 +1,90 @@
+:root {
+    --primary-bg: rgba(44, 62, 80, 1);
+    --secondary-bg: rgba(0,0,0,0.9);
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: serif;
+    background: var(--secondary-bg);
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.phone-body {
+    width: 350px;
+    height: 700px;
+    
+    border-radius: 30px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    position: relative;
+    
+    box-shadow:  1px 2px 1px gold inset,
+               2px 10px 3px rgba(149,165,166 ,0.1);
+}
+
+.phone-body:before,
+.phone-body:after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--primary-bg);
+  top: 12px;
+}
+
+.phone-body:after {
+ top: 25px;
+ left: 125px;
+ width: 8px;
+ height: 8px;
+}
+
+.phone-inner {
+    background: var(--primary-bg);
+    
+    height: 80%;
+    width: 90%;
+    
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.phone-inner:after{
+    content: '';
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: absolute;
+    bottom: -60px;
+    box-shadow: 0px 1px 1px #ecff,
+               1px 0px 1px gold;
+}
+
+.phone-inner:before{
+    content: '';
+    width: 50px;
+    height: 7px;
+    border-radius: 5px;
+    background: var(--primary-bg);
+    position: absolute;
+    top: -40px;
+}
+
+article {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 0.8rem;
+    border-radius: 5px;
+}
