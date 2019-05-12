@@ -36,7 +36,7 @@ I created this repository to practice myself. Here I publish programming code fo
 ### Python and JavaScript
 
 1. [Coding Problems](coding-problems/)
-2. [Python and JavaScript Language Primer](#python-and-javascript) 
+2. [Python and JavaScript Language Primer](#python-and-javascript-languages) 
 3. [Python Codes](python-language/)
 4. [JavaScript Codes](javascript/)
 
@@ -51,13 +51,13 @@ I created this repository to practice myself. Here I publish programming code fo
 
 ### Open Source Projects
 
-1. [Todos Mobile App- React-Native](https://github.com/mahmudahsan/todos-react-reactnative)
+1. [Todos Mobile App - React Native](https://github.com/mahmudahsan/todos-react-reactnative)
 2. [Pythonbangla.com - React.js](https://github.com/mahmudahsan/python-bangla-react)
 3. [Pythonbangla.com - Django](https://github.com/mahmudahsan/pythonbangla.com)
 4. [Web Scraping - Python | Aljazzera | GoodReads](https://github.com/mahmudahsan/webscraping)
 5. [Bank Rates - Python](https://github.com/mahmudahsan/bankrates)
 
-### Python and JavaScript
+### Python and JavaScript Languages
 
 1. [Variables](#variables)
 2. [Absent of Value](#absent-of-value)
