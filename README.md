@@ -12,6 +12,7 @@
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
     </a>
 </p>
+
 # Python, JavaScript and Computer Science
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my [Blog](https://thinkdiff.net) or my [Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg). When I solve any programming problem I like to write solution in both `Python` and `JavaScript` languages. As these 2 languages currently I am mostly working on. Beside these 2 languages, I have extensive working knowledge of `Swift` and `Obj-C` programming langauges.
@@ -26,7 +27,7 @@ I created this repository to practice myself. Here I publish programming code fo
 
 # Table of Contents
 
-1. [Coding Interview](coding-interview/README.md)
+1. [Coding Interview](coding-interview/)
 2. [Python and JavaScript Language Primer](#python-and-javascript) 
 3. [Python Projects](#python-projects)
 
