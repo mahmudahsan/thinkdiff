@@ -30,15 +30,17 @@ I created this repository to practice myself. Here I publish programming code fo
 
 # Table of Contents
 
-1. [Coding Interview](coding-interview/)
+1. [Coding Problems](coding-problems/)
 2. [Python and JavaScript Language Primer](#python-and-javascript) 
-3. [Python Projects](#python-projects)
+3. [Open Source Projects](#open-source-projects)
 
 
-## Python Projects
-- [Bank Rates](https://github.com/mahmudahsan/bankrates)
-
-- [Pythonbangla.com Webapp](https://github.com/mahmudahsan/pythonbangla.com)
+# Open Source Projects
+1. [Todos Mobile App- React-Native](https://github.com/mahmudahsan/todos-react-reactnative)
+2. [Pythonbangla.com - React.js](https://github.com/mahmudahsan/python-bangla-react)
+3. [Pythonbangla.com - Django](https://github.com/mahmudahsan/pythonbangla.com)
+4. [Web Scraping - Python | Aljazzera | GoodReads](https://github.com/mahmudahsan/webscraping)
+5. [Bank Rates - Python](https://github.com/mahmudahsan/bankrates)
 
 # Python and JavaScript
 
