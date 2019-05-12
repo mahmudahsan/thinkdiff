@@ -1,0 +1,11 @@
+{
+  "name": "python-javascript-cs",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/mahmudahsan/python-javascript-cs.git",
+  "author": "Mahmud Ahsan <mahmud@thinkdiff.net>",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.11"
+  }
+}
