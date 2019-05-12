@@ -8,8 +8,11 @@
     <a href="https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg">
         <img src="https://img.shields.io/badge/youtube-red.svg" alt="Youtube" />
     </a>
+    <a href="https://pythonbangla.com">
+        <img src="https://img.shields.io/badge/pythonbangla.com-orange.svg" alt="pythonbangla.com" />
+    </a>
     <a href="https://twitter.com/mahmudahsan">
-        <img src="https://img.shields.io/badge/contact%40-mahmudahsan-green.svg" alt="Twitter: @mahmudahsan" />
+        <img src="https://img.shields.io/badge/contact%40-mahmudahsan-blue.svg" alt="Twitter: @mahmudahsan" />
     </a>
 </p>
 
