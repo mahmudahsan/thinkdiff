@@ -1,5 +1,5 @@
 <p align="center">
-    <img src="cover1.png" alt="Computer Programming" />
+    <img src="cover.png" alt="Computer Programming" />
 </p>
 <p align="center">
     <a href="http://thinkdiff.net/">
