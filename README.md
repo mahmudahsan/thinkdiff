@@ -20,7 +20,7 @@
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my [Blog](https://thinkdiff.net) or my [Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg). When I solve any programming problem I like to write solution in both `Python` and `JavaScript` languages. As these 2 languages currently I am mostly working on. Beside these 2 languages, I have extensive working knowledge of `Swift` and `Obj-C` programming langauges.
 
-# My Programming Courses
+## My Programming Courses
 
 - [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
 - [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/)
@@ -28,25 +28,33 @@ I created this repository to practice myself. Here I publish programming code fo
 - [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
 
 
-# Table of Contents
+## Table of Contents
+
+### Python and JavaScript
 
 1. [Coding Problems](coding-problems/)
 2. [Python and JavaScript Language Primer](#python-and-javascript) 
-3. [Open Source Projects](#open-source-projects)
-4. [Python Codes](python-language/)
-5. [JavaScript Codes](javascript/)
-6. [Django Codes](django-framework/)
-7. [Django Rest Framework Codes](django-rest-framework/)
+3. [Python Codes](python-language/)
+4. [JavaScript Codes](javascript/)
 
+### Django
 
-# Open Source Projects
+1. [Django Codes](django-framework/)
+2. [Django Rest Framework Codes](django-rest-framework/)
+
+### React and React Native
+
+1. [React Native Tutorials](react-native/)
+
+### Open Source Projects
+
 1. [Todos Mobile App- React-Native](https://github.com/mahmudahsan/todos-react-reactnative)
 2. [Pythonbangla.com - React.js](https://github.com/mahmudahsan/python-bangla-react)
 3. [Pythonbangla.com - Django](https://github.com/mahmudahsan/pythonbangla.com)
 4. [Web Scraping - Python | Aljazzera | GoodReads](https://github.com/mahmudahsan/webscraping)
 5. [Bank Rates - Python](https://github.com/mahmudahsan/bankrates)
 
-# Python and JavaScript
+### Python and JavaScript
 
 1. [Variables](#variables)
 2. [Absent of Value](#absent-of-value)
@@ -55,7 +63,7 @@ I created this repository to practice myself. Here I publish programming code fo
 5. [String](#string)
 6. [List](#list)
 
-## Variables
+### Variables
 
 > Environment: Collection of bindings and their values that exist at a given time is called the environment
 
@@ -118,7 +126,7 @@ console.log();
 //console.log(localStr2); // ReferenceError: localStr2 is not defined
 ```
 
-## Absent of Value
+### Absent of Value
 
 ### `Python`
 
@@ -153,7 +161,7 @@ console.log(sp3, typeof sp3);
 console.log((0/0)); // output: Nan
 ```
 
-## Operators
+### Operators
 
 ### `Python`
 
@@ -277,7 +285,7 @@ let aNum = 2;
 console.log("Exponential: " + Math.pow(aNum, 8));
 ```
 
-## Statements Expression Comments
+### Statements Expression Comments
 
 > The smallest part of codes that python interpreter can execute is called `statement`
 
@@ -306,7 +314,7 @@ multiline comment
 multiline comment */
 ```
 
-## String
+### String
 
 ### `Python`
 
@@ -470,7 +478,7 @@ const num = 100; // number type
 console.log(num.toString(), typeof num.toString()); // 100 string
 ```
 
-## List
+### List
 
 `Python`
 ```python
@@ -494,7 +502,7 @@ const lst = [1, 2, 3]
 
 ***Document Templates***
 
-## Title
+### Title
 
 ### `Python`
 
