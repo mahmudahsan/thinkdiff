@@ -33,6 +33,10 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Coding Problems](coding-problems/)
 2. [Python and JavaScript Language Primer](#python-and-javascript) 
 3. [Open Source Projects](#open-source-projects)
+4. [Python Codes](python-language/)
+5. [JavaScript Codes](javascript/)
+6. [Django Codes](django-framework/)
+7. [Django Rest Framework Codes](django-rest-framework/)
 
 
 # Open Source Projects
