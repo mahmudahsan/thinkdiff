@@ -23,15 +23,20 @@
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my [Blog](https://thinkdiff.net) or my [Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg). 
 
+### My Open Source Projects
+
+1. [Todos Mobile App - React Native](https://github.com/mahmudahsan/todos-react-reactnative)
+2. [Pythonbangla.com - React.js](https://github.com/mahmudahsan/python-bangla-react)
+3. [Pythonbangla.com - Django](https://github.com/mahmudahsan/pythonbangla.com)
+4. [Web Scraping - Python | Aljazzera | GoodReads](https://github.com/mahmudahsan/webscraping)
+5. [Bank Rates - Python](https://github.com/mahmudahsan/bankrates)
+
 ## My Programming Courses
 
 - [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
 - [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/)
 - [Web Scraping in Python with BeautifulSoup & Scrapy Framework](https://www.udemy.com/web-scraping-in-python/)
 - [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
-
-
-## Table of Contents
 
 ### Python and JavaScript
 
@@ -49,11 +54,4 @@ I created this repository to practice myself. Here I publish programming code fo
 
 1. [React Native Tutorials](react-native/)
 
-### Open Source Projects
-
-1. [Todos Mobile App - React Native](https://github.com/mahmudahsan/todos-react-reactnative)
-2. [Pythonbangla.com - React.js](https://github.com/mahmudahsan/python-bangla-react)
-3. [Pythonbangla.com - Django](https://github.com/mahmudahsan/pythonbangla.com)
-4. [Web Scraping - Python | Aljazzera | GoodReads](https://github.com/mahmudahsan/webscraping)
-5. [Bank Rates - Python](https://github.com/mahmudahsan/bankrates)
 
