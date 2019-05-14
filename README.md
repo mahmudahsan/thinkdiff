@@ -28,7 +28,7 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Todos Mobile App - React Native](https://github.com/mahmudahsan/todos-react-reactnative)
 2. [Pythonbangla.com - React.js](https://github.com/mahmudahsan/python-bangla-react)
 3. [Pythonbangla.com - Django](https://github.com/mahmudahsan/pythonbangla.com)
-4. [Web Scraping - Python | Aljazzera | GoodReads](https://github.com/mahmudahsan/webscraping)
+4. [Web Scraping - Python | AlJazeera | GoodReads](https://github.com/mahmudahsan/webscraping)
 5. [Bank Rates - Python](https://github.com/mahmudahsan/bankrates)
 
 ## My Programming Courses
