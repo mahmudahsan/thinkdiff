@@ -32,7 +32,7 @@ I created this repository to practice myself. Here I publish programming code fo
 - [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
 
 ### Node, Express
-- [Stuckoverflow](https://github.com/mahmudahsan/thinkdiff/tree/master/nodejs/StuckOverFlow): On Progress - a dynamic express server application
+- [Stuckoverflow](https://github.com/mahmudahsan/stuckoverflow): On Progress - a dynamic express server application
 
 ### Python, Django
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
