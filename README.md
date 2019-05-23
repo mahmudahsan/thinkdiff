@@ -26,18 +26,18 @@ I created this repository to practice myself. Here I publish programming code fo
 ## My Open Source Projects
 
 ### React Native 
-1. [Todos Mobile App: cross platform mobile app](https://github.com/mahmudahsan/todos-react-reactnative)
+1. [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
 
 ### React
-1. [Pythonbangla.com: video tutorials playlist](https://github.com/mahmudahsan/python-bangla-react)
+1. [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
 
 ### Node, Express
-1. [Stuckoverflow - On Progress: a dynamic express server application](https://github.com/mahmudahsan/thinkdiff/tree/master/nodejs/StuckOverFlow)
+1. [Stuckoverflow](https://github.com/mahmudahsan/thinkdiff/tree/master/nodejs/StuckOverFlow): On Progress - a dynamic express server application
 
 ### Python, Django
-1. [Pythonbangla.com: video tutorials playlist](https://github.com/mahmudahsan/pythonbangla.com)
-4. [Web Scraping: alJazeera and goodreads website scraping techniques](https://github.com/mahmudahsan/webscraping)
-5. [Bank Rates: a Bangladeshi bank's currency rates scraping](https://github.com/mahmudahsan/bankrates)
+1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
+4. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
+5. [Bank Rates](https://github.com/mahmudahsan/bankrates): a Bangladeshi bank's currency rates scraping
 
 
 ## My Programming Courses
