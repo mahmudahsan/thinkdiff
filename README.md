@@ -51,7 +51,8 @@ I created this repository to practice myself. Here I publish programming code fo
 
 1. [Coding Problems](coding-problems/)
 2. [JavaScript Language](javascript/) 
-3. [Python Language](python-language/) 
+3. [Design Patterns](design-patterns/)
+4. [Python Language](python-language/) 
    
 
 ### Django
