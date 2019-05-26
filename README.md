@@ -31,9 +31,6 @@ I created this repository to practice myself. Here I publish programming code fo
 ### React
 - [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
 
-### Node, Express
-- [Stuckoverflow](https://github.com/mahmudahsan/stuckoverflow): On Progress - a dynamic express server application
-
 ### Python, Django
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
 4. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
