@@ -50,3 +50,14 @@ commands.forEach(cmd => {
   console.log(store.getState());
 });
 ```
+
+Output
+```
+1
+0
+1
+2
+1
+2
+1
+```
