@@ -11,6 +11,7 @@
 - [Set](#set)
 - [Object](#object)
 - [Destructuring](#destructuring)
+- [Spread Operator](#spread-operator)
 - [Function](#function)
 - [Class](#class)
 
@@ -350,6 +351,40 @@ const arrNumbers = [1, 2, 3, 4, 5];
 
 const [ one, two, three ] = arrNumbers;
 console.log(one, two, three);
+```
+
+### Spread Operator
+
+##### Spread operator (...Name) allows an iterable to spread or expand individually inside a receiver. Iterables can be  strings, arrays, sets, etc.
+
+```js
+// arr1 and arr2 are same this is not the right way
+const arr1 = [1, 2, 3, 4];
+const arr2 = arr1;
+console.log(arr1 === arr2);
+
+arr2.push(5);
+console.log(arr1);
+
+// ...array return each element of an array
+// here arr3 is completely new array and has no relation with arr1
+const arr3 = [...arr1, 6];
+console.log(arr3);
+console.log(arr1 === arr3);
+```
+
+##### Spread operator for object is proposal feature but it works with babel transpiler
+
+```js
+const obj1 = {
+  name: 'rice',
+  price: 20
+};
+
+const type = 'groceries';
+
+const obj2 = {...obj1, type}
+console.log(obj2);
 ```
 
 ### Function
