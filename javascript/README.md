@@ -8,6 +8,7 @@
 - [Comment](#comment)
 - [String](#string)
 - [List](#list)
+- [Function](#function)
 
 ### Variables
 
@@ -230,3 +231,61 @@ const lst = [1, 2, 3]
 | item existence  | `lst.includes(item)` |
 | index of item   |  `lst.indexOf(item)` |
 
+### Function
+
+A regular function
+```javascript
+function sum(items) {
+    return items.reduce((total, item) => total + item );
+}
+
+console.log(sum([1, 2, 3]));
+```
+
+Function binding with a variable name
+```javascript
+const sum = function(items) {
+    return items.reduce((total, item) => total + item );
+}
+
+console.log(sum([1, 2, 3]));
+```
+
+#### Arrow Function
+
+An arrow function is shorter than a regular function expression
+
+```javascript
+// Arrow function 1
+const squareArrow1 = (n) => {
+  return n * n;
+};
+console.log("Arrow1: " + squareArrow1(7));
+
+// Arrow function 2
+// When there is one parameter, () is optional
+const squareArrow2 = n => {
+  return n * n;
+};
+console.log("Arrow2: " + squareArrow1(9));
+
+// Arrow function 3
+// When no curly braces provided after arrow, that means implicit returns
+const squareArrow3 = n => n * n;
+console.log("Arrow3: " + squareArrow1(11));
+
+// Invalid 
+// Must have to pass () beside parameters before arrow 
+//const addArrow = a, b => a + b; // ERROR
+
+// Valid
+const addArrow = (a, b) => a + b; 
+
+// Empty parameter
+// Must have to provid ()
+const helloWorld = () => {
+  console.log("Hello World");
+}
+helloWorld();
+
+```
