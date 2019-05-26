@@ -8,6 +8,7 @@
 - [Comment](#comment)
 - [String](#string)
 - [List](#list)
+- [Set](#set)
 - [Function](#function)
 
 ### Variables
@@ -230,6 +231,18 @@ const lst = [1, 2, 3]
 | number of items |         `lst.length` |
 | item existence  | `lst.includes(item)` |
 | index of item   |  `lst.indexOf(item)` |
+
+### Set
+
+Set object store unique values of any type
+
+```js
+const setNumbers = new Set([1, 2, 3, 4, 1]);
+console.log(setNumbers);
+
+setNumbers.add(3);
+console.log(setNumbers);
+```
 
 ### Function
 
