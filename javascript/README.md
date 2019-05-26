@@ -9,6 +9,7 @@
 - [String](#string)
 - [List](#list)
 - [Set](#set)
+- [Object](#object)
 - [Function](#function)
 
 ### Variables
@@ -136,7 +137,7 @@ console.log("Exponential: " + Math.pow(aNum, 8));
 
 ### Statements Expression Comments
 
-> The smallest part of codes that python interpreter can execute is called `statement`
+> The smallest part of codes that javascriput interpreter can execute is called `statement`
 
 > The combination of value, variable and operators are called `expression`
 
@@ -234,7 +235,7 @@ const lst = [1, 2, 3]
 
 ### Set
 
-Set object store unique values of any type
+##### Set object store unique values of any type
 
 ```js
 const setNumbers = new Set([1, 2, 3, 4, 1]);
@@ -244,9 +245,73 @@ setNumbers.add(3);
 console.log(setNumbers);
 ```
 
+### Object
+
+A regular JavaScript object.
+```js
+const Person = {
+    name: 'Ahsan',
+    count: 'Bangladesh',
+};
+
+console.log(Person);
+```
+
+##### Shorthand property name in object
+When object property name and initializing variable name are same we can use shorthand syntax
+
+```js
+// ES5
+var person = {
+  name: name
+};
+console.log(person.name);
+
+// ES6
+const personSame = {
+  name,
+};
+console.log(personSame.name);
+```
+
+##### Concise Method name in object
+
+```js
+// ES5
+var person = {
+  name: 'Mahmud',
+  getName: function(){
+    return this.name;
+  }
+};
+
+console.log(person.getName());
+
+// ES6
+const personAgain = {
+  name: 'Mahmud Ahsan',
+  getName(){
+    return this.name;
+  }
+};
+
+console.log(personAgain.getName());
+```
+
+##### Computed property name
+
+```js
+const key = 'key' + 1;
+const obj = {
+  [key]: 'data',
+};
+
+console.log(obj[key]);
+```
+
 ### Function
 
-A regular function
+##### A regular function
 ```javascript
 function sum(items) {
     return items.reduce((total, item) => total + item );
@@ -255,7 +320,7 @@ function sum(items) {
 console.log(sum([1, 2, 3]));
 ```
 
-Function binding with a variable name
+##### Function binding with a variable name
 ```javascript
 const sum = function(items) {
     return items.reduce((total, item) => total + item );
@@ -264,7 +329,7 @@ const sum = function(items) {
 console.log(sum([1, 2, 3]));
 ```
 
-Default value in function parameter
+##### Default value in function parameter
 ```js
 const personDetails = (name, country='Bangladesh') => {
   console.log(name + " " + country);
