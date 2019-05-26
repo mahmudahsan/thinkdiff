@@ -1,6 +1,5 @@
 ### Design Patterns
 
-- [Design Patterns](#design-patterns)
 - [Redux Concept from Scratch](#redux-concept-from-scratch)
 
 ### Redux Concept from Scratch
