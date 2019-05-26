@@ -251,6 +251,16 @@ const sum = function(items) {
 console.log(sum([1, 2, 3]));
 ```
 
+Default value in function parameter
+```js
+const personDetails = (name, country='Bangladesh') => {
+  console.log(name + " " + country);
+}
+
+personDetails("mahmud");
+personDetails('mark', 'Malaysia');
+```
+
 #### Arrow Function
 
 An arrow function is shorter than a regular function expression
