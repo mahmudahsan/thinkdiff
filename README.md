@@ -28,13 +28,15 @@ I created this repository to practice myself. Here I publish programming code fo
 ### React Native 
 - [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
 
+  - [Learn React Native](react-native/): My published video tutorials of react native framework to develop cross platform mobile apps
+
 ### React
 - [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
 
 ### Python, Django
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
-4. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
-5. [Bank Rates](https://github.com/mahmudahsan/bankrates): a Bangladeshi bank's currency rates scraping
+2. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
+3. [Bank Rates](https://github.com/mahmudahsan/bankrates): a Bangladeshi bank's currency rates scraping
 
 
 ## My Programming Courses
@@ -57,8 +59,5 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Django Codes](django-framework/)
 2. [Django Rest Framework Codes](django-rest-framework/)
 
-### React and React Native
-
-1. [React Native Tutorials](react-native/)
 
 
