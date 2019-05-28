@@ -19,6 +19,29 @@
 
 > Environment: Collection of bindings and their values that exist at a given time is called the environment
 
+##### Primitive Types
+There are 7 primitive types in JavaScript.
+1. null
+2. undefined
+3. number
+4. bigint (ES10)
+5. string
+6. boolean
+7. symbol
+
+```js
+const num = 100n;
+console.log(typof num); // bigint
+
+const num2 = BigInt(100);
+console.log(typeof num2); // bigint
+
+const id1 = Symbol('id1');
+console.log(typeof id1); // symbol
+```
+
+Some fundamentals:
+
 ```javascript
 var number1 = 200; // number: integer
 let number2 = 300.50; // number: floating-point
