@@ -28,8 +28,6 @@ I created this repository to practice myself. Here I publish programming code fo
 ### React Native 
 - [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
 
-  - [Learn React Native](react-native/): My published video tutorials of react native framework to develop cross platform mobile apps
-
 ### React
 - [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
 
@@ -39,7 +37,7 @@ I created this repository to practice myself. Here I publish programming code fo
 3. [Bank Rates](https://github.com/mahmudahsan/bankrates): a Bangladeshi bank's currency rates scraping
 
 
-## My Programming Courses
+## My Programming Courses and Tutorials
 
 - [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
 - [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/)
