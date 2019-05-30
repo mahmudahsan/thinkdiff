@@ -1,6 +1,7 @@
 # Flutter
 
-- Background
+- [Background](#background)
+- [Widget](#widget)
 
 ####  Background
 
@@ -8,7 +9,44 @@ Flutter is a cross-platform mobile app development framework by Google. It used 
 
 Flutter also supports hot reloading for faster development.
 
-Flutter is a reactive library like ReactJS on Web. In flutter, everything is a widget and every widget is a dart class. Using widget we create view.
+### Widget
 
+Flutter is a reactive library like ReactJS on Web. In flutter, ***everything is a widget*** and every widget is a dart class. Using widget we create view.
 
+#### Widgets are 2 types:
+
+1. Stateless
+2. Statefull
+
+#### Some common widgets are:
+
+- Layout - `Row, Column, Scaffold, Stack`
+- Structures - `Button, Toast, MenuDrawer`
+- Styles - `TextStyle, Color`
+- Animations - `FadeInPhoto, transformations`
+- Position, Alignment - `Center, Padding`
+
+##### Flutter favors composition over class inheritance
+
+So this is wrong
+```dart
+class AddToCartButton extends Button {}
+```
+
+Correct Flutter widget composition
+
+```dart
+class AddToCartButton extends Widget {
+  @override
+  build() {
+    return Center(
+      child: Button(
+        child: Text('Add to Cart'),
+      )
+    );
+  }
+}
+```
+
+In a Flutter widget `build` method must exist. It describes the view by returning a `widget`.
 
