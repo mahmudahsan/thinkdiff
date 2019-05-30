@@ -14,6 +14,8 @@
 - [Spread Operator](#spread-operator)
 - [Function](#function)
 - [Class](#class)
+- [Promise](#promise)
+- [Async / Await](#async-await)
 
 ### Variables
 
@@ -556,4 +558,107 @@ class Honda extends Car {
 
 const honda = new Honda('honda', 'sedan', 'accord');
 honda.print();
+```
+
+### Promise
+
+##### A promise object represents an eventual completion or failure for an asynchronous operation.
+
+##### Promise has 3 states:
+1. Pending
+2. Fulfilled
+3. Rejected
+
+When a pending promise either fulfilled or rejected and if a corresponding handler is attached by 'then' method, the handler will be called. If it is rejected, the corresponding catch method if attached will be called.
+
+```js
+ const getData = () => {
+  return new Promise((resolve, reject) => {
+    setTimeout(()=>{
+      resolve('data received');
+    }, 1000);
+
+    // reject example 
+    setTimeout(()=>{
+      reject('network disconnected');
+    }, 500);
+  });
+ };
+
+ const dataFromServer = getData();
+ 
+ dataFromServer.then(
+    (value)=>{
+      console.log(value);
+    }, 
+    (error)=>{ // implicit catch within then
+      console.log(error);
+    }
+ ); 
+
+  /*
+  // explicit catch to detect rejection
+   dataFromServer.then(
+    (value)=>{
+      console.log(value);
+    })
+    .catch((error)=>{
+      console.log(error);
+    }  
+ );
+ */
+```
+
+### Async Await
+
+##### `async/await` functions are built onto promise. A function starts with async keyword means, it will must return a `promise` either implicitly or explicitly.
+
+##### The keyword `await` makes JavaScript wait until the `promise` settled and return the result
+
+***Example 1:***
+
+```js
+ const sum = async (a, b) => {
+   return a + b;
+ };
+ console.log(sum); // [AsyncFunction: sum]
+ console.log(sum(1, 2)); // Promise { 3 }
+ const result = sum(100, 200);
+ result.then(value => {
+  console.log(value);
+ });
+ ```
+
+ ***Example 2:***
+
+```js
+const pow = async (num, pow) => {
+  return new Promise((resolve, reject)=>{
+    const r = Math.pow(num, pow);
+    resolve(r);
+  });
+ };
+
+ pow(2, 2).then(val => {console.log(val)});
+```
+
+ ***Example 3:***
+
+```js
+ const getData = async () => {
+    const data = new Promise((resolve, reject) => {
+      setTimeout(()=>{
+        resolve("data received");
+      }, 2000);
+    });
+
+    console.log('test 1');
+    let result = await data;
+    console.log('test 2');
+    return result;
+ };
+
+ getData().then(result => {
+   console.log(result);
+ });
 ```

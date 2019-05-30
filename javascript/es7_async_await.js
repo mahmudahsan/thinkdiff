@@ -28,7 +28,7 @@
  pow(2, 2).then(val => {console.log(val)});
 
  /**
-  * The keyword await makes JavaScript wait untile the promise settled and return the result
+  * The keyword await makes JavaScript wait until the promise settled and return the result
   */
  // Example 3
  const getData = async () => {
