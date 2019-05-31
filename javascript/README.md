@@ -165,7 +165,7 @@ console.log("Exponential: " + Math.pow(aNum, 8));
 
 ### Statements Expression Comments
 
-> The smallest part of codes that javascriput interpreter can execute is called `statement`
+> The smallest part of codes that javascript interpreter can execute is called `statement`
 
 > The combination of value, variable and operators are called `expression`
 
