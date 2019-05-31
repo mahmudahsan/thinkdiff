@@ -1,6 +1,6 @@
 void main() {
-  print(sum(2, 2));
-  print(sum(2));
+  print(isAdult(1));
+  print(isAdult());
 }
 
-dynamic sum(var num1, [var num2]) => num1 + ( num2 ?? 0 );
+bool isAdult([int age = 18]) => age >= 18;

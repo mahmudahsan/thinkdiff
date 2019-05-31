@@ -507,6 +507,35 @@ void main() {
 dynamic sum(var num1, [var num2]) => num1 + ( num2 ?? 0 );
 ```
 
+##### Default parameter value
+
+To provide default value on parameter it has to be declared either `positional optional` or `named optional`
+
+```dart
+void main() {
+  print(isAdult(1));
+  print(isAdult());
+}
+
+bool isAdult([int age = 18]) => age >= 18;
+```
+
+```dart
+
+```
+
+```dart
+
+```
+
+```dart
+
+```
+
+```dart
+
+```
+
 ```dart
 
 ```
