@@ -1,5 +1,8 @@
 void main() {
-  var numbers = [1, 2, 3];
-  
-  numbers.forEach((num) => print(num));
+  int num = 5;
+
+  do {
+    print(num);
+    num -= 1;
+  } while(num > 0);
 }

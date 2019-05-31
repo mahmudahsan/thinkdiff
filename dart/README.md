@@ -365,22 +365,49 @@ for (var n in numbers) {
 ```
 
 3. forEach loop
+
+Here inside `forEach` method we provide a function. Thus `forEach` is a higher order function.
+
 ```dart
 var numbers = [1, 2, 3];
   
 numbers.forEach((num) => print(num));
 ```
 
-```dart
+we can rewrite this `forEach` by another way:
 
+```dart
+void main() {
+  var numbers = [1, 2, 3];
+
+  numbers.forEach(printNum);
+}
+
+void printNum(num) {
+  print(num);
+}
 ```
 
-```dart
+4. While loop
 
+```dart
+  int num = 5;
+
+  while (num > 0){ 
+    print(num);
+    num -= 1;
+  }
 ```
 
-```dart
+5. do-while loop
 
+```dart
+  int num = 5;
+
+  do {
+    print(num);
+    num -= 1;
+  } while(num > 0);
 ```
 
 ```dart
