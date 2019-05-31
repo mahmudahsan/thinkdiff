@@ -45,7 +45,7 @@ I created this repository to practice myself. Here I publish programming code fo
 - [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
 - [Flutter Tutorials](flutter/)
 
-### Python and JavaScript
+### JavaScript, Dart, Python | Coding, Design Patterns
 
 1. [JavaScript Language](javascript/) 
 2. [Dart Language](dart/)
