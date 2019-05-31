@@ -16,13 +16,34 @@ class MyApp extends StatelessWidget {
           backgroundColor: Colors.green[800],
         ),
         body: SafeArea(
-          child: Container(
-            child: Text('Hello 1'),
-            color: Colors.white,
-            alignment: Alignment.center,
-            margin: EdgeInsets.all(20),
-            padding: EdgeInsets.all(10),
-            height: 200,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: <Widget>[
+              Container(
+                child: Text('Life'),
+                color: Colors.white,
+                alignment: Alignment.center,
+                margin: EdgeInsets.all(20),
+                padding: EdgeInsets.all(10),
+                height: 100,
+              ),
+              Container(
+                child: Text('Is'),
+                color: Colors.white,
+                alignment: Alignment.center,
+                margin: EdgeInsets.all(20),
+                padding: EdgeInsets.all(10),
+                height: 200,
+              ),
+              Container(
+                child: Text('Cool'),
+                color: Colors.white,
+                alignment: Alignment.center,
+                margin: EdgeInsets.all(20),
+                padding: EdgeInsets.all(10),
+                height: 150,
+              ),
+            ],
           ),
         ),
         backgroundColor: Colors.teal[200],
@@ -30,3 +51,5 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+
+
