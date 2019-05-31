@@ -348,14 +348,14 @@ print(result);
 
 Same like `JavaScript` language
 
-1. Standard for loop
+1. **Standard for loop**
 ```dart
 for (var i = 0; i < 10; ++i) {
   print(i);
 }
 ```
 
-2. for-in loop
+2. **for-in loop**
 ```dart
 var numbers = [1, 2, 3];
 
@@ -364,7 +364,7 @@ for (var n in numbers) {
 }
 ```
 
-3. forEach loop
+3. **forEach loop**
 
 Here inside `forEach` method we provide a function. Thus `forEach` is a higher order function.
 
@@ -388,7 +388,7 @@ void printNum(num) {
 }
 ```
 
-4. While loop
+4. **While loop**
 
 ```dart
   int num = 5;
@@ -399,7 +399,7 @@ void printNum(num) {
   }
 ```
 
-5. do-while loop
+5. **do-while loop**
 
 ```dart
   int num = 5;
