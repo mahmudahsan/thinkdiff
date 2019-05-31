@@ -12,6 +12,7 @@
   - [Operator](#conditional-operator)
   - [Ternary Operator](#ternary-operator)
 - [Loop](#loop)
+- [Function](#function)
 
 ### Setup
 
@@ -410,16 +411,100 @@ void printNum(num) {
   } while(num > 0);
 ```
 
+6. **Break and Continue**
+
 ```dart
+void main() {
+  for (var i = 0; i < 10; ++i) {
+    if (i > 5) break;
+    print(i);
+  }
+
+  for (var i = 0; i < 10; ++i) {
+    if (i % 2 == 0) continue;
+    print("Odd: $i");
+  }
+}
+```
+
+### Function
+
+- Each `function` is an object of class `Function`
+- Each `function` if returns something should have a `return type`. Otherwise it will return `void`
+
+Some examples:
+```dart
+void main() {
+  showOutput(square(2));
+  showOutput(square(2.5));
+}
+
+void showOutput(var msg) {
+  print(msg);
+}
+
+dynamic square(var num) {
+  return num * num;
+}
+```
+
+#### Fat Arrow Expression => or Arrow Function
+
+For one expression within a function we can use the shorthand syntax called **Fat Arrow** `=>`. And it implicitly returns the value after `=>`. It's somewhat similar to `JavaScript Arrow Function`.
+
+we can redefine the above `square` function by this:
+```dart
+dynamic square(var num) => num * num;
+```
+
+#### Positional and Named Parameter
+
+Positional arguments works like other language starting from left.
+
+```dart
+void main() {
+  print(sum(2, 2));
+}
+
+dynamic sum(var num1, var num2) => num1 + num2;
 
 ```
 
-```dart
+For Named parameter, whe have to use `{}` outside the named parameter within a function signature.
 
+```dart
+void main() {
+  print(sumName(num1: 2, num2: 2));
+}
+
+dynamic sumName({var num1, var num2}) => num1 + num2;
 ```
 
-```dart
+We can also mix positional and named parameter.
 
+By default, `named parameter` is optional. So we can use null aware operator to check this optional argument.
+
+```dart
+void main() {
+  print(sum(2, num2: 2));
+  print(sum(2));
+}
+
+dynamic sum(var num1, {var num2}) => num1 + ( num2 ?? 0 );
+```
+
+**Positional Optional Parameter**
+
+We have to use square bracket around positional optional parameter. That's it.
+
+So we use the above example redefined below:
+```dart
+void main() {
+  print(sum(2, 2));
+  print(sum(2));
+}
+
+dynamic sum(var num1, [var num2]) => num1 + ( num2 ?? 0 );
 ```
 
 ```dart

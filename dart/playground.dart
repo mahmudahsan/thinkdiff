@@ -1,8 +1,6 @@
 void main() {
-  int num = 5;
-
-  do {
-    print(num);
-    num -= 1;
-  } while(num > 0);
+  print(sum(2, 2));
+  print(sum(2));
 }
+
+dynamic sum(var num1, [var num2]) => num1 + ( num2 ?? 0 );
