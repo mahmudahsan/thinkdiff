@@ -19,7 +19,7 @@
     </a>
 </p>
 
-# Python, JavaScript and Computer Science
+# JavaScript, Python, Dart | React, Express, Node, Flutter
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my [Blog](https://thinkdiff.net) or my [Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg). 
 
@@ -43,19 +43,15 @@ I created this repository to practice myself. Here I publish programming code fo
 - [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/)
 - [Web Scraping in Python with BeautifulSoup & Scrapy Framework](https://www.udemy.com/web-scraping-in-python/)
 - [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
+- [Flutter Tutorials](flutter/)
 
 ### Python and JavaScript
 
-1. [Coding Problems](coding-problems/)
-2. [JavaScript Language](javascript/) 
-3. [Design Patterns](design-patterns/)
-4. [Python Language](python-language/) 
-
-### Flutter and Dart
-
-1. [Dart Language](dart/)
-2. [Flutter](flutter/)
-   
+1. [JavaScript Language](javascript/) 
+2. [Dart Language](dart/)
+3. [Python Language](python-language/) 
+4. [Coding Problems](coding-problems/)
+5. [Design Patterns](design-patterns/)
 
 ### Django
 
