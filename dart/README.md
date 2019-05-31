@@ -13,6 +13,8 @@
   - [Ternary Operator](#ternary-operator)
 - [Loop](#loop)
 - [Function](#function)
+- [Class](#class)
+- [Enum](#enum)
 
 ### Setup
 
@@ -71,7 +73,7 @@ void main() {
 
 - Object oriented programming language
 - Everything is an object and derived from `object` class
-- Static strongly typed language. Can not assign integer value to String type etc.
+- Strongly typed language. Can not assign integer value to String type etc.
 - ( ; ) Semicolon is mandatory to the end of statements
 
 ****Strongly Typed Language:**** The type of a variable is known at ***compile time***. For example: `C++`, `Java`, `Swift`
@@ -367,7 +369,7 @@ for (var n in numbers) {
 
 3. **forEach loop**
 
-Here inside `forEach` method we provide a function. Thus `forEach` is a higher order function.
+Here inside `forEach` method we provide a function. Thus `forEach` is a higher order function. Also in this first example, within `forEach` we are using `anonymous` function.
 
 ```dart
 var numbers = [1, 2, 3];
@@ -509,7 +511,7 @@ dynamic sum(var num1, [var num2]) => num1 + ( num2 ?? 0 );
 
 ##### Default parameter value
 
-To provide default value on parameter it has to be declared either `positional optional` or `named optional`
+To provide default value on parameter it has to be declared either `positional optional` or `named optional` and after `=` sign need to provide default value.
 
 ```dart
 void main() {
@@ -520,20 +522,113 @@ void main() {
 bool isAdult([int age = 18]) => age >= 18;
 ```
 
-```dart
+### Class
 
+A blank class with Constructor, properties and methods. A default constructor is the same name of Class name.
+```dart
+class Person {
+  String name;
+  int age;
+
+  Person(String name, [int age = 18]) {
+    this.name = name;
+    this.age = age;
+  }
+
+  void showOutput() {
+    print('Name: ${this.name}');
+    print('Age: ${this.age}');
+  }
+}
+
+void main() {
+  var person1 = Person('Jack');
+  Person person2 = Person('Jill', 15);
+
+  person1.showOutput();
+  person2.showOutput();
+}
+```
+**Output**
+```
+Name: Jack
+Age: 18
+Name: Jill
+Age: 15
 ```
 
-```dart
+Using syntactic sugar we can use write a shorter default constructor like this way.
 
+`Dart` automatically assign same named arguments to the same named properties.
+
+If we want, we can use automatically assign with other functionality inside default constructor like example `Vehicle`.
+
+```dart
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, [this.age = 18]);
+}
+
+class Vehicle {
+  String model;
+  int year;
+
+  Vehicle(this.model, this.year) {
+    print(this.model);
+    print(this.year);
+  }
+}
 ```
 
-```dart
+### Class Inheritance
 
+```dart
+class Vehicle {
+  String model;
+  int year;
+
+  Vehicle(this.model, this.year) {
+    print(this.model);
+    print(this.year);
+  }
+}
+
+class Car extends Vehicle {
+  double price;
+
+  Car(String model, int year, this.price) : super(model, year);
+
+  void showOutput() {
+    print(this.model);
+    print(this.year);
+    print(this.price);
+  }
+}
+
+void main() {
+  var car1 = Car('Accord', 2014, 150000);
+  car1.showOutput();
+}
 ```
 
-```dart
+### Enum
 
+```dart
+enum Color {
+  red,
+  green,
+  blue,
+}
+
+void main() {
+  var color = Color.red;
+
+  if (color == Color.red) {
+    print('Red');
+  }
+}
 ```
 
 ```dart

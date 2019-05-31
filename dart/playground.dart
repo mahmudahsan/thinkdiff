@@ -1,6 +1,13 @@
-void main() {
-  print(isAdult(1));
-  print(isAdult());
+enum Color {
+  red,
+  green,
+  blue,
 }
 
-bool isAdult([int age = 18]) => age >= 18;
+void main() {
+  var color = Color.red;
+
+  if (color == Color.red) {
+    print('Red');
+  }
+}
