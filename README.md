@@ -39,11 +39,11 @@ I created this repository to practice myself. Here I publish programming code fo
 
 ## My Programming Courses and Tutorials
 
+- [Flutter and Dart Tutorials](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ) | [Code](flutter/)
 - [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
 - [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/)
 - [Web Scraping in Python with BeautifulSoup & Scrapy Framework](https://www.udemy.com/web-scraping-in-python/)
 - [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
-- [Flutter and Dart Tutorials](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ) | [Code](flutter/)
 
 ### JavaScript, Dart, Python | Coding, Design Patterns
 
