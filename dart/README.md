@@ -39,6 +39,9 @@ dart filename.dart
 
 Dart is a strictly typed programming language. It supports both AOT (Ahead of time) and JIT (Just In Time) compilation. It is a compiled programming language and can also transpile the code into JavaScript.
 
+- `dart:core` library contains built-in types, collections, and other core functionality for every Dart program.
+- `dart:core` library automatically imports to every Dart program.
+
 #### Code Samples
 
 ```dart
@@ -566,6 +569,8 @@ bool isAdult([int age = 18]) => age >= 18;
 ```
 
 ### Class
+
+- `Object` class from `dart:core` library is the base class of all object type in dart programming.
 
 A blank class with Constructor, properties and methods. A default constructor is the same name of Class name.
 ```dart
