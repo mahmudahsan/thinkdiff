@@ -3,7 +3,8 @@
 - [Setup](#setup) | [Official](https://dart.dev/get-dart)
 - [Features](#features)
 - [Data Types](#data-types)
-- [Types in Function](#types-in-function)
+  - [Types in Function](#types-in-function)
+  - [Types Conversion](#types-conversion)
 - [Comments](#comments)
 - [null object](#null-object)
 - [Final and Const](#final-and-const)
@@ -45,6 +46,7 @@ Dart can deliver the best of both worlds: extremely fast development cycles, and
 
 - `dart:core` library contains built-in types, collections, and other core functionality for every Dart program.
 - `dart:core` library automatically imports to every Dart program.
+- `Dart` is a single thread programming language like 'JavaScript'
 
 #### Code Samples
 
@@ -80,9 +82,11 @@ void main() {
 
 #### `Dart` Language Common Features:
 
-- Object oriented programming language
-- Everything is an object and derived from `object` class
+- Everything you can place in a variable is an object, and every object is an instance of a class. Even numbers, functions, and null are objects. 
+- All objects inherit from the `Object` class.
 - Static typed language. Can not assign integer value to String type etc.
+- Dart supports generic types, like `List<int>` (a list of integers) or `List<dynamic>` (a list of objects of any type).
+- Unlike Java, Dart doesn’t have the keywords `public`, `protected`, and `private`
 - ( ; ) Semicolon is mandatory to the end of statements
 
 ****Strongly Typed Language:**** The type of a variable is known at ***compile time***. For example: `C++`, `Java`, `Swift`
@@ -141,6 +145,7 @@ And ages is `int` type as we defined it.
 ```dart
 void main() {
   List names = ['Jack', 'Jill'];
+  print(names.length);
   for (var n in names) {
     print(n);
   }
@@ -181,6 +186,36 @@ dynamic dynamicSquare(dynamic val) {
   return val * val;
 }
 ```
+### Types Conversion
+
+Here’s how you turn a string into a number, or vice versa:
+
+```dart
+// String -> int
+var one = int.parse('1');
+assert(one == 1);
+
+// String -> double
+var onePointOne = double.parse('1.1');
+assert(onePointOne == 1.1);
+
+// int -> String
+String oneAsString = 1.toString();
+assert(oneAsString == '1');
+
+// double -> String
+String piAsString = 3.14159.toStringAsFixed(2);
+assert(piAsString == '3.14');
+```
+
+#### String
+
+You can create a “raw” string by prefixing it with r:
+```dart
+var s = r'In a raw string, not even \n gets special treatment.';
+```
+
+
 ### Comments
 
 ```dart
@@ -204,11 +239,12 @@ void main() {
 ```
 ### Final and Const
 
-`final` and `const` when used before defining any variable can not reassign. But `final` variable if declared in class without value must have to assigned in the `constructor()` method 
+`final` and `const` when used before defining any variable can not reassign. 
+- But `final` variable if declared in class without value must have to assigned in the `constructor()` method 
 
 ```dart
 final String person1 = 'Jack';
-const String person2 = 'Jill';
+const String person2 = 'Jill'; // compile time constant
 
 print(person1);
 print(person2);
@@ -216,6 +252,24 @@ print(person2);
 // can not reassign
 // person1 = 'aa';
 // person2 = 'bb';
+```
+
+- Instance variables can be `final` 
+- Instance variable can be `static const`
+
+```dart
+class X {
+  final name; // type will be defined by inferred value
+  static const int age = 10;
+  
+  X(this.name);
+}
+
+main() {
+  var x = X('Jack');
+  print(x.name);
+  print(X.age); // use Classname.StaticVariable
+}
 ```
 
 ### Operators
