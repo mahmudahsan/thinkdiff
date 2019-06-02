@@ -119,6 +119,10 @@ void main() {
 }
 ```
 
+#### Tips 
+ 
+- Best to ***avoid*** `var` and `dynamic` type to get advantage of type-safe language. It will create less error.
+
 #### Complex Data Types
 
 We can define type when declare something or we can let it to the compiler to decide the type.
