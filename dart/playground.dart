@@ -1,13 +1,7 @@
-enum Color {
-  red,
-  green,
-  blue,
-}
-
 void main() {
-  var color = Color.red;
+  var name = 'Jack';
+  print(name);
 
-  if (color == Color.red) {
-    print('Red');
-  }
+  name = 100;
+  print(name);
 }

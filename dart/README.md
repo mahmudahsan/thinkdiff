@@ -2,7 +2,7 @@
 
 - [Setup](#setup) | [Official](https://dart.dev/get-dart)
 - [Features](#features)
-- [Complex Data Types](#complex-data-types)
+- [Data Types](#data-types)
 - [Types in Function](#types-in-function)
 - [Comments](#comments)
 - [null object](#null-object)
@@ -73,14 +73,51 @@ void main() {
 
 - Object oriented programming language
 - Everything is an object and derived from `object` class
-- Strongly typed language. Can not assign integer value to String type etc.
+- Static typed language. Can not assign integer value to String type etc.
 - ( ; ) Semicolon is mandatory to the end of statements
 
 ****Strongly Typed Language:**** The type of a variable is known at ***compile time***. For example: `C++`, `Java`, `Swift`
 
 ****Dynamic Typed Language:**** The type of a variable is known at ***run time.*** For example: `Python`, `Ruby`, `JavaScript`.
 
-### Complex Data Types
+### Data Types
+
+#### Simple or Primitive Data Types
+
+- `int`
+- `double`
+- `String`
+- `bool`
+- `dynamic`
+
+**If we declare a variable as `String` we have to put only `String` value within it.**
+
+##### We can not put one type to another static type.
+```dart
+void main() {
+  var name = 'Jack'; // type inference made this as String
+  print(name);
+
+  name = 100; // Will show error here
+  print(name);
+}
+```
+
+##### We can put any data on a dynamic type variable
+
+```dart
+void main() {
+  var weakType; // dynamic
+
+  weakType = 'Jack';
+  print(weakType);
+
+  weakType = 100;
+  print(weakType);
+}
+```
+
+#### Complex Data Types
 
 We can define type when declare something or we can let it to the compiler to decide the type.
 
