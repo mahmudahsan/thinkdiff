@@ -613,6 +613,50 @@ void main() {
 }
 ```
 
+### Method Overriding
+
+#### The annotation `@override` marks an instance member as overriding a superclass member with the same name. But it is optional.
+
+- The intent of the `@override` notation is to catch situations where a superclass renames a member, and an independent subclass which used to override the member, could silently continue working using the superclass implementation.
+- Use `@override` when you don't have control of superclass `method` implementation
+
+```dart
+class X {
+  String name;
+  
+  X(this.name);
+  
+  void showOutput() {
+    print(this.name);
+  }
+  
+  dynamic square(dynamic val) {
+    return val * val;
+  }
+}
+
+class Y extends X {
+  Y(String name) : super(name);
+  
+  @override
+  void showOutput() {
+    print(this.name);
+    print('Hello');
+  }
+  
+  // not using @override at this time
+  dynamic square(dynamic val) {
+    return val * val + 2;
+  }
+}
+
+void main() {
+  var obj = Y('Jack');
+  obj.showOutput();
+  print(obj.square(2));
+}
+```
+
 ### Enum
 
 ```dart
