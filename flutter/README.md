@@ -21,7 +21,7 @@ Flutter is a reactive library like ReactJS on Web. In flutter, ***everything is 
 
 #### Some common widgets are:
 
-- Layout - `Row, Column, Scaffold, Stack`
+- Layout - `Container, Row, Column, Scaffold, Stack`
 - Structures - `Button, Toast, MenuDrawer`
 - Styles - `TextStyle, Color`
 - Animations - `FadeInPhoto, transformations`
@@ -30,8 +30,7 @@ Flutter is a reactive library like ReactJS on Web. In flutter, ***everything is 
 ##### Flutter favors composition over class inheritance
 
 - Every widget must have a `build` method which must returns `widget`
-- Every `StatefulWidget` must have a `createState`method which returns a `State`object
-- Every `StatefulWidget` has an associated `State` object, which have a `build`method.
+- `BuildContext` contains the reference of the widget location in the widget tree
 
 ##### Stateless widget example
 
@@ -50,6 +49,10 @@ class MyApp extends StatelessWidget {
 }
 ```
 
+- Every `StatefulWidget` must have a `createState`method which returns a `State`object
+- Every `StatefulWidget` has an associated `State` object, which have a `build`method
+- Using `setState(() { })` method state object uses to manage internal state
+
 ##### Stateful widget example
 
 ```dart
@@ -59,10 +62,17 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> { 
-
+  int _counter = 0;
+  
   @override
   Widget build(BuildContext context) { 
     return Container();
+  }
+  
+  void increment() {
+     setState(() {
+      _counter += 1;
+     });
   }
 }
 ```
