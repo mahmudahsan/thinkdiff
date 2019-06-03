@@ -1,30 +1,30 @@
-int mustGreaterThanZero(int val) {
-  if (val <= 0) {
-    throw Exception('Value must be greater than zero');
+class Vehicle {
+  String model;
+  int year;
+
+  Vehicle(this.model, this.year) {
+    print(this.model);
+    print(this.year);
   }
-  return val;
+
+  void showOutput(){
+    print(model);
+    print(year);
+  }
 }
 
-void letVerifyTheValue(var val) {
-  var valueVerification;
+class Car extends Vehicle {
+  double price;
 
-  try {
-    valueVerification = mustGreaterThanZero(val);
-  }
-  catch(e) {
-    print(e);
-  }
-  finally {
-    if (valueVerification == null) {
-      print('Value is not accepted');
-    }
-    else {
-      print('Value verified: $valueVerification');
-    }
+  Car(String model, int year, this.price) : super(model, year);
+
+  void showOutput() {
+    super.showOutput();
+    print(this.price);
   }
 }
 
 void main() {
-  letVerifyTheValue(10);
-  letVerifyTheValue(0);
+  var car1 = Car('Accord', 2014, 150000);
+  car1.showOutput();
 }

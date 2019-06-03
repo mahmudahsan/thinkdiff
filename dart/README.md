@@ -29,11 +29,20 @@
   - [Anonymous Function](#anonymous-function)
   - [Parameter](#parameter)
 - [Class](#class)
+  - [Class Inheritance](#class-inheritance)
+  - [Method Overriding](#method-overriding)
+  - [Getters and Setters](#getters-and-setters)
+  - [Abstract methods](#abstract-methods)
+  - [Abstract classes](#abstract-classes)
+  - [Mixins](#mixins)
+  - [Class variables](#class-variables)
+  - [Static methods](#static-methods)
 - [Enum](#enum)
 - [Lexical Scope](#lexical-scope)
 - [Closure](#closure)
 - [Assert](#assert)
 - [Exception Handling](#exception-handling)
+- [Generics](#generics)
 
 ### Setup
 
@@ -120,6 +129,9 @@ void main() {
 - `String`
 - `bool`
 - `dynamic`
+
+**Both `int` and `double` are subtypes of `num`. 
+The num type includes basic operators such as +, -, /, and * etc.**
 
 **If we declare a variable as `String` we have to put only `String` value within it.**
 
@@ -872,16 +884,27 @@ bool isAdult([int age = 18]) => age >= 18;
 ### Class
 
 - `Object` class from `dart:core` library is the base class of all object type in dart programming.
+- Use `this` when there is a name conflict
+- A `default constructor` is the same name of Class name
+- A `named constructor` is used to implement multiple constructors for a class or to provide extra clarity
 
-A blank class with Constructor, properties and methods. A default constructor is the same name of Class name.
+A blank class with Constructor, properties and methods. 
+
 ```dart
 class Person {
   String name;
   int age;
 
+  // default constructor
   Person(String name, [int age = 18]) {
     this.name = name;
     this.age = age;
+  }
+
+  // named constructor
+  Person.guest() {
+    name = 'Guest';
+    age = 18;
   }
 
   void showOutput() {
@@ -896,6 +919,9 @@ void main() {
 
   person1.showOutput();
   person2.showOutput();
+
+  var person3 = Person.guest();
+  person3.showOutput();
 }
 ```
 **Output**
@@ -933,6 +959,8 @@ class Vehicle {
 
 ### Class Inheritance
 
+Use `extends` to create a subclass, and `super` to refer to the superclass:
+
 ```dart
 class Vehicle {
   String model;
@@ -942,6 +970,11 @@ class Vehicle {
     print(this.model);
     print(this.year);
   }
+
+  void showOutput(){
+    print(model);
+    print(year);
+  }
 }
 
 class Car extends Vehicle {
@@ -950,8 +983,7 @@ class Car extends Vehicle {
   Car(String model, int year, this.price) : super(model, year);
 
   void showOutput() {
-    print(this.model);
-    print(this.year);
+    super.showOutput();
     print(this.price);
   }
 }
@@ -1006,7 +1038,146 @@ void main() {
 }
 ```
 
+### Getters and Setters
+
+ - Getters and setters are special methods that provide read and write access to an object’s properties. 
+ - Each instance variable has an `implicit getter`, plus a `setter` if appropriate. 
+ - You can create additional properties by implementing getters and setters, using the `get` and `set` keywords
+
+ ```dart
+ class Rectangle {
+  num left, top, width, height;
+
+  Rectangle(this.left, this.top, this.width, this.height);
+
+  // Define two calculated properties: right and bottom.
+  num get right => left + width;
+  set right(num value) => left = value - width;
+  num get bottom => top + height;
+  set bottom(num value) => top = value - height;
+}
+
+void main() {
+  var rect = Rectangle(3, 4, 20, 15);
+  assert(rect.left == 3);
+  rect.right = 12;
+  assert(rect.left == -8);
+}
+```
+#### Abstract methods
+Instance, getter, and setter methods can be abstract, defining an interface but leaving its implementation up to other classes. Abstract methods can only exist in abstract classes.
+
+```dart
+abstract class Doer {
+  // Define instance variables and methods...
+
+  void doSomething(); // Define an abstract method.
+}
+
+class EffectiveDoer extends Doer {
+  void doSomething() {
+    // Provide an implementation, so the method is not abstract here...
+  }
+}
+```
+
+#### Abstract classes 
+
+Use the abstract modifier to define an abstract class—a class that can’t be instantiated. Abstract classes are useful for defining interfaces
+
+```dart
+// This class is declared abstract and thus
+// can't be instantiated.
+abstract class AbstractContainer {
+  // Define constructors, fields, methods...
+
+  void updateChildren(); // Abstract method.
+}
+```
+
+#### Mixins
+
+- Adding features to a class: mixins
+- Mixins are a way of reusing a class’s code in multiple class hierarchies.
+- To use a `mixin`, use the `with` keyword followed by one or more mixin names.
+
+```dart
+class Musician extends Performer with Musical {
+  // ···
+}
+
+class Maestro extends Person
+    with Musical, Aggressive, Demented {
+  Maestro(String maestroName) {
+    name = maestroName;
+    canConduct = true;
+  }
+}
+
+mixin Musical {
+  bool canPlayPiano = false;
+  bool canCompose = false;
+  bool canConduct = false;
+
+  void entertainMe() {
+    if (canPlayPiano) {
+      print('Playing piano');
+    } else if (canConduct) {
+      print('Waving hands');
+    } else {
+      print('Humming to self');
+    }
+  }
+}
+
+```
+
+#### Class variables
+
+- Use the `static` keyword to implement class-wide variables and methods.
+- Static variables aren’t initialized until they’re used
+
+```dart
+class Queue {
+  static const initialCapacity = 16;
+  // ···
+}
+
+void main() {
+  assert(Queue.initialCapacity == 16);
+}
+```
+
+#### Static methods
+
+- Static methods (class methods) do not operate on an instance, and thus do not have access to this
+
+```dart
+import 'dart:math';
+
+class Point {
+  num x, y;
+  Point(this.x, this.y);
+
+  static num distanceBetween(Point a, Point b) {
+    var dx = a.x - b.x;
+    var dy = a.y - b.y;
+    return sqrt(dx * dx + dy * dy);
+  }
+}
+
+void main() {
+  var a = Point(2, 2);
+  var b = Point(4, 4);
+  var distance = Point.distanceBetween(a, b);
+  assert(2.8 < distance && distance < 2.9);
+  print(distance);
+}
+```
+
 ### Enum
+
+Each value in an enum has an index getter, which returns the zero-based position of the value in the enum declaration. For example, the first value has index 0, and the second value has index 1.
 
 ```dart
 enum Color {
@@ -1166,9 +1337,19 @@ try {
 }
 ```
 
+### Generics
+
+Generics are often required for type safety, but they have more benefits than just allowing your code to run:
+
+- Properly specifying generic types results in better generated code
+- You can use generics to reduce code duplication.
+
+If you intend for a list to contain only strings, you can declare it as List<String> (read that as “list of string”). That way you, your fellow programmers, and your tools can detect that assigning a non-string to the list is probably a mistake. Here’s an example:
 
 ```dart
-
+var names = List<String>();
+names.addAll(['Seth', 'Kathy', 'Lars']);
+names.add(42); // Error
 ```
 
 ```dart
