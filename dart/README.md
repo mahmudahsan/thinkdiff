@@ -13,15 +13,24 @@
   - [Null Aware Operator](#null-aware-operator)
   - [Operator](#conditional-operator)
   - [Ternary Operator](#ternary-operator)
+  - [Type Test](#type-test)
+  - [Cascade notation (..)](#casecade-notation)
+- [Conditional Statement](#conditional-statement)
 - [Loop](#loop)
 - [Collection](#collection)
   - [List](#list)
   - [Spread Operator ...](#spread-operator)
   - [Null Aware Spread Operator ...?](#null-aware-spread-operator)
   - [Collection if and collection for](#collection-if-and-collection-for)
+  - [Set](#set)
+  - [Maps](#maps)
 - [Function](#function)
+  - [Arrow Function](#arrow-function)
+  - [Anonymous Function](#anonymous-function)
+  - [Parameter](#parameter)
 - [Class](#class)
 - [Enum](#enum)
+- [Lexical Scope](#lexical-scope)
 
 ### Setup
 
@@ -432,7 +441,48 @@ void main() {
 }
 ```
 
-### Conditional Operator
+#### Ternary Operator
+
+Same like `JavaScript` language `?:` 
+
+```dart
+int x = 100;
+var result = x % 2 == 0 ? 'Even' :'Odd';
+print(result);
+```
+
+
+### Type Test
+`as` for type casting
+`is` for True if the object has the specified type
+`!is` False if the object has the specified type
+
+```dart
+if (emp is Person) {
+  // Type check
+  emp.firstName = 'Bob';
+}
+
+(emp as Person).firstName = 'Bob';
+
+```
+
+### Cascade notation
+**(..)**
+Cascades (..) allow you to make a sequence of operations on the same object.
+
+```dart
+querySelector('#confirm') // Get an object.
+  ..text = 'Confirm' // Use its members.
+  ..classes.add('important')
+  ..onClick.listen((e) => window.alert('Confirmed!'));
+```
+
+The first method call, `querySelector()`, returns a `selector` object. The code that follows the cascade notation operates on this selector object, ignoring any subsequent values that might be returned.
+
+The previous example is equivalent to:
+
+### Conditional Statement
 
 #### if..else if..else
 
@@ -467,16 +517,6 @@ switch(number) {
   default:
     print('Confused');
 }
-```
-
-#### Ternary Operator
-
-Same like `JavaScript` language `?:` 
-
-```dart
-int x = 100;
-var result = x % 2 == 0 ? 'Even' :'Odd';
-print(result);
 ```
 
 ### Loop
@@ -659,6 +699,55 @@ elements.addAll(halogens);
 
 **As of Dart 2.3, sets support spread operators (... and ...?) and collection ifs and fors, just like lists do.**
 
+### Maps
+
+```dart
+// Dart infers that gifts has the type Map<String, String> and nobleGases has the type Map<int, String>.
+var gifts = {
+  // Key:    Value
+  'first': 'partridge',
+  'second': 'turtledoves',
+  'fifth': 'golden rings'
+};
+
+var nobleGases = {
+  2: 'helium',
+  10: 'neon',
+  18: 'argon',
+};
+
+// You can create the same objects using a Map constructor:
+
+var gifts = Map();
+gifts['first'] = 'partridge';
+gifts['second'] = 'turtledoves';
+gifts['fifth'] = 'golden rings';
+
+var nobleGases = Map();
+nobleGases[2] = 'helium';
+nobleGases[10] = 'neon';
+nobleGases[18] = 'argon';
+```
+
+**If you look for a key that isn’t in a map, you get a null in return:**
+
+```dart
+var gifts = {'first': 'partridge'};
+assert(gifts['fifth'] == null);
+```
+
+***To create a map that’s a compile-time constant, add const before the map literal:***
+
+```dart
+final constantMap = const {
+  2: 'helium',
+  10: 'neon',
+  18: 'argon',
+};
+
+// constantMap[2] = 'Helium'; // Uncommenting this causes an error.
+```
+
 ### Function
 
 - Each `function` is an object of class `Function`
@@ -680,6 +769,7 @@ dynamic square(var num) {
 }
 ```
 
+### Arrow Function
 #### Fat Arrow Expression => or Arrow Function
 
 For one expression within a function we can use the shorthand syntax called **Fat Arrow** `=>`. And it implicitly returns the value after `=>`. It's somewhat similar to `JavaScript Arrow Function`.
@@ -689,6 +779,20 @@ we can redefine the above `square` function by this:
 dynamic square(var num) => num * num;
 ```
 
+#### Anonymous Function
+
+- A nameless function called an anonymous function, or sometimes a lambda or closure. 
+
+The following example defines an anonymous function with an untyped parameter, item. The function, invoked for each item in the list, prints a string that includes the value at the specified index.
+
+```dart
+var list = ['apples', 'bananas', 'oranges'];
+list.forEach((item) {
+  print('${list.indexOf(item)}: $item');
+});
+```
+
+### Parameter
 #### Positional and Named Parameter
 
 Positional arguments works like other language starting from left.
@@ -724,6 +828,16 @@ void main() {
 
 dynamic sum(var num1, {var num2}) => num1 + ( num2 ?? 0 );
 ```
+
+**You can annotate a named parameter in any Dart code (not just Flutter) with `@required` to indicate that it is a required parameter.**
+
+```dart
+const Scrollbar({Key key, @required Widget child})
+```
+
+Required is defined in the meta package. Either import package:meta/meta.dart directly, or import another package that exports meta, such as Flutter’s package:flutter/material.dart.
+
+
 
 **Positional Optional Parameter**
 
@@ -905,6 +1019,59 @@ void main() {
     print('Red');
   }
 }
+```
+
+### Lexical Scope
+
+Dart is a lexically scoped language, which means that the scope of variables is determined statically, simply by the layout of the code. You can “follow the curly braces outwards” to see if a variable is in scope.
+
+Here is an example of nested functions with variables at each scope level:
+
+```dart
+bool topLevel = true;
+
+void main() {
+  var insideMain = true;
+
+  void myFunction() {
+    var insideFunction = true;
+
+    void nestedFunction() {
+      var insideNestedFunction = true;
+
+      assert(topLevel);
+      assert(insideMain);
+      assert(insideFunction);
+      assert(insideNestedFunction);
+    }
+  }
+}
+```
+Notice how nestedFunction() can use variables from every level, all the way up to the top level
+
+### Lexical Closure
+
+- A closure is a function object that has access to variables in its lexical scope, even when the function is used outside of its original scope.
+- Functions can close over variables defined in surrounding scopes.
+
+```dart
+
+```
+
+```dart
+
+```
+
+```dart
+
+```
+
+```dart
+
+```
+
+```dart
+
 ```
 
 ```dart
