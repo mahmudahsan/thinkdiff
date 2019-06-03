@@ -5,6 +5,7 @@
 - [Data Types](#data-types)
   - [Types in Function](#types-in-function)
   - [Types Conversion](#types-conversion)
+  - [String](#string)
 - [Comments](#comments)
 - [null object](#null-object)
 - [Final and Const](#final-and-const)
@@ -13,6 +14,11 @@
   - [Operator](#conditional-operator)
   - [Ternary Operator](#ternary-operator)
 - [Loop](#loop)
+- [Collection](#collection)
+  - [List](#list)
+  - [Spread Operator ...](#spread-operator)
+  - [Null Aware Spread Operator ...?](#null-aware-spread-operator)
+  - [Collection if and collection for](#collection-if-and-collection-for)
 - [Function](#function)
 - [Class](#class)
 - [Enum](#enum)
@@ -106,6 +112,12 @@ void main() {
 **If we declare a variable as `String` we have to put only `String` value within it.**
 
 ##### We can not put one type to another static type.
+
+- We can define type when declare something or we can let it to the compiler to decide the type.
+
+- Here names is `String` type by type inference. 
+
+- And ages is `int` type as we defined it.
 ```dart
 void main() {
   var name = 'Jack'; // type inference made this as String
@@ -113,6 +125,9 @@ void main() {
 
   name = 100; // Will show error here
   print(name);
+
+  int age = 30;
+  print(age);
 }
 ```
 
@@ -133,29 +148,6 @@ void main() {
 #### Tips 
  
 - Best to ***avoid*** `var` and `dynamic` type to get advantage of type-safe language. It will create less error.
-
-#### Complex Data Types
-
-We can define type when declare something or we can let it to the compiler to decide the type.
-
-Here names is `String` type by type inference. 
-
-And ages is `int` type as we defined it.
-
-```dart
-void main() {
-  List names = ['Jack', 'Jill'];
-  print(names.length);
-  for (var n in names) {
-    print(n);
-  }
-
-  List <int> ages = [18, 20, 33];
-  for (var a in ages) {
-    print(a);
-  }
-}
-```
 
 ### Types in Function
 
@@ -210,11 +202,47 @@ assert(piAsString == '3.14');
 
 #### String
 
+A Dart string is a sequence of UTF-16 code units.
+
+```dart
+var s1 = 'Single quotes work well for string literals.';
+var s2 = "Double quotes work just as well.";
+var s3 = 'It\'s easy to escape the string delimiter.';
+var s4 = "It's even easier to use the other delimiter.";
+```
+
 You can create a “raw” string by prefixing it with r:
+
 ```dart
 var s = r'In a raw string, not even \n gets special treatment.';
 ```
 
+**String interpolation**
+
+```dart
+var age = 35;
+var str = 'My age is: $age';
+print(str);
+```
+
+**Multiline String**
+```dart
+var s1 = '''
+You can create
+multi-line strings like this one.
+''';
+
+var s2 = """This is also a
+multi-line string.""";
+```
+
+**Constant String**
+```dart
+// These work in a const string.
+const aConstNum = 0;
+const aConstBool = true;
+const aConstString = 'a constant string';
+```
 
 ### Comments
 
@@ -532,6 +560,104 @@ void main() {
   }
 }
 ```
+
+### Collection
+
+#### List
+
+```dart
+void main() {
+  List names = ['Jack', 'Jill'];
+  print(names.length);
+  for (var n in names) {
+    print(n);
+  }
+
+  List <int> ages = [18, 20, 33];
+  for (var a in ages) {
+    print(a);
+  }
+}
+```
+
+To create a list that’s a compile-time constant, add const before the list literal:
+
+```dart
+var constantList = const [1, 2, 3];
+// constantList[1] = 1; // Uncommenting this causes an error.
+```
+
+### Spread Operator
+Dart 2.3 introduced the spread operator (...). For example, you can use the spread operator (...) to insert all the elements of a list into another list:
+
+```dart
+var list = [1, 2, 3];
+var list2 = [0, ...list];
+assert(list2.length == 4);
+```
+### Null Aware Spread Operator
+
+Dart 2.3 introduced  null-aware spread operator (...?). 
+If the expression to the right of the spread operator might be null, you can avoid exceptions by using a null-aware spread operator (...?):
+
+```dart
+var list;
+var list2 = [0, ...?list];
+assert(list2.length == 1);
+```
+
+### Collection if and collection for
+Dart 2.3 also introduced collection if and collection for, which you can use to build collections using conditionals (if) and repetition (for).
+
+Here’s an example of using collection if to create a list with three or four items in it:
+
+```dart
+var nav = [
+  'Home',
+  'Furniture',
+  'Plants',
+  if (promoActive) 'Outlet'
+];
+```
+
+Here’s an example of using collection for to manipulate the items of a list before adding them to another list:
+
+```dart
+var listOfInts = [1, 2, 3];
+var listOfStrings = [
+  '#0',
+  for (var i in listOfInts) '#$i'
+];
+assert(listOfStrings[1] == '#1');
+```
+
+#### Set
+A set in Dart is an unordered collection of unique items. Dart support for sets is provided by set literals and the Set type.
+
+```dart
+// Here is a simple Dart set, created using a set literal:  
+var halogens = {'fluorine', 'chlorine', 'bromine', 'iodine', 'astatine'};
+```
+
+To create an empty set, use {} preceded by a type argument, or assign {} to a variable of type Set:
+
+```dart
+var names = <String>{};
+// Set<String> names = {}; // This works, too.
+// var names = {}; // Creates a map, not a set.
+
+```
+
+- Add items to an existing set using the add() or addAll() methods
+- Use .length to get the number of items in the set
+
+```dart
+var elements = <String>{};
+elements.add('fluorine');
+elements.addAll(halogens);
+```
+
+**As of Dart 2.3, sets support spread operators (... and ...?) and collection ifs and fors, just like lists do.**
 
 ### Function
 
