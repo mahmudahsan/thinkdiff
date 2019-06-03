@@ -31,6 +31,9 @@
 - [Class](#class)
 - [Enum](#enum)
 - [Lexical Scope](#lexical-scope)
+- [Closure](#closure)
+- [Assert](#assert)
+- [Exception Handling](#exception-handling)
 
 ### Setup
 
@@ -1055,16 +1058,114 @@ Notice how nestedFunction() can use variables from every level, all the way up t
 - Functions can close over variables defined in surrounding scopes.
 
 ```dart
+// Function type, dynamic also works
+Function makeAdder(int initial) {
+  int total = initial;
 
+  // nested function
+  int addToTotal(int addBy) {
+    total += addBy;
+    return total;
+  }
+
+  return addToTotal;
+}
+
+void main() {
+  var adder = makeAdder(2);
+  var val = adder(5);
+  print(val);
+
+  val = adder(3);
+  print(val);
+}
 ```
+Output:
+```
+7
+10
+```
+
+### Assert
+
+`assert` is commonly used to check a condition and if the condition is false it terminates the execution of the program
+
+In `dart` `assert` only works in development mode not in production code. And Flutter enables `assert` only in `debug` mode.
 
 ```dart
+// Make sure the variable has a non-null value.
+assert(text != null);
 
+// Make sure the value is less than 100.
+assert(number < 100);
+
+// Make sure this is an https URL.
+assert(urlString.startsWith('https'));
 ```
+
+### Exception Handling
+
+- To `throw` error use `throw` or `rethrow` keywords
+- To `catch` error follow the example
+- `finally` block is optional and runs everytime
 
 ```dart
+int mustGreaterThanZero(int val) {
+  if (val <= 0) {
+    throw Exception('Value must be greater than zero');
+  }
+  return val;
+}
 
+void letVerifyTheValue(var val) {
+  var valueVerification;
+
+  try {
+    valueVerification = mustGreaterThanZero(val);
+  }
+  catch(e) {
+    print(e);
+  }
+  finally {
+    if (valueVerification == null) {
+      print('Value is not accepted');
+    }
+    else {
+      print('Value verified: $valueVerification');
+    }
+  }
+}
+
+void main() {
+  letVerifyTheValue(10);
+  // letVerifyTheValue(0);
+}
 ```
+
+Output:
+```
+Value verified: 10
+Exception: Value must be greater than zero
+Value is not accepted
+```
+
+- To catch a particular exception type follow this
+
+```dart
+try {
+  breedMoreLlamas();
+} on OutOfLlamasException {
+  // A specific exception
+  buyMoreLlamas();
+} on Exception catch (e) {
+  // Anything else that is an exception
+  print('Unknown exception: $e');
+} catch (e) {
+  // No specified type, handles all
+  print('Something really unknown: $e');
+}
+```
+
 
 ```dart
 
