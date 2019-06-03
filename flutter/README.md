@@ -13,6 +13,9 @@ Flutter also supports hot reloading for faster development.
 
 Flutter is a reactive library like ReactJS on Web. In flutter, ***everything is a widget*** and every widget is a dart class. Using widget we create view.
 
+- Every widget must have a `build` method which must returns a `widget`
+
+
 #### Widgets are 2 types:
 
 1. Stateless
@@ -48,5 +51,5 @@ class AddToCartButton extends Widget {
 }
 ```
 
-In a Flutter widget `build` method must exist. It describes the view by returning a `widget`.
+
 
