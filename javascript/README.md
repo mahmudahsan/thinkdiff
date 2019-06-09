@@ -442,6 +442,36 @@ personDetails("mahmud");
 personDetails('mark', 'Malaysia');
 ```
 
+#### Regular function vs Function binding with variable
+
+- We can not call the function binded with a variable before defining the function.
+- The following will throw an error
+
+```js
+callX(10);
+const callX = function (x) {
+    console.log(x);
+}
+```
+
+**Correct Solution**
+```js
+const callX = function (x) {
+    console.log(x);
+}
+callX(10);
+```
+
+**BUT** we can call a regular function anywhere in the context
+
+```js
+// It works perfectly fine
+callX(10);
+function callX (x) {
+    console.log(x);
+}
+```
+
 #### Arrow Function
 
 An arrow function is shorter than a regular function expression
