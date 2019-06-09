@@ -98,6 +98,7 @@ void main() {
 
 - `main()` is the entry point
 - `dart` supports type inference and type defined
+- `void` means this function doesn't return any value. And it is optional
 
 #### Importing package and take input from user
 
