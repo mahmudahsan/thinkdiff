@@ -44,6 +44,10 @@
 - [Exception Handling](#exception-handling)
 - [Generics](#generics)
 
+## Extra
+- [Asynchronous Programming](#asynchronous-programming)
+
+
 ### Setup
 
 Setup in Mac
@@ -1351,6 +1355,14 @@ var names = List<String>();
 names.addAll(['Seth', 'Kathy', 'Lars']);
 names.add(42); // Error
 ```
+
+### Asynchronous Programming
+#### futures & async-await
+
+- `Dart` code is single threaded
+- `Future` object represents result of asynchronous operation. 
+- To suspend execution until a `Future` object completes operation, use `await` in an `async` function
+
 
 ```dart
 
