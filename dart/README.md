@@ -440,18 +440,18 @@ void main () {
 ```
 #### null aware variation two (??)
 
-Suppose an object has few fields, but some field may be `null`. In this case if we want to provide a `default value` we can follow `??` operator.
+If an object is `null` and we want a `default value` for that we can follow `??` operator.
 
 ```dart
 class Num {
-  int num;
+  int num = 10
 }
 
 void main () {
   var n = Num();
   int number;
   
-  number = n.num ?? 18; // default value
+  number = n?.num ?? 18; // default value
   print(number);
 }
 ```
