@@ -299,8 +299,6 @@ assert(piAsString == '3.14');
 
 ### Constant Values
 
-
-**Constant String**
 ```dart
 // These work in a const string.
   const aConstNum = 0;
