@@ -6,6 +6,7 @@
   - [Types in Function](#types-in-function)
   - [String](#string)
   - [Types Conversion](#types-conversion)
+  - [Constant Values](#constant-values)
 - [Comments](#comments)
 - [null object](#null-object)
 - [Final and Const](#final-and-const)
@@ -274,14 +275,6 @@ var s2 = """This is also a
 multi-line string.""";
 ```
 
-**Constant String**
-```dart
-// These work in a const string.
-const aConstNum = 0;
-const aConstBool = true;
-const aConstString = 'a constant string';
-```
-
 ### Types Conversion
 
 Here’s how you turn a string into a number, or vice versa:
@@ -303,6 +296,26 @@ assert(oneAsString == '1');
 String piAsString = 3.14159.toStringAsFixed(2);
 assert(piAsString == '3.14');
 ```
+
+### Constant Values
+
+
+**Constant String**
+```dart
+// These work in a const string.
+  const aConstNum = 0;
+  const aConstBool = true;
+  const aConstString = 'a constant string';
+
+  print(aConstNum);
+  print(aConstBool);
+  print(aConstString);
+
+  print(aConstNum.runtimeType);
+  print(aConstBool.runtimeType);
+  print(aConstString.runtimeType);
+```
+
 
 ### Comments
 
