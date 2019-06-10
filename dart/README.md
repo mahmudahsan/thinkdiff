@@ -9,7 +9,6 @@
   - [Constant Values](#constant-values)
 - [Comments](#comments)
 - [null object](#null-object)
-- [Final and Const](#final-and-const)
 - [Operators](#operators)
   - [Null Aware Operator](#null-aware-operator)
   - [Operator](#conditional-operator)
@@ -30,6 +29,7 @@
   - [Anonymous Function](#anonymous-function)
   - [Parameter](#parameter)
 - [Class](#class)
+  - [Final and Const](#final-and-const)
   - [Class Inheritance](#class-inheritance)
   - [Method Overriding](#method-overriding)
   - [Getters and Setters](#getters-and-setters)
@@ -333,40 +333,6 @@ If a variable is declared but didn't assign with any value, it contains `null` o
 void main() {
   int num;
   print(num); // output: null
-}
-```
-### Final and Const
-
-`final` and `const` when used before defining any variable can not reassign. 
-- But `final` variable if declared in class without value must have to assigned in the `constructor()` method 
-
-```dart
-final String person1 = 'Jack';
-const String person2 = 'Jill'; // compile time constant
-
-print(person1);
-print(person2);
-
-// can not reassign
-// person1 = 'aa';
-// person2 = 'bb';
-```
-
-- Instance variables can be `final` 
-- Instance variable can be `static const`
-
-```dart
-class X {
-  final name; // type will be defined by inferred value
-  static const int age = 10;
-  
-  X(this.name);
-}
-
-main() {
-  var x = X('Jack');
-  print(x.name);
-  print(X.age); // use Classname.StaticVariable
 }
 ```
 
@@ -1000,6 +966,41 @@ class Vehicle {
     print(this.model);
     print(this.year);
   }
+}
+```
+
+### Final and Const
+
+`final` and `const` when used before defining any variable can not reassign. 
+- But `final` variable if declared in class without value must have to assigned in the `constructor()` method 
+
+```dart
+final String person1 = 'Jack';
+const String person2 = 'Jill'; // compile time constant
+
+print(person1);
+print(person2);
+
+// can not reassign
+// person1 = 'aa';
+// person2 = 'bb';
+```
+
+- Instance variables can be `final` 
+- Instance variable can be `static const`
+
+```dart
+class X {
+  final name; // type will be defined by inferred value
+  static const int age = 10;
+  
+  X(this.name);
+}
+
+main() {
+  var x = X('Jack');
+  print(x.name);
+  print(X.age); // use Classname.StaticVariable
 }
 ```
 
