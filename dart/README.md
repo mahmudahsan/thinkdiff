@@ -11,7 +11,7 @@
 - [null object](#null-object)
 - [Operators](#operators)
   - [Null Aware Operator](#null-aware-operator)
-  - [Operator](#conditional-operator)
+  - [Conditional Statement](#conditional-statement)
   - [Ternary Operator](#ternary-operator)
   - [Type Test](#type-test)
   - [Cascade notation (..)](#casecade-notation)
