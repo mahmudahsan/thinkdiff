@@ -300,10 +300,9 @@ assert(piAsString == '3.14');
 ### Constant Values
 
 ```dart
-// These work in a const string.
-  const aConstNum = 0;
-  const aConstBool = true;
-  const aConstString = 'a constant string';
+  const aConstNum = 0; // int constant
+  const aConstBool = true; // bool constant 
+  const aConstString = 'a constant string'; // string constant
 
   print(aConstNum);
   print(aConstBool);
