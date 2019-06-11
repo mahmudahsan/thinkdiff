@@ -46,7 +46,7 @@ class _RandomWidgetState extends State<RandomWidget> {
                       child: Icon(Icons.autorenew),
                       backgroundColor: Colors.red[500],
                       foregroundColor: Colors.white,
-                      onPressed: () => makeRandomNumber(),
+                      onPressed: makeRandomNumber,
                     ),
                   ],
                 ),
