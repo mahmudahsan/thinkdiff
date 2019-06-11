@@ -10,6 +10,9 @@ Flutter is a cross-platform mobile app development framework by Google. It used 
 - Flutter also supports hot reloading for faster development
 - A flutter app is represented by a `widget tree` similar to the `DOM` on the browser.
 
+-  Flutter app uses an `event loop`. Which is a background infinite loop periodically wake up and checks the `event queue` to see if there is any task assigned. If the **CPU is idle**, the event loop puts the task onto the `run stack`. 
+
+
 ### Widget
 
 Flutter is a reactive library like ReactJS on Web. In flutter, ***everything is a widget*** and every widget is a dart class. Using widget we create view.

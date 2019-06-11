@@ -1403,18 +1403,63 @@ names.add(42); // Error
 #### futures & async-await
 
 - `Dart` code is single threaded
-- `Future` object represents result of asynchronous operation. 
-- To suspend execution until a `Future` object completes operation, use `await` in an `async` function
+- `Future<T>` object represents result of asynchronous operation which produces a result of type `T`. If the result is not usable value, then the future's type is `Future<void>`. 
 
+**Two** ways to handle `Future`
+1. Using the `Future` API
+2. Using the `async` and `await` operations
+
+
+> `Future` example with `callback` passing in `then`
+
+> Use `catchError` for to catch any error
 
 ```dart
+Future delayedPrint(int seconds, String msg) {
+  final duration = Duration(seconds: seconds);
+  return Future.delayed(duration).then((value) => msg);
+}
+
+main() {
+  print('Life');
+  delayedPrint(2, "Is").then((status) {
+    print(status);
+  }).catchError((err) => print(err));
+  print('Good');
+}
 
 ```
 
-```dart
-
+Output
+```
+Life
+Good
+Is
 ```
 
+Asynchronous operation with Synchronous fashion
+
 ```dart
+Future delayedPrint(int seconds, String msg) {
+  final duration = Duration(seconds: seconds);
+  return Future.delayed(duration).then((value) => msg);
+}
+
+main() async {
+  print('Life');
+  await delayedPrint(2, "Is").then((status){
+    print(status);
+  });
+  print('Good');
+}
+```
+
+Output
 
 ```
+Life
+Is
+Good
+```
+
+> We can also use `try..catch` block to catch error for asynchronous operation.
