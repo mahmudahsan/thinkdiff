@@ -1,26 +1,30 @@
-void task1() {
-  print('Task 1 Done.');
+mixin CanFly {
+  void fly(String name) {
+    print('$name flying');
+  }
 }
 
-Future <String> task2() async {
-  Duration duration = Duration(seconds: 2);
-  
-  String result;
-
-  await Future.delayed(duration, () {
-    print('Task 2 Done.');
-    result = ' Task 2 Data';
-  });
-
-  return result;
+mixin CanDrive {
+  void drive(String name) {
+    print('$name driving');
+  }
 }
 
-void task3(String result) {
-  print('Task 3 Done. $result');
+class Car with CanDrive {
+
 }
 
-void main() async {
-  task1();
-  String result = await task2();
-  task3(result);
+class Helicopter with CanFly, CanDrive {
+  void perform(String name) {
+    fly(name);
+    drive(name);
+  }
+}
+
+void main() {
+  Car car = Car();
+  car.drive('car');
+
+  Helicopter helicopter = Helicopter();
+  helicopter.perform('helicopter');
 }
