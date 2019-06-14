@@ -692,3 +692,41 @@ const pow = async (num, pow) => {
    console.log(result);
  });
 ```
+
+ ***Example 4:***
+ 
+> `async / await` with synchronous fashion without using `then` of `promise` object
+
+```javascript
+function task1() {
+  console.log('Task 1');
+}
+
+function task2() {
+  console.log('Task 2');
+  return new Promise((resolve, reject) => {
+    setTimeout(() => resolve('Task 2'), 2000);
+  });
+}
+
+function task3(data) {
+  console.log(`Task 3 with ${data}`);
+}
+
+async function main() {
+  task1();
+  const data = await task2();
+  task3(data);
+}
+
+main();
+```
+
+We can also redefine the `main()` function like this. In this case we use `then` method of `promise` object for the asynchronous operation.
+
+```javascript
+function main() {
+  task1();
+  task2().then(data => task3(data));
+}
+```
