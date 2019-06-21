@@ -1,6 +1,6 @@
 # short_profile
 
-<img src='demo.png' />
+<img src='demo.png' width='300' />
 
 A new Flutter application.
 
