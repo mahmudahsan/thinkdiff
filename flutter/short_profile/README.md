@@ -1,5 +1,7 @@
 # short_profile
 
+<img src='demo.png' />
+
 A new Flutter application.
 
 ## Getting Started
