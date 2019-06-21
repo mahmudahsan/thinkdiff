@@ -1,133 +1,140 @@
 import 'package:flutter/material.dart';
+import 'package:short_profile/widgets/info_card.dart';
+import 'package:url_launcher/url_launcher.dart' as launcher;
 
-void main() {
-  runApp(
-      MyApp()
-  );
-}
+const url = 'http://thinkdiff.net';
+const email = 'mahmud@example.com';
+const phone = '+880 123 456 78';
+
+void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: Scaffold(
-        body: SafeArea(
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: <Widget>[
-              CircleAvatar(
-                radius: 50,
-                backgroundImage: AssetImage('images/Mahmud_200.jpg'),
-              ),
-              Text(
-                'Mahmud Ahsan',
-                style: TextStyle(
-                  fontSize: 40.0,
-                  color: Colors.white,
-                  fontWeight: FontWeight.bold,
-                  fontFamily: 'Pacifico',
-                ),
-              ),
-              Text(
-                'Software Engineer',
-                style: TextStyle(
-                  fontFamily: 'Source Sans Pro',
-                  fontSize: 30.0,
-                  color: Colors.teal[50],
-                  letterSpacing: 2.5,
-                  fontWeight: FontWeight.bold,
-                ),
-              ),
-              SizedBox(
-                height: 20,
-                width: 200,
-                child: Divider(
-                  color: Colors.teal.shade700,
-                ),
-              ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: Padding(
-                  padding: EdgeInsets.all(15.0),
-                  child: Row(
-                    children: <Widget>[
-                      Icon(
-                        Icons.phone,
-                        color: Colors.teal,
-                      ),
-                      SizedBox(width: 30.0),
-                      Text(
-                        '+880 123 456 78',
-                        style: TextStyle(
-                          color: Colors.teal,
-                          fontFamily: 'Source Sans Pro',
-                          fontSize: 20.0,
-                        ),
-                      ),
-                    ],
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.email,
-                    color: Colors.teal,
-                  ),
-                  title: Text(
-                    'mahmud@example.com',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0,
-                      color: Colors.teal,
-                    ),
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.web,
-                    color: Colors.teal,
-                  ),
-                  title: Text(
-                    'http://thinkdiff.net',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0,
-                      color: Colors.teal,
-                    ),
-                  ),
-                ),
-              ),
-              Card(
-                color: Colors.white,
-                margin: EdgeInsets.symmetric(vertical: 10.0, horizontal: 25.0),
-                child: ListTile(
-                  leading: Icon(
-                    Icons.location_city,
-                    color: Colors.teal,
-                  ),
-                  title: Text(
-                    'Melaka, Malaysia',
-                    style: TextStyle(
-                      fontFamily: 'Source Sans Pro',
-                      fontSize: 20.0,
-                      color: Colors.teal,
-                    ),
-                  ),
-                ),
-              ),
-            ],
+      home: Home(),
+    );
+  }
+}
+
+class Home extends StatelessWidget {
+  void _showDialog(BuildContext context, {String title, String msg}) {
+    final dialog = AlertDialog(
+      title: Text(title),
+      content: Text(msg),
+      actions: <Widget>[
+        RaisedButton(
+          color: Colors.teal,
+          onPressed: () {
+            Navigator.pop(context);
+          },
+          child: Text(
+            'Close',
+            style: TextStyle(
+              color: Colors.white,
+            ),
           ),
         ),
-        backgroundColor: Colors.teal[200],
+      ],
+    );
+    showDialog(context: context, builder: (x) => dialog);
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: SafeArea(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: <Widget>[
+            CircleAvatar(
+              radius: 50,
+              backgroundImage: AssetImage('images/Mahmud_200.jpg'),
+            ),
+            Text(
+              'Mahmud Ahsan',
+              style: TextStyle(
+                fontSize: 40.0,
+                color: Colors.white,
+                fontWeight: FontWeight.bold,
+                fontFamily: 'Pacifico',
+              ),
+            ),
+            Text(
+              'Software Engineer',
+              style: TextStyle(
+                fontFamily: 'Source Sans Pro',
+                fontSize: 30.0,
+                color: Colors.teal[50],
+                letterSpacing: 2.5,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+            SizedBox(
+              height: 20,
+              width: 200,
+              child: Divider(
+                color: Colors.teal.shade700,
+              ),
+            ),
+            InfoCard(
+              text: phone,
+              icon: Icons.phone,
+              onPressed: () async {
+                String removeSpaceFromPhoneNumber = phone.replaceAll(new RegExp(r"\s+\b|\b\s"), "");
+                final phoneCall = 'tel:$removeSpaceFromPhoneNumber';
+
+                if (await launcher.canLaunch(phoneCall)) {
+                  await launcher.launch(phoneCall);
+                } else {
+                  _showDialog(
+                    context,
+                    title: 'Sorry',
+                    msg: 'Phone number can not be called. Please try again!',
+                  );
+                }
+              },
+            ),
+            InfoCard(
+              text: email,
+              icon: Icons.email,
+              onPressed: () async {
+                final emailAddress = 'mailto:$email';
+
+                if (await launcher.canLaunch(emailAddress)) {
+                  await launcher.launch(emailAddress);
+                } else {
+                  _showDialog(
+                    context,
+                    title: 'Sorry',
+                    msg: 'Email can not be send. Please try again!',
+                  );
+                }
+              },
+            ),
+            InfoCard(
+              text: url,
+              icon: Icons.web,
+              onPressed: () async {
+                if (await launcher.canLaunch(url)) {
+                  await launcher.launch(url);
+                } else {
+                  _showDialog(
+                    context,
+                    title: 'Sorry',
+                    msg: 'URL can not be opened. Please try again!',
+                  );
+                }
+              },
+            ),
+            InfoCard(
+              text: 'Melaka, Malaysia',
+              icon: Icons.location_city,
+            ),
+          ],
+        ),
       ),
+      backgroundColor: Colors.teal[200],
     );
   }
 }

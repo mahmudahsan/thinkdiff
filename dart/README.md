@@ -48,6 +48,8 @@
 
 ## Extra
 - [Asynchronous Programming](#asynchronous-programming)
+  - [Futures](#futures)
+  - [Stream](#stream)
 
 
 ### Setup
@@ -1442,7 +1444,10 @@ void main() {
 ```
 
 ### Asynchronous Programming
-#### futures & async-await
+
+Asynchronous programming in Dart is characterized by the Future and Stream classes.
+
+#### futures
 
 - `Dart` code is single threaded
 - `Future<T>` object represents result of asynchronous operation which produces a result of type `T`. If the result is not usable value, then the future's type is `Future<void>`. 
@@ -1538,3 +1543,7 @@ void main() async {
   task3(result);
 }
 ```
+
+#### Stream
+
+A stream is a sequence of asynchronous events. Unlike `future` a stream notify if there is an event is ready.
