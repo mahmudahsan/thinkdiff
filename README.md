@@ -21,7 +21,10 @@
 
 # JavaScript, Python, Dart | React, Express, Node, Flutter
 
-I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my [Blog](https://thinkdiff.net) or my [Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg). 
+I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my blog or my youtube channel. 
+
+1. [Thinkdiff Programming Blog](https://thinkdiff.net)
+2. [Thinkdiff Programming Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg)
 
 ## My Open Source Projects
 
