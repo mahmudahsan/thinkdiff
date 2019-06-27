@@ -1,6 +1,8 @@
 # form
 
-A new Flutter application.
+A form with validation.
+
+<img src='demo.png' width='300' />
 
 ## Getting Started
 
