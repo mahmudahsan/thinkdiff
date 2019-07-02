@@ -2,6 +2,7 @@
 
 - [Background](#background)
 - [Widget](#widget)
+- [Animated Container](#animated-container)
 
 ####  Background
 
@@ -61,7 +62,7 @@ class MyApp extends StatelessWidget {
 ```dart
 class MyHomePage extends StatefulWidget {
 @override
-  _MyHomePageState createState() => new _MyHomePageState();   
+  _MyHomePageState createState() => _MyHomePageState();   
 }
 
 class _MyHomePageState extends State<MyHomePage> { 
@@ -79,4 +80,8 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 ```
+
+### Animated Container
+
+`ÀnimatedContainer` widget when change the properties it shows animation. It's similar like the `Container` widget. It's called implicit animation. [Code](https://github.com/mahmudahsan/thinkdiff/blob/master/flutter/small_demo/animation_container/lib/main.dart)
 
