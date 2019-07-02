@@ -4,6 +4,7 @@
 - [Widget](#widget)
 - [Animated Container](#animated-container)
 - [Animated Opacity](#animated-opacity)
+- [Navigation Drawer](#navigation-drawer)
 
 ####  Background
 
@@ -104,4 +105,7 @@ If we need a widget to fade in and fade out, we can use `AnimatedOpacity` widget
 ```
 [Sample App](https://github.com/mahmudahsan/thinkdiff/blob/master/flutter/small_demo/fade_widget/lib/main.dart)
 
+### Navigation Drawer
+
+To show a navigation drawer within material app, `Scaffold` has a `drawer` property where we can initiate `Drawer()` widget. [Code](https://github.com/mahmudahsan/thinkdiff/blob/master/flutter/small_demo/drawer/lib/main.dart)
 
