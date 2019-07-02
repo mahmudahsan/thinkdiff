@@ -3,6 +3,7 @@
 - [Background](#background)
 - [Widget](#widget)
 - [Animated Container](#animated-container)
+- [Animated Opacity](#animated-opacity)
 
 ####  Background
 
@@ -84,4 +85,23 @@ class _MyHomePageState extends State<MyHomePage> {
 ### Animated Container
 
 `ÀnimatedContainer` widget when change the properties it shows animation. It's similar like the `Container` widget. It's called implicit animation. [Code](https://github.com/mahmudahsan/thinkdiff/blob/master/flutter/small_demo/animation_container/lib/main.dart)
+
+### Animated Opacity
+If we need a widget to fade in and fade out, we can use `AnimatedOpacity` widget. Using `opacity` and `duration` properties we can change the opacity with animation.
+
+```dart
+       AnimatedOpacity(
+          opacity: _isVisible ? 1 : 0,
+          duration: Duration(milliseconds: 500),
+          child: Container(
+            height: 100,
+            width: 100,
+            color: Colors.green,
+          ),
+        ),
+      ),
+
+```
+[Sample App](https://github.com/mahmudahsan/thinkdiff/blob/master/flutter/small_demo/fade_widget/lib/main.dart)
+
 
