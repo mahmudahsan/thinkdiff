@@ -6,6 +6,6 @@
   "author": "Mahmud Ahsan <mahmud@thinkdiff.net>",
   "license": "MIT",
   "dependencies": {
-    "lodash": "^4.17.11"
+    "lodash": "^4.17.13"
   }
 }
