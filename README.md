@@ -28,6 +28,11 @@ I created this repository to practice myself. Here I publish programming code fo
 
 ## My Open Source Projects
 
+### Flutter
+1. [Todos](https://github.com/mahmudahsan/flutter_todos)
+2. [Short Profile](flutter/short_profile)
+3. [Form](flutter/form)
+
 ### React Native 
 - [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
 
@@ -37,11 +42,6 @@ I created this repository to practice myself. Here I publish programming code fo
 ### Python, Django
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
 2. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
-
-### Flutter, Dart
-1. [Short Profile](flutter/short_profile)
-2. [Form](flutter/form)
-
 
 ## My Programming Courses and Tutorials
 
