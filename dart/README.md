@@ -40,7 +40,7 @@
   - [Static methods](#static-methods)
 - [Enum](#enum)
 - [Lexical Scope](#lexical-scope)
-- [Closure](#closure)
+- [Closure](#lexical-closure)
 - [Assert](#assert)
 - [Exception Handling](#exception-handling)
 - [Generics](#generics)
