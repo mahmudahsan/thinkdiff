@@ -4,6 +4,8 @@
  */
 import 'package:flutter/material.dart';
 import 'package:states_provider/drawer_menu.dart';
+import 'package:provider/provider.dart';
+import 'package:states_provider/model/ui.dart';
 
 class Settings extends StatefulWidget {
   @override
@@ -11,8 +13,6 @@ class Settings extends StatefulWidget {
 }
 
 class _SettingsState extends State<Settings> {
-  double _value = 0.5;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -21,30 +21,27 @@ class _SettingsState extends State<Settings> {
         title: Text('Settings'),
       ),
       drawer: DrawerMenu(),
-      body: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        children: <Widget>[
-          Padding(
-            padding: EdgeInsets.only(left: 20, top: 20),
-            child: Text(
-              'Font Size: ${getFontSize()}',
-              style: TextStyle(
-                  fontSize: Theme.of(context).textTheme.headline.fontSize),
+      body: Consumer<UI>(builder: (context, ui, child) {
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: <Widget>[
+            Padding(
+              padding: EdgeInsets.only(left: 20, top: 20),
+              child: Text(
+                'Font Size: ${ui.fontSize.toInt()}',
+                style: TextStyle(
+                    fontSize: Theme.of(context).textTheme.headline.fontSize),
+              ),
             ),
-          ),
-          Slider(
-              min: 0.5,
-              value: _value,
-              onChanged: (newValue) {
-                setState(() {
-                  _value = newValue;
-                });
-                print(newValue);
-              }),
-        ],
-      ),
+            Slider(
+                min: 0.5,
+                value: ui.sliderFontSize,
+                onChanged: (newValue) {
+                  ui.fontSize = newValue;
+                }),
+          ],
+        );
+      }),
     );
   }
-
-  int getFontSize() => (_value * 30).toInt();
 }
