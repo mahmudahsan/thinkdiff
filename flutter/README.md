@@ -6,6 +6,8 @@
 - [Animated Container](#animated-container)
 - [Animated Opacity](#animated-opacity)
 - [Navigation Drawer](#navigation-drawer)
+- [States](#states)
+- [States by Provider](#provider)
 
 ####  Background
 
@@ -110,3 +112,126 @@ If we need a widget to fade in and fade out, we can use `AnimatedOpacity` widget
 
 To show a navigation drawer within material app, `Scaffold` has a `drawer` property where we can initiate `Drawer()` widget. [Code](https://github.com/mahmudahsan/thinkdiff/blob/master/flutter/small_demo/drawer/lib/main.dart)
 
+### States
+
+There are two types of state:
+1. Ephemeral (Widget Specific)
+2. App (Global)
+
+**How to do State Management**
+1. Simple State (Stateful Widget)
+2. InheritedWidget (low level)
+3. Provider (Syntactic sugar of InheritedWidget, Recommended)
+4. Scoped Model (No longer recommended)
+5. Redux
+6. BloC (Business Logic Component)
+
+### Provider
+
+It is a [3rd party library](https://pub.dev/packages/provider).
+
+[My Sample Project of Provider](https://github.com/mahmudahsan/thinkdiff/tree/master/flutter/small_demo/states_provider)
+
+There are 3 important class to use this library:
+1. `ChangeNotifier` builtin class
+2. `ChangeNotifierProvider`
+3. `Consumer`
+
+* `ChangeNotifier` is a simple class which provides notification to it's listeners. It's kind of `Observable` pattern. We can extends or use ChangeNotifier as a mixin to create our state model. We only need the `notifyListeners()` to notify the listeners.
+
+```dart
+import 'package:flutter/material.dart';
+
+class UI with ChangeNotifier {
+  double _fontSize = 0.5;
+
+  set fontSize(newValue) {
+    _fontSize = newValue;
+    notifyListeners();
+  }
+
+  double get fontSize => _fontSize * 30;
+
+  double get sliderFontSize => _fontSize;
+}
+```
+
+* `ChangeNotifierProvider` is a widget that sends an instance of `ChangeNotifier` to it's descendent. I found it's better to put this widget at the top level of the widget tree.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:states_provider/home.dart';
+import 'package:states_provider/about.dart';
+import 'package:states_provider/settings.dart';
+import 'package:provider/provider.dart';
+import 'package:states_provider/model/ui.dart';
+
+void main() => runApp(MyApp());
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MultiProvider(
+      providers: [
+        ChangeNotifierProvider(
+          builder: (_) => UI(),
+        ),
+      ],
+      child: MaterialApp(
+        initialRoute: '/',
+        routes: {
+          '/': (context) => Home(),
+          '/about': (context) => About(),
+          '/settings': (context) => Settings(),
+        },
+      ),
+    );
+  }
+}
+```
+
+* `Consumer` widget it the widget where we need to consume the change. It's best practice to put `Consumer` as deep in the widget tree as possible.
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:flutter_lorem/flutter_lorem.dart';
+import 'package:states_provider/drawer_menu.dart';
+import 'package:provider/provider.dart';
+import 'package:states_provider/model/ui.dart';
+
+class About extends StatelessWidget {
+  String text = lorem(paragraphs: 3, words: 50);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('About'),
+        backgroundColor: Colors.teal,
+      ),
+      drawer: DrawerMenu(),
+      body: Container(
+        margin: EdgeInsets.all(10.0),
+        child: Consumer<UI>(
+          builder: (context, ui, child) {
+            return RichText(
+              text: TextSpan(
+                text: text,
+                style:
+                    TextStyle(fontSize: ui.fontSize, color: Colors.lightBlue),
+              ),
+            );
+          },
+        ),
+      ),
+    );
+  }
+}
+
+```
+
+If we do not need to update the widget based on the data  in the model but only need to access it. Then we can use `Provider.of()<T>(context, listen:false)` with listen parameter as `false` 
+
+```dart
+Provider.of<CartModel>(context, listen: false).methodName;
+```
