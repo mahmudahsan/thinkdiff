@@ -7,7 +7,8 @@
 - [Animated Opacity](#animated-opacity)
 - [Navigation Drawer](#navigation-drawer)
 - [States](#states)
-- [States by Provider](#provider)
+  - [Provider](#provider)
+  - [Redux](#redux)
 
 ####  Background
 
@@ -234,4 +235,211 @@ If we do not need to update the widget based on the data  in the model but only 
 
 ```dart
 Provider.of<CartModel>(context, listen: false).methodName;
+```
+
+### Redux
+My Sample Project: [Redux](https://git.io/fjScV)
+Library: 
+* [Redux](https://pub.dev/packages/redux)
+* [Flutter Redux](https://pub.dev/packages/flutter_redux)
+* [Redux Thunk](https://pub.dev/packages/redux_thunk)
+
+##### Step 1: create an `AppState` model
+
+```dart
+import 'package:flutter/material.dart';
+
+class AppState {
+  double sliderFontSize;
+  bool bold;
+  bool italic;
+
+  AppState(
+      {@required this.sliderFontSize, this.bold = false, this.italic = false});
+
+  AppState.fromAppState(AppState another) {
+    sliderFontSize = another.sliderFontSize;
+    bold = another.bold;
+    italic = another.italic;
+  }
+
+  double get viewFontSize => sliderFontSize * 30;
+}
+```
+
+##### Step 2: Create Actions
+
+```dart
+/// Actions with Payload
+class FontSize {
+  final double payload;
+  FontSize(this.payload);
+}
+
+class Bold {
+  final bool payload;
+  Bold(this.payload);
+}
+
+class Italic {
+  final bool payload;
+  Italic(this.payload);
+}
+```
+
+##### Step 3: Create Reducers
+
+```dart
+import 'package:states_redux/model/app_state.dart';
+import 'package:states_redux/redux/actions.dart';
+
+AppState reducer(AppState prevState, dynamic action) {
+  AppState newState = AppState.fromAppState(prevState);
+
+  if (action is FontSize) {
+    newState.sliderFontSize = action.payload;
+  } else if (action is Bold) {
+    newState.bold = action.payload;
+  } else if (action is Italic) {
+    newState.italic = action.payload;
+  }
+
+  return newState;
+}
+```
+
+##### Step 4: Create Store in the Main.dart
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:states_redux/home.dart';
+import 'package:states_redux/about.dart';
+import 'package:states_redux/settings.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:redux/redux.dart';
+import 'package:states_redux/model/app_state.dart';
+import 'package:states_redux/redux/reducers.dart';
+
+void main() {
+  final _initialState = AppState(sliderFontSize: 0.5);
+  final Store<AppState> _store =
+      Store<AppState>(reducer, initialState: _initialState);
+
+  runApp(MyApp(store: _store));
+}
+
+class MyApp extends StatelessWidget {
+  final Store<AppState> store;
+
+  MyApp({this.store});
+
+  @override
+  Widget build(BuildContext context) {
+    return StoreProvider<AppState>(
+      store: store,
+      child: MaterialApp(
+        initialRoute: '/',
+        routes: {
+          '/': (context) => Home(),
+          '/about': (context) => About(),
+          '/settings': (context) => Settings(),
+        },
+      ),
+    );
+  }
+}
+```
+
+##### Step 5: Use State and Dispatch Action
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:states_redux/drawer_menu.dart';
+import 'package:flutter_redux/flutter_redux.dart';
+import 'package:states_redux/model/app_state.dart';
+import 'package:states_redux/redux/actions.dart';
+
+class Settings extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.teal,
+        title: Text('Settings'),
+      ),
+      drawer: DrawerMenu(),
+      body: StoreConnector<AppState, AppState>(
+        converter: (store) => store.state,
+        builder: (context, state) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 20, top: 20),
+                child: Text(
+                  'Font Size: ${state.viewFontSize.toInt()}',
+                  style: TextStyle(
+                      fontSize: Theme.of(context).textTheme.headline.fontSize),
+                ),
+              ),
+              Slider(
+                  min: 0.5,
+                  value: state.sliderFontSize,
+                  onChanged: (newValue) {
+                    StoreProvider.of<AppState>(context)
+                        .dispatch(FontSize(newValue));
+                  }),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  children: <Widget>[
+                    Checkbox(
+                        value: state.bold,
+                        onChanged: (newValue) {
+                          try {
+                            StoreProvider.of<AppState>(context)
+                                .dispatch(Bold(newValue));
+                          } catch (e) {
+                            print(e);
+                          }
+                        }),
+                    Text(
+                      'Bold',
+                      style: getStyle(state.bold, false),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  children: <Widget>[
+                    Checkbox(
+                        value: state.italic,
+                        onChanged: (newValue) {
+                          StoreProvider.of<AppState>(context)
+                              .dispatch(Italic(newValue));
+                        }),
+                    Text(
+                      'Italic',
+                      style: getStyle(false, state.italic),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  TextStyle getStyle([bool isBold = false, bool isItalic = false]) {
+    return TextStyle(
+      fontSize: 18,
+      fontWeight: isBold ? FontWeight.bold : FontWeight.normal,
+      fontStyle: isItalic ? FontStyle.italic : FontStyle.normal,
+    );
+  }
+}
 ```
