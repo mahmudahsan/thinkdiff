@@ -28,6 +28,7 @@
   - [Arrow Function](#arrow-function)
   - [Anonymous Function](#anonymous-function)
   - [Parameter](#parameter)
+- [Generators](#generators)
 - [Class](#class)
   - [Final and Const](#final-and-const)
   - [Class Inheritance](#class-inheritance)
@@ -892,6 +893,51 @@ void main() {
 }
 
 bool isAdult([int age = 18]) => age >= 18;
+```
+
+### Generators
+
+To produce a sequence of values lazily we can use generator function.
+
+Dart supports two kinds of generator functions:
+1. Synchronous generator - returns an iterable object
+2. Asynchronous generator - returns a stream object
+
+* An iterable object is a collection of values can be accessed sequentially.
+* A stream object represents an asynchronous data events.
+
+
+##### Synchronous Generator:
+
+- Mark the function body as `sync*` and use `yield` to deliver value
+
+```dart
+Iterable<int> naturalsTo(int n) sync* {
+  int k = 0;
+  while (k < n) yield k++;
+}
+```
+
+##### Asynchronous Generator:
+
+- Mark the function body as `async*` and use `yield` to deliver value
+
+```dart
+Stream<int> asynchronousNaturalsTo(int n) async* {
+  int k = 0;
+  while (k < n) yield k++;
+}
+```
+
+> For recursive function, `yield*` improves performance
+
+```dart
+Iterable<int> naturalsDownFrom(int n) sync* {
+  if (n > 0) {
+    yield n;
+    yield* naturalsDownFrom(n - 1);
+  }
+}
 ```
 
 ### Class
