@@ -45,11 +45,9 @@
 - [Exception Handling](#exception-handling)
 - [Generics](#generics)
 - [Mixin](#mixin)
-
-## Extra
 - [Asynchronous Programming](#asynchronous-programming)
   - [Futures](#futures)
-  - [Stream](#stream)
+  - [Streams](#streams)
 
 
 ### Setup
@@ -1451,6 +1449,8 @@ Asynchronous programming in Dart is characterized by the Future and Stream class
 
 - `Dart` code is single threaded
 - `Future<T>` object represents result of asynchronous operation which produces a result of type `T`. If the result is not usable value, then the future's type is `Future<void>`. 
+- A `Future` represents a single value either a data or an error asynchronously
+
 
 **Two** ways to handle `Future`
 1. Using the `Future` API
@@ -1544,6 +1544,74 @@ void main() async {
 }
 ```
 
-#### Stream
+#### Streams
 
-A stream is a sequence of asynchronous events. Unlike `future` a stream notify if there is an event is ready.
+A `Stream` is a sequence of asynchronous events. Unlike `future` a stream notify if there is an event is ready.
+
+- `Stream` is similar like `Future`
+- `Stream` delivers zero or more than zero values or errors over time
+- To create `Stream` use `StreamController` class
+- By default, `Stream` are setup for single subscription. So two listen will not work.
+- For multiple listeners, use `.asBroadcastStream()` method
+
+Let's create a `Stream` of `RandomNumber`
+
+```dart
+import 'dart:async';
+import 'dart:math' as Math;
+
+class RandomNumber {
+  final StreamController _controller = StreamController<int>();
+  int _count = Math.Random().nextInt(100);
+  int times = 0;
+
+  RandomNumber() {
+    Timer.periodic(Duration(seconds: 1), (timer){
+      _controller.sink.add(_count);
+      _count = Math.Random().nextInt(100);
+      times += 1;
+
+      if (times > 5) {
+        timer.cancel();
+        _controller.sink.close();
+      }
+    });
+  }
+
+  Stream<int> get stream => _controller.stream;
+}
+```
+
+To listen the change of stream:
+```dart
+void main() {
+  final randomNumStream = RandomNumber().stream;
+
+  final subscription = randomNumStream.listen(
+    (data){
+      print('Data: $data');
+    },
+    onError: (err) {
+      print('Error: $err');
+    },
+    cancelOnError: false,
+    onDone: (){
+      print('Done');
+    }
+  );
+}
+```
+
+For broadcasting:
+```dart
+void main() {
+  final broadCastRandomNumStream = RandomNumber().stream.asBroadcastStream();
+
+  final sub1 = broadCastRandomNumStream.listen(printData);
+  final sub2 = broadCastRandomNumStream.listen(printData);
+}
+
+void printData(data){
+  print('Data: $data');
+}
+```
