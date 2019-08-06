@@ -912,9 +912,21 @@ Dart supports two kinds of generator functions:
 - Mark the function body as `sync*` and use `yield` to deliver value
 
 ```dart
-Iterable<int> naturalsTo(int n) sync* {
-  int k = 0;
-  while (k < n) yield k++;
+import 'dart:io';
+
+Iterable<int> countStream(int max) sync * {
+  for (int i = 0; i < max; ++i) {
+    yield i;
+    sleep(Duration(seconds: 1));
+  }
+}
+
+void main() {
+  print('start');
+  countStream(5).forEach((data){
+    print(data);
+  });
+  print('end');
 }
 ```
 
@@ -923,9 +935,24 @@ Iterable<int> naturalsTo(int n) sync* {
 - Mark the function body as `async*` and use `yield` to deliver value
 
 ```dart
-Stream<int> asynchronousNaturalsTo(int n) async* {
-  int k = 0;
-  while (k < n) yield k++;
+import 'dart:io';
+
+Stream<int> countStream(int max) async * {
+  for (int i = 0; i < max; ++i) {
+    yield i;
+    sleep(Duration(seconds: 1));
+  }
+}
+
+void main() {
+  print('start');
+  countStream(5).listen((data){
+    print(data);
+  },
+  onDone: (){
+    print("Done");
+  });
+  print('end');
 }
 ```
 
@@ -1660,4 +1687,42 @@ void main() {
 void printData(data){
   print('Data: $data');
 }
+```
+
+##### Another Stream Example
+
+In this case, we are using Generator function and `yield` keyword to put the values in the stream
+
+```dart
+import 'dart:io';
+
+Stream<int> countStream(int max) async * {
+  for (int i = 0; i < max; ++i) {
+    yield i;
+    sleep(Duration(seconds: 1));
+  }
+}
+
+void main() {
+  print('start');
+  countStream(5).listen((data){
+    print(data);
+  },
+  onDone: (){
+    print("Done");
+  });
+  print('end');
+}
+```
+Output:
+
+```
+start
+end
+0
+1
+2
+3
+4
+Done
 ```
