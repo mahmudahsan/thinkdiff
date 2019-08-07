@@ -1480,6 +1480,12 @@ assert(number < 100);
 assert(urlString.startsWith('https'));
 ```
 
+To enable assert in Dart you have to run the following command
+```
+dart --enable-asserts FILENAME.dart 
+```
+Normally in Flutter, `assert` is automatically enabled in the debug mode.
+
 ### Exception Handling
 
 - To `throw` error use `throw` or `rethrow` keywords
