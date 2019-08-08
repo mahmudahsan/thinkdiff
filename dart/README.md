@@ -50,6 +50,7 @@
   - [Futures](#futures)
   - [Streams](#streams)
 - [Regular Expression](#regular-expression)
+- [File IO](#file-io)
 
 
 ### Setup
@@ -1797,4 +1798,30 @@ Output:
 Focus
 What
 Matters
+```
+
+### File IO
+
+Reading a file
+```dart
+// File Reading
+
+import 'dart:io';
+
+void main() async {
+  File file = File('data.txt');
+  var contents = await file.readAsString();
+  print(contents);
+}
+```
+
+Writing a new file
+
+```dart
+import 'dart:io';
+
+void main() async {
+  File file = File('hello.txt');
+  var contents = await file.writeAsString('Life is Good!\n\nI love programming');
+}
 ```
