@@ -1784,7 +1784,7 @@ Dart regular expressions have the same syntax and semantics as JavaScript regula
 
 ```
 void main() {
-  RegExp exp = new RegExp(r"(\w+)");
+  RegExp exp = RegExp(r"(\w+)");
   String str = "Focus What Matters!";
   Iterable<RegExpMatch> matches = exp.allMatches(str);
   matches.forEach((match) {
