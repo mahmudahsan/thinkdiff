@@ -49,6 +49,7 @@
 - [Asynchronous Programming](#asynchronous-programming)
   - [Futures](#futures)
   - [Streams](#streams)
+- [Regular Expression](#regular-expression)
 
 
 ### Setup
@@ -1775,4 +1776,25 @@ end
 3
 4
 Done
+```
+
+### Regular Expression
+
+Dart regular expressions have the same syntax and semantics as JavaScript regular expressions.
+
+```
+void main() {
+  RegExp exp = new RegExp(r"(\w+)");
+  String str = "Focus What Matters!";
+  Iterable<RegExpMatch> matches = exp.allMatches(str);
+  matches.forEach((match) {
+    print(str.substring(match.start, match.end));
+  });
+}
+```
+Output:
+```
+Focus
+What
+Matters
 ```
