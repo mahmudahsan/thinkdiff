@@ -9,6 +9,7 @@
 - [States](#states)
   - [Provider](#provider)
   - [Redux](#redux)
+  - [BloC](#bloc)
 
 ####  Background
 
@@ -423,6 +424,257 @@ class Settings extends StatelessWidget {
                     Text(
                       'Italic',
                       style: getStyle(false, state.italic),
+                    ),
+                  ],
+                ),
+              ),
+            ],
+          );
+        },
+      ),
+    );
+  }
+
+  TextStyle getStyle([bool isBold = false, bool isItalic = false]) {
+    return TextStyle(
+      fontSize: 18,
+      fontWeight: isBold ? FontWeight.bold : FontWeight.normal,
+      fontStyle: isItalic ? FontStyle.italic : FontStyle.normal,
+    );
+  }
+}
+```
+
+### BloC
+B.Lo.C stands for Business Logic Components. 
+
+* [Official Tutorial](https://felangel.github.io/bloc/#/gettingstarted)
+
+##### Architecture
+> We can separate an application into three Layers:
+1. Data Layer
+    * Data Provider
+    * Repository
+2. Business Logic
+3. Presentation
+
+##### 1. Data Layer
+It's responsibility is to provide data from any source. 
+**Data Provider** provides raw data and **repository** is a wrapper of one or more data providers.
+
+##### 2. Bloc or Business Logic
+It's responsibility is to received events from presentation layer and respond with new state. It works as a bridge between data layer and presentation layer.
+
+##### 3. Presentation Layer
+It's responsibility is to render itself based on one or more bloc states. It also handles user input and application lifecycle events.
+
+**My Demo Project:** [BloC](https://git.io/fjbWm)
+
+> Library: 
+* [BloC](https://pub.dev/packages/bloc)
+* [Flutter BloC](https://pub.dev/packages/flutter_bloc)
+
+
+##### Step 1: Create Events 
+
+```dart
+part of 'settings_bloc.dart';
+
+@immutable
+abstract class SettingsEvent {
+  final dynamic payload;
+  SettingsEvent(this.payload);
+}
+
+class FontSize extends SettingsEvent {
+  FontSize(double payload) : super(payload);
+}
+
+class Bold extends SettingsEvent {
+  Bold(bool payload) : super(payload);
+}
+
+class Italic extends SettingsEvent {
+  Italic(bool payload) : super(payload);
+}
+
+```
+
+##### Step 2: Create State 
+
+```dart
+part of 'settings_bloc.dart';
+
+@immutable
+abstract class SettingsState {
+  final double sliderFontSize;
+  final bool isBold;
+  final bool isItalic;
+
+  SettingsState({this.sliderFontSize, this.isBold, this.isItalic});
+
+  double get fontSize => sliderFontSize * 30;
+}
+
+class InitialSettingsState extends SettingsState {
+  InitialSettingsState()
+      : super(sliderFontSize: 0.5, isBold: false, isItalic: false);
+}
+
+class NewSettingState extends SettingsState {
+  NewSettingState.fromOldSettingState(SettingsState oldState,
+      {double sliderFontSize, bool isBold, bool isItalic})
+      : super(
+          sliderFontSize: sliderFontSize ?? oldState.sliderFontSize,
+          isBold: isBold ?? oldState.isBold,
+          isItalic: isItalic ?? oldState.isItalic,
+        );
+}
+
+```
+
+##### Step 3: Create BloC
+
+```dart
+import 'dart:async';
+import 'package:bloc/bloc.dart';
+import 'package:meta/meta.dart';
+
+part 'settings_event.dart';
+
+part 'settings_state.dart';
+
+class SettingsBloc extends Bloc<SettingsEvent, SettingsState> {
+  @override
+  SettingsState get initialState => InitialSettingsState();
+
+  @override
+  Stream<SettingsState> mapEventToState(SettingsEvent event) async* {
+    if (event is FontSize) {
+      yield NewSettingState.fromOldSettingState(currentState,
+          sliderFontSize: event.payload);
+    } else if (event is Bold) {
+      yield NewSettingState.fromOldSettingState(currentState,
+          isBold: event.payload);
+    } else if (event is Italic) {
+      yield NewSettingState.fromOldSettingState(currentState,
+          isItalic: event.payload);
+    }
+  }
+}
+
+```
+
+##### Step 4: Create BlocProvider in `main.dart`
+
+```dart
+import 'package:flutter/material.dart';
+import 'package:states_bloc/home.dart';
+import 'package:states_bloc/about.dart';
+import 'package:states_bloc/settings.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:states_bloc/bloc/settings/settings_bloc.dart';
+
+void main() {
+  final BlocProvider<SettingsBloc> blocProvider = BlocProvider<SettingsBloc>(
+    builder: (_) => SettingsBloc(),
+    child: MyApp(),
+  );
+
+  runApp(blocProvider);
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      initialRoute: '/',
+      routes: {
+        '/': (context) => Home(),
+        '/about': (context) => About(),
+        '/settings': (context) => Settings(),
+      },
+    );
+  }
+}
+
+```
+
+##### Step 5: Use BloC state and dispatch events
+
+```dart
+/**
+ * Created by Mahmud Ahsan
+ * https://github.com/mahmudahsan
+ */
+import 'package:flutter/material.dart';
+import 'package:states_bloc/drawer_menu.dart';
+import 'package:states_bloc/bloc/settings/settings_bloc.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
+
+class Settings extends StatelessWidget {
+  double _value = 0.5;
+  bool isBold = false;
+  bool isItalic = false;
+
+  @override
+  Widget build(BuildContext context) {
+    final SettingsBloc settingsBloc = BlocProvider.of<SettingsBloc>(context);
+
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.teal,
+        title: Text('Settings'),
+      ),
+      drawer: DrawerMenu(),
+      body: BlocBuilder<SettingsBloc, SettingsState>(
+        builder: (context, state) {
+          return Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(left: 20, top: 20),
+                child: Text(
+                  'Font Size: ${state.fontSize.toInt()}',
+                  style: TextStyle(
+                      fontSize: Theme.of(context).textTheme.headline.fontSize),
+                ),
+              ),
+              Slider(
+                  min: 0.5,
+                  value: state.sliderFontSize,
+                  onChanged: (newValue) {
+                    settingsBloc.dispatch(FontSize(newValue));
+                  }),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  children: <Widget>[
+                    Checkbox(
+                      value: state.isBold,
+                      onChanged: (newVal) {
+                        settingsBloc.dispatch(Bold(newVal));
+                      },
+                    ),
+                    Text(
+                      'Bold',
+                      style: getStyle(state.isBold, false),
+                    ),
+                  ],
+                ),
+              ),
+              Container(
+                margin: EdgeInsets.symmetric(horizontal: 8),
+                child: Row(
+                  children: <Widget>[
+                    Checkbox(
+                        value: state.isItalic,
+                        onChanged: (newVal) {
+                          settingsBloc.dispatch(Italic(newVal));
+                        }),
+                    Text(
+                      'Italic',
+                      style: getStyle(false, state.isItalic),
                     ),
                   ],
                 ),
