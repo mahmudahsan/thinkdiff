@@ -445,7 +445,7 @@ class Settings extends StatelessWidget {
 }
 ```
 
-### BloC
+### Bloc
 B.Lo.C stands for Business Logic Components. 
 
 * [Official Tutorial](https://felangel.github.io/bloc/#/gettingstarted)
@@ -468,11 +468,11 @@ It's responsibility is to received events from presentation layer and respond wi
 ##### 3. Presentation Layer
 It's responsibility is to render itself based on one or more bloc states. It also handles user input and application lifecycle events.
 
-**My Demo Project:** [BloC](https://git.io/fjbWm)
+**My Demo Project:** [Bloc](https://git.io/fjbWm)
 
 > Library: 
-* [BloC](https://pub.dev/packages/bloc)
-* [Flutter BloC](https://pub.dev/packages/flutter_bloc)
+* [Bloc](https://pub.dev/packages/bloc)
+* [Flutter Bloc](https://pub.dev/packages/flutter_bloc)
 
 
 ##### Step 1: Create Events 
@@ -533,7 +533,7 @@ class NewSettingState extends SettingsState {
 
 ```
 
-##### Step 3: Create BloC
+##### Step 3: Create Bloc
 
 ```dart
 import 'dart:async';
@@ -600,7 +600,7 @@ class MyApp extends StatelessWidget {
 
 ```
 
-##### Step 5: Use BloC state and dispatch events
+##### Step 5: Use Bloc state and dispatch events
 
 ```dart
 /**
