@@ -958,7 +958,7 @@ void main() {
 }
 ```
 
-> For recursive function, `yield*` improves performance
+> When we have to use function call to produce value in yield we have to use `yield*`
 
 ```dart
 Iterable<int> naturalsDownFrom(int n) sync* {
