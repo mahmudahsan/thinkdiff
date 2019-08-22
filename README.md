@@ -23,8 +23,21 @@
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my blog or my youtube channel. 
 
-1. [Thinkdiff Programming Blog](https://thinkdiff.net)
-2. [Thinkdiff Programming Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg)
+## My Udemy Courses with Discounts
+1. [Mastering Dart Programming With Flutter Development](https://www.udemy.com/dart-flutter-course/?couponCode=ITHINKDIFF)
+2. [Web Scraping in Python with BeautifulSoup & Scrapy Framework](https://www.udemy.com/web-scraping-in-python/?couponCode=ITHINKDIFF.NET)
+3. [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/?couponCode=ITHINKDIFF.NET)
+
+## My Blog and Youtube
+
+1. [Programming Blog](https://thinkdiff.net)
+2. [Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg)
+
+## FREE Programming Video Tutorials
+
+- [Flutter and Dart Tutorials](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ) | [Code](flutter/)
+- [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
+- [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
 
 ## My Open Source Projects
 
@@ -32,7 +45,7 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Todos](https://github.com/mahmudahsan/flutter_todos) | [Tutorial](https://youtu.be/OQG3MxenJsM)
 2. [Short Profile](flutter/short_profile) | [Tutorial](https://youtu.be/ULxYR66BRb4)
 3. [State: Provider](https://git.io/fjyR6) | [Tutorial](https://www.youtube.com/watch?v=fEIdWV8MAso)
-4. [State: Redux](https://git.io/fjScV)
+4. [State: Redux](https://git.io/fjScV) | [Tutorial](https://www.youtube.com/watch?v=vzCszJQ_qZQ&t=793s)
 5. [Form](flutter/form)
 
 ### React Native 
@@ -45,15 +58,7 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
 2. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
 
-## My Programming Courses and Tutorials
-
-- [Flutter and Dart Tutorials](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ) | [Code](flutter/)
-- [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
-- [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/)
-- [Web Scraping in Python with BeautifulSoup & Scrapy Framework](https://www.udemy.com/web-scraping-in-python/)
-- [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
-
-### JavaScript, Dart, Python | Coding, Design Patterns
+### Language Quick Reference
 
 1. [JavaScript Language](javascript/) 
 2. [Dart Language](dart/) | [Video Tutorial](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
