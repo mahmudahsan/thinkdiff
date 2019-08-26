@@ -46,7 +46,8 @@ I created this repository to practice myself. Here I publish programming code fo
 2. [Short Profile](flutter/short_profile) | [Tutorial](https://youtu.be/ULxYR66BRb4)
 3. [State: Provider](https://git.io/fjyR6) | [Tutorial](https://www.youtube.com/watch?v=fEIdWV8MAso)
 4. [State: Redux](https://git.io/fjScV) | [Tutorial](https://www.youtube.com/watch?v=vzCszJQ_qZQ&t=793s)
-5. [Form](flutter/form)
+5. [State: Bloc](https://git.io/fjbWm) | [Tutorial](https://youtu.be/BHC_D52TecY)
+6. [Form](flutter/form)
 
 ### React Native 
 - [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
@@ -58,13 +59,14 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
 2. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
 
-### Language Quick Reference
+### Quick Reference
 
 1. [JavaScript Language](javascript/) 
 2. [Dart Language](dart/) | [Video Tutorial](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
-3. [Python Language](python-language/) 
-4. [Coding Problems](coding-problems/)
-5. [Design Patterns](design-patterns/)
+3. [Flutter](flutter/) | [Video Tutorial](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ)
+4. [Python Language](python-language/) 
+5. [Coding Problems](coding-problems/)
+6. [Design Patterns](design-patterns/)
 
 ### Django
 
