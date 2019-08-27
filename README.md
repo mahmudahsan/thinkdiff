@@ -65,12 +65,12 @@ I created this repository to practice myself. Here I publish programming code fo
 
 ### Quick Reference Mobile
 
-1. [Dart Language](dart/) | [Video Tutorial](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
-2. [Flutter](flutter/) | [Video Tutorial](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ)
+1. [Dart Language](dart/) | [Video](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
+2. [Flutter](flutter/) | [Video](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ)
 
 ### Quick Reference Web
-1. [JavaScript Language](javascript/) 
-2. [Python Language](python-language/) 
+1. [JavaScript Language](javascript/) | [ES6 Video](https://www.youtube.com/watch?v=7LnGAsErYYU)
+2. [Python Language](python-language/) | [Video](https://www.youtube.com/watch?v=llbgjR_tL2k)
 3. [Django](django/)
 
 ### Other
