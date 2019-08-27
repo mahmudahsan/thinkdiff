@@ -63,14 +63,19 @@ I created this repository to practice myself. Here I publish programming code fo
 1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
 2. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
 
-### Quick Reference
+### Quick Reference Mobile
 
+1. [Dart Language](dart/) | [Video Tutorial](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
+2. [Flutter](flutter/) | [Video Tutorial](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ)
+
+### Quick Reference Web
 1. [JavaScript Language](javascript/) 
-2. [Dart Language](dart/) | [Video Tutorial](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
-3. [Flutter](flutter/) | [Video Tutorial](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ)
-4. [Python Language](python-language/) 
-5. [Coding Problems](coding-problems/)
-6. [Design Patterns](design-patterns/)
+2. [Python Language](python-language/) 
+3. [Django](django/)
+
+### Other
+1. [Coding Problems](coding-problems/)
+2. [Design Patterns](design-patterns/)
 
 ### Django
 
