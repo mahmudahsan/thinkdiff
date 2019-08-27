@@ -19,7 +19,11 @@
     </a>
 </p>
 
-# JavaScript, Python, Dart | React, Flutter
+# Python, JavaScript, Dart | Django, React, Flutter
+> 😍 My Personal Choice:
+- API Development | **Django REST Framework**
+- Web Client | **React**
+- Mobile Apps | **Flutter**
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my blog or my youtube channel. 
 
