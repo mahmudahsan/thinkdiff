@@ -1,6 +1,6 @@
 # Table of Contents
-1. [Django](django-commands)
-2. [Heroku](heroku-commands)
+1. [Django](#django-commands)
+2. [Heroku](#heroku-commands)
 
 ## Django Commands
 
