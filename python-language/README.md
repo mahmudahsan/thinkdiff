@@ -7,6 +7,7 @@
 - [Statements Expression Comments](#statements-expression-comments)
 - [String](#string)
 - [List](#list)
+- [Mixins](#Mixins)
 
 ### Variables
 
@@ -232,3 +233,37 @@ lst = [1, 2, 3]
 | item existence  |   `item in lst`   |
 | index of item   | `lst.index(item)` |
 
+
+### Mixins
+Mixins is a way to add extra methods or properties from other classes into a class. This creates a class in a compositional style.
+
+In Python, class hierarchy is defined from right to left. So when we want to use mixins we have to be careful, in case there are same name method or property.
+
+
+```python
+# mixins
+
+class Base:
+    def hello(self):
+        print('Base')
+        
+class Mixin1:
+    def hello(self):
+        print('Mixin 1')
+        
+class Mixin2:
+    def hello(self):
+        print('Mixin 2')
+        
+class MyClass(Mixin2, Mixin1, Base):
+    pass
+        
+if __name__ == '__main__':
+    my_class = MyClass()
+    my_class.hello()
+    
+```
+Output
+```
+Mixin 2
+```
