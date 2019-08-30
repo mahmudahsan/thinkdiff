@@ -19,13 +19,9 @@
     </a>
 </p>
 
-# Python, JavaScript, Dart | Django, React, Flutter
-> 😍 My Personal Choice:
-- API Development | **Django REST Framework**
-- Web Client | **React**
-- Mobile Apps | **Flutter**
+# Overview
 
-I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my blog or my youtube channel. 
+I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my blog or my youtube channel.
 
 ## My Udemy Courses with Discounts
 1. [Mastering Dart Programming With Flutter Development](https://www.udemy.com/dart-flutter-course/?couponCode=ITHINKDIFF)
