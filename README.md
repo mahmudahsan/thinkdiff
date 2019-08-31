@@ -69,16 +69,12 @@ I created this repository to practice myself. Here I publish programming code fo
 2. [Python Language](python-language/) | [Video](https://www.youtube.com/watch?v=llbgjR_tL2k)
 3. [Django](django/)
 
-### Other
-1. [Coding Problems](coding-problems/)
-2. [Design Patterns](design-patterns/)
+### Mixed
+1. [My Daily Warm Up](daily-warm-up/)
+2. [Coding Problems](coding-problems/)
+3. [Design Patterns](design-patterns/)
 
 ### Django
 
 1. [Django Codes](django-framework/)
 2. [Django Rest Framework Codes](django-rest-framework/)
-
-
-### Daily Warm Up
-
-1. [My Daily Warm Up](daily-warm-up/)
