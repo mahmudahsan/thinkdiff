@@ -6,21 +6,3 @@
 
 There is no standard rule for warming up. ***Experienced programmers suggest to do small things regularly.***
 
-
-
-### Flutter
-
-- Write a counter app
-
-### Node.js / Express.js
-
-
-### React.js
-
-
-### Dart
-
-
-### JavaScript
-
-
