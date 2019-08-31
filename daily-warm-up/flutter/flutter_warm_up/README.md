@@ -10,8 +10,3 @@ In this Flutter warm up project, I will do random things in random day or repeat
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
 - [online documentation](https://flutter.dev/docs)
-
-
-### Warm Up Ideas
-
-1. Write the counter app
