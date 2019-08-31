@@ -1,16 +1,17 @@
-# flutter_warm_up
+# Flutter Warm Up Project
 
-A new Flutter application.
+In this Flutter warm up project, I will do random things in random day or repeat older things I done. This will help me to keep in touch with this technology.
 
-## Getting Started
+## Resource
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
+1. [Dart Language](dart/) | [Video](https://www.youtube.com/watch?v=Ej_Pcr4uC2Q&list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ&index=3)
+2. [Flutter](flutter/) | [Video](https://www.youtube.com/playlist?list=PLlMOodDAsO4xrTgVEkKXfVf7sSVEsmWKQ)
 
 - [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
 - [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+- [online documentation](https://flutter.dev/docs)
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+### Warm Up Ideas
+
+1. Write the counter app
