@@ -52,7 +52,7 @@ I created this repository to practice myself. Here I publish programming code fo
 ### React Native
 - [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
 - [Hello World for Beginner](/react-native/t1_helloworld) | [Tutorial](https://www.youtube.com/watch?v=kFEs5WB7NB0)
-- [Simple Counter](/react-native/simple_counter) 
+- [Simple Counter](/react-native/simple_counter) | [Tutorial](https://youtu.be/6Jb7Xs64nwM)
 
 ### React
 - [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
