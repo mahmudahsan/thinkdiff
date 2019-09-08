@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:validators/validators.dart' as validator;
+import 'model.dart';
+import 'result.dart';
 
 void main() => runApp(MyApp());
 
@@ -24,12 +26,7 @@ class TestForm extends StatefulWidget {
 
 class _TestFormState extends State<TestForm> {
   final _formKey = GlobalKey<FormState>();
-
-  String _firstName;
-  String _lastName;
-  String _email;
-  String _password1;
-  String _password2;
+  Model model = Model();
 
   @override
   Widget build(BuildContext context) {
@@ -55,12 +52,11 @@ class _TestFormState extends State<TestForm> {
                       }
                       return null;
                     },
-                    onSaved: (String value){
-                      _firstName = value;
+                    onSaved: (String value) {
+                      model.firstName = value;
                     },
                   ),
                 ),
-
                 Container(
                   alignment: Alignment.topCenter,
                   width: halfMediaWidth,
@@ -72,15 +68,14 @@ class _TestFormState extends State<TestForm> {
                       }
                       return null;
                     },
-                    onSaved: (String value){
-                      _lastName = value;
+                    onSaved: (String value) {
+                      model.lastName = value;
                     },
                   ),
                 )
               ],
             ),
           ),
-
           MyTextFormField(
             hintText: 'Email',
             isEmail: true,
@@ -90,8 +85,8 @@ class _TestFormState extends State<TestForm> {
               }
               return null;
             },
-            onSaved: (String value){
-              _email = value;
+            onSaved: (String value) {
+              model.email = value;
             },
           ),
           MyTextFormField(
@@ -106,8 +101,8 @@ class _TestFormState extends State<TestForm> {
 
               return null;
             },
-            onSaved: (String value){
-              _password1 = value;
+            onSaved: (String value) {
+              model.password = value;
             },
           ),
           MyTextFormField(
@@ -116,38 +111,25 @@ class _TestFormState extends State<TestForm> {
             validator: (String value) {
               if (value.length < 7) {
                 return 'Password should be minimum 7 characters';
-              }
-              else if (_password1 != null && value != _password1) {
+              } else if (model.password != null && value != model.password) {
                 print(value);
-                print(_password1);
+                print(model.password);
                 return 'Password not matched';
               }
 
               return null;
             },
-            onSaved: (String value){
-              _password2 = value;
-            },
           ),
-
           RaisedButton(
             color: Colors.blueAccent,
-            onPressed: (){
-              if (_formKey.currentState.validate()){
+            onPressed: () {
+              if (_formKey.currentState.validate()) {
                 _formKey.currentState.save();
 
-                print(_firstName);
-                print(_lastName);
-                print(_email);
-                print(_password1);
-                print(_password2);
-
-                Scaffold.of(context).showSnackBar(
-                  SnackBar(
-                    content: Text('Processing Data'),
-                    backgroundColor: Colors.redAccent[100],
-                  ),
-                );
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Result(model: this.model)));
               }
             },
             child: Text(
@@ -156,7 +138,6 @@ class _TestFormState extends State<TestForm> {
                 color: Colors.white,
               ),
             ),
-
           )
         ],
       ),
@@ -182,7 +163,7 @@ class MyTextFormField extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.all(8.0),
+      padding: EdgeInsets.all(8.0),
       child: TextFormField(
         decoration: InputDecoration(
           hintText: hintText,
@@ -199,5 +180,3 @@ class MyTextFormField extends StatelessWidget {
     );
   }
 }
-
-
