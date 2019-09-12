@@ -47,7 +47,7 @@ I created this repository to practice myself. Here I publish programming code fo
 3. [State: Provider](https://git.io/fjyR6) | [Tutorial](https://www.youtube.com/watch?v=fEIdWV8MAso)
 4. [State: Redux](https://git.io/fjScV) | [Tutorial](https://www.youtube.com/watch?v=vzCszJQ_qZQ&t=793s)
 5. [State: Bloc](https://git.io/fjbWm) | [Tutorial](https://youtu.be/BHC_D52TecY)
-6. [Form](flutter/form)
+6. [Form](flutter/form) | [Tutorial](https://www.youtube.com/watch?v=S-nLT3TRJFY&t=1646s)
 
 ### React Native
 - [Todos Mobile App](https://github.com/mahmudahsan/todos-react-reactnative): cross platform mobile app with navigation and offline data storage
