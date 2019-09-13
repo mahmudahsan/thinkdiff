@@ -2,6 +2,7 @@
 
 - [Redux Concept from Scratch](#redux-concept-from-scratch)
 - [Redux Concept with Observer pattern](#redux-concept-with-observer-pattern)
+- [React demo based on previous store](#react-demo-based-on-previous-store)
 
 ### Redux Concept from Scratch
 
@@ -151,4 +152,96 @@ Current State
 { messages: [ 'Life is Cool', 'You are doing too much' ] }
 Current State
 { messages: [ 'You are doing too much' ] }
+```
+
+### React demo based on previous store
+
+> use create-react-app APP_NAME and use [Redux Concept with Observer pattern](#redux-concept-with-observer-pattern) code and the following code to see the demo
+
+```javascript
+// Store
+const store = createStore(reducer, initialState);
+
+
+class App extends React.Component {
+  componentDidMount() {
+    store.subscribe(() => this.forceUpdate());
+  }
+  render() {
+    const messages = store.getState().messages;
+
+    return (
+      <div className='ui segment'>
+        <MessageView messages={messages} />
+        <MessageInput />
+      </div>
+    );
+  }
+}
+
+class MessageInput extends React.Component {
+  state = {
+    value: '',
+  };
+
+  onChange = (e) => {
+    this.setState({
+      value: e.target.value,
+    })
+  };
+
+  handleSubmit = () => {
+    store.dispatch({
+      type: 'ADD_MESSAGE',
+      message: this.state.value,
+    });
+    this.setState({
+      value: '',
+    });
+  };
+
+  render() {
+    return (
+      <div className='ui input'>
+        <input
+          onChange={this.onChange}
+          value={this.state.value}
+          type='text'
+        />
+        <button
+          onClick={this.handleSubmit}
+          className='ui primary button'
+          type='submit'
+        >
+          Submit
+        </button>
+       </div>
+    );
+  }
+}
+
+class MessageView extends React.Component {
+  handleClick = (index) => {
+    store.dispatch({
+      type: 'DELETE_MESSAGE',
+      index: index,
+    });
+  };
+
+  render() {
+    const messages = this.props.messages.map((message, index) => (
+      <div
+        className='ui comment'
+        key={index}
+        onClick={() => this.handleClick(index)}
+      >
+        {message}
+      </div>
+    ));
+
+    return messages;
+  }
+}
+
+export default App;
 ```
