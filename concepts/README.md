@@ -4,6 +4,7 @@
 - [Redux Concept with Observer pattern](#redux-concept-with-observer-pattern)
 - [React demo based on previous store](#react-demo-based-on-previous-store)
 - [React Redux Counter](#react-redux-counter)
+- [SQL vs NOSQL](#sql-vs-nosql)
 
 ### Redux Concept from Scratch
 
@@ -325,3 +326,10 @@ const App = () => (
 export default App;
 ```
 
+### SQL vs NOSQL
+
+| SQL  | NOSQL |
+| ------------- | ------------- |
+| Row/Record  | Document  |
+| Table  | Collection  |
+| Column  | Field  |

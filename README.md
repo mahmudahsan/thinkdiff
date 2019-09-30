@@ -74,7 +74,7 @@ I created this repository to practice myself. Here I publish programming code fo
 ### Mixed
 1. [My Daily Warm Up](daily-warm-up/)
 2. [Coding Problems](coding-problems/)
-3. [Design Patterns](design-patterns/)
+3. [Concepts](concepts/)
 
 ### Django
 
