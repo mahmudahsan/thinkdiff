@@ -766,6 +766,7 @@ class _WebSocketDemoState extends State<WebSocketDemo> {
   List<String> messageList = [];
 
   _WebSocketDemoState({this.channel}) {
+  // Comment below part if use StreamBuilder Widget
     channel.stream.listen((data) {
       setState(() {
         print(data);
@@ -813,40 +814,45 @@ class _WebSocketDemoState extends State<WebSocketDemo> {
             ),
           ),
           Expanded(
-            child: ListView(
-              children: <Widget>[
-                for (String message in messageList)
-                  ListTile(
-                    title: Container(
-                      child: Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: Text(
-                          message,
-                          style: TextStyle(fontSize: 22),
-                        ),
-                      ),
-                      color: Colors.teal[50],
-                      height: 60,
-                    ),
-                  ),
-              ],
-            ),
-          )
+            child: getMessageList(),
+          ),
 //          Expanded(
-//            child: ListView(
-//              children: <Widget>[
-//                StreamBuilder(
-//                  stream: widget.channel.stream,
-//                  builder: (context, snapshot) => ListTile(
-//                    title: Text(snapshot.hasData ? snapshot.data : ''),
-//                  ),
-//                )
-//              ],
+//            child: StreamBuilder(
+//              stream: channel.stream,
+//              builder: (context, snapshot) {
+//                if (snapshot.hasData) {
+//                  messageList.add(snapshot.data);
+//                }
+//
+//                return getMessageList();
+//              },
 //            ),
 //          ),
         ],
       ),
     );
+  }
+
+  ListView getMessageList() {
+    List<Widget> listWidget = [];
+
+    for (String message in messageList) {
+      listWidget.add(ListTile(
+        title: Container(
+          child: Padding(
+            padding: const EdgeInsets.all(8.0),
+            child: Text(
+              message,
+              style: TextStyle(fontSize: 22),
+            ),
+          ),
+          color: Colors.teal[50],
+          height: 60,
+        ),
+      ));
+    }
+
+    return ListView(children: listWidget);
   }
 
   @override
@@ -856,5 +862,6 @@ class _WebSocketDemoState extends State<WebSocketDemo> {
     super.dispose();
   }
 }
+
 
 ```
