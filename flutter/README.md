@@ -721,6 +721,8 @@ class Settings extends StatelessWidget {
 
 ### Web Socket
 
+WebSocket is a computer communications protocol, providing full-duplex communication channels over a single TCP connection. Using this protocol, server also can push data to client even if client not requested. Like a chat app.
+
 Library: [Web Socket](https://pub.dev/packages/web_socket_channel)
 ```
 dependencies:
