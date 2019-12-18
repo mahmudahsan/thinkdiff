@@ -221,19 +221,86 @@ print (name[7:-1])
 
 ### List
 
+> List is a mutable ordered collection of items. 
+- List item can be accessed by index number
+
+
 `Python`
 ```python
-lst = [1, 2, 3]
+list = [1, 2, 3, 4, 5]
+
+# Accessing first item
+list[0]
+
+# Negative -1 means accessing from the end | Output 5
+list[-1]
+
+# Range of items | Output: 2, 3
+list[1:3]
+
+# Length of List | Output: 5
+len(list)
+
+# Getting last item 
+item = list.pop() # 5
+print(list) # 1, 2, 3, 4 | 5 removed by pop() method
+
+# Getting first item
+list.pop(0) # 1
+
+# Checking list item existence
+if 3 in list:
+  print('yes') # yes
+
+# Index of the first element of a value
+list.index(3)
+
+# Adding item
+list.append(6)
+
+# Adding item in an index
+list.append(1, 6) # [1, 6, 2, 3, 4, 5]
+
+# Remove item
+list.remove(5) # [1, 2, 3, 4] For more than one same item, it will remove one only
+
+# Remove indexed item
+del list[4] # [1, 2, 3, 4]
+
+# Empty list
+list.clear()
+
+# Copying List
+list2 = list.copy() # OR
+list2 = list
+
+# Joining two lists
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list = list1 + list2
+
+# Counting the occurrence of item
+list = [1, 1, 2, 1, 3]
+print(list.count(1)) # 3
+
+# Extending list by list or any iterable object
+list1 = [1, 2, 3]
+list2 = [4, 5, 6]
+list1.extend(list2)
+print(list1) # [1, 2, 3, 4, 5, 6]
+
+# Reversing a list
+list = [1, 2, 3, 4]
+list.reverse()
+print(list) # [4, 3, 2, 1]
+
+# Sorting a list
+# Syntax List.sort(reverse=True|False, key=function)
+list = [5, 3, 1, 0, 10, 7, 8]
+list.sort() # list.sort(reverse=True) for descending order
+print(list) # [0, 1, 3, 5, 7, 8, 10]
+
 ```
-**Common Methods**
-
-| List            |     `Python`      |
-| --------------- | :---------------: |
-| get first item  |   `lst.pop(0)`    |
-| number of items |    `len(lst)`     |
-| item existence  |   `item in lst`   |
-| index of item   | `lst.index(item)` |
-
 
 ### Mixins
 Mixins is a way to add extra methods or properties from other classes into a class. This creates a class in a compositional style.
