@@ -577,6 +577,23 @@ const obj = {
 console.log(obj[key]);
 ```
 
+##### Some useful object methods
+
+```javascript
+// geting keys as array using Object class method keys()
+let obj = {
+  name: 'mark',
+  age: 35
+};
+
+let keys = Object.keys(obj); // ['name', 'age']
+
+// Iterating object
+for (let key in obj) {
+  console.log(obj[key]);
+}
+```
+
 ### Destructuring
 
 ##### Destructuring is an easier way to access properties in objects and arrays
