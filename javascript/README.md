@@ -4,10 +4,11 @@
 - [Variables](#variables)
 - [Absent of Value](#absent-of-value)
 - [Operators](#operators)
+- [Number Methods](#number-methods)
 - [Statements Expression Comments](#statements-expression-comments)
 - [Comment](#comment)
 - [String](#string)
-- [List](#list)
+- [Array](#array)
 - [Set](#set)
 - [Object](#object)
 - [Destructuring](#destructuring)
@@ -33,35 +34,34 @@ There are 7 primitive types in JavaScript.
 
 ```js
 const num = 100n;
-console.log(typof num); // bigint
+typof num // bigint
 
 const num2 = BigInt(100);
-console.log(typeof num2); // bigint
+typeof num2 // bigint
 
 const id1 = Symbol('id1');
-console.log(typeof id1); // symbol
+typeof id1 // symbol
 ```
 
 Some fundamentals:
 
 ```javascript
-var number1 = 200; // number: integer
-let number2 = 300.50; // number: floating-point
-const name = "Aladin"; // string
-const boolean = true; // true | false
-const nothing = null; // absent of object
-const undef = undefined; // absent of value
+var number1 = 200 // number: integer
+let number2 = 300.50 // number: floating-point
+const name = "Aladin" // string
+const boolean = true // true | false
+const nothing = null // absent of object
+const undef = undefined // absent of value
 
 // const means constant. It can not be modifed once defined
 
-console.log(number1, typeof number1);
-console.log(number2, typeof number2);
-console.log(name, typeof name);
-console.log(boolean, typeof boolean);
-console.log(nothing, typeof nothing);
-console.log(undef, typeof undef);
+console.log(number1, typeof number1)
+console.log(number2, typeof number2)
+console.log(name, typeof name)
+console.log(boolean, typeof boolean)
+console.log(nothing, typeof nothing)
+console.log(undef, typeof undef)
 
-console.log();
 // var exist in function scope
 {
   var str = "Hello World";
@@ -98,69 +98,117 @@ console.log(absent1 === absent2); // value and identity check false
 
 console.log();
 /**
- * Spcial Numbers
+ * Special Numbers
  */
-const sp1 = Infinity;
-const sp2 = -Infinity;
-const sp3 = NaN; // Not a number
-console.log(sp1, typeof sp1);
-console.log(sp2, typeof sp2);
-console.log(sp3, typeof sp3);
-console.log((0/0)); // output: Nan
+const sp1 = Infinity
+const sp2 = -Infinity
+const sp3 = NaN // Not a number
+console.log(sp1, typeof sp1)
+console.log(sp2, typeof sp2)
+console.log(sp3, typeof sp3)
+console.log((0/0)) // output: Nan
 ```
 
 ### Operators
 
 ```javascript
 // Unary Operator
-let uVal = 10;
-console.log(-uVal); 
+let uVal = 10
+console.log(-uVal)
 
 ++uVal; // --uVal => pre-increment, pre-decrement
-console.log(uVal); // 11
+console.log(uVal) // 11
 
 uVal++; // uVal-- => post-increment, post-decrement
-console.log(uVal); // 12
+console.log(uVal) // 12
 
 // Difference between ++uVal and uVal++
-uVal = 100;
-console.log(++uVal);
-console.log(uVal);
-console.log(uVal++);
-console.log(uVal);
+uVal = 100
+console.log(++uVal)
+console.log(uVal)
+console.log(uVal++)
+console.log(uVal)
 
-console.log();
 // Binary Operator
-let bNum1 = 20;
-let bNum2 = 40;
-let resultBN = bNum1 + bNum2; // bNum1 - bNum2
-console.log(`${bNum1}+${bNum2}=${bNum1 + bNum2}`);
+let bNum1 = 20
+let bNum2 = 40
+let resultBN = bNum1 + bNum2 // bNum1 - bNum2
+console.log(`${bNum1}+${bNum2}=${bNum1 + bNum2}`)
 
-resultBN = resultBN + 10;
-console.log(resultBN);
-resultBN += 1; // ++resultBN or resultBN++
-console.log(resultBN);
+resultBN = resultBN + 10
+console.log(resultBN)
+resultBN += 1 // ++resultBN or resultBN++
+console.log(resultBN)
 
-console.log();
-resultBN = 100;
-console.log(resultBN); 
-resultBN = resultBN - 10;
-console.log(resultBN); 
-resultBN = resultBN * 2;
-console.log(resultBN);
-resultBN = resultBN / 7;
-console.log(resultBN); // 25.714285714285715
-console.log(Math.floor(resultBN)); // 25
+console.log()
+resultBN = 100
+console.log(resultBN)
+resultBN = resultBN - 10
+console.log(resultBN)
+resultBN = resultBN * 2
+console.log(resultBN)
+resultBN = resultBN / 7
+console.log(resultBN) // 25.714285714285715
+console.log(Math.floor(resultBN)) // 25
 
-console.log();
 // Remainder operator
-let x = 10;
-let y = 3;
-console.log(x % y);
+let x = 10
+let y = 3
+console.log(x % y)
 
 // Exponential function
-let aNum = 2;
-console.log("Exponential: " + Math.pow(aNum, 8));
+let aNum = 2
+console.log("Exponential: " + Math.pow(aNum, 8))
+```
+
+### Number Methods
+
+```javascript
+// Number to string
+let num = 100
+let sNum = num.toString()
+console.log(typeof sNum) // string
+
+// Fixed number of decimal
+// toFixed() returns a string
+let num = 99.9481
+num.toFixed(0) // 100
+num.toFixed(2) // 99.95
+num.toFixed(8) // 90.9481000
+
+// Variable to Numbers
+// Number()
+Number(true);          // returns 1
+Number(false);         // returns 0
+Number("100");         // returns 100
+Number("  990");       // returns 990
+Number(" 10  ");       // returns 10
+Number("10.33");       // returns 10.33
+Number("10,33");       // returns NaN
+Number("XYZ");        // returns NaN
+
+// String to Int
+parseInt("10");         // returns 10
+parseInt("10.33");      // returns 10
+parseInt("10 20 30");   // returns 10
+parseInt("10 years");   // returns 10
+parseInt("years 10");   // returns NaN 
+
+// String to Float
+parseFloat("10");        // returns 10
+parseFloat("10.33");     // returns 10.33
+parseFloat("10 20 30");  // returns 10
+parseFloat("10 years");  // returns 10
+parseFloat("years 10");  // returns NaN
+
+// Date to a Number
+// Returns the number of milliseconds since 1.1.1970
+Number(new Date('2019-12-19')) // 1576713600000
+
+// Minimum and Maximum Number in JavaScript
+let min = Number.MIN_VALUE // 5e-324
+let max = Number.MAX_VALUE // 1.7976931348623157e+308
+
 ```
 
 ### Statements Expression Comments
@@ -181,85 +229,277 @@ multiline comment */
 ### String
 
 ```javascript
-const strType1 = "Life is good"; // double quotes
-const strType2 = 'Let\'s do it'; // single quotes
-const strType3 = `Sum of 2+2=${2+2}`; // template literal
+const strType1 = "Life is good" // double quotes
+const strType2 = 'Let\'s do it' // single quotes
+const strType3 = `Sum of 2+2=${2+2}` // template literal
 
 // Template literal ${} inside value computed and converted to string
-
-console.log(strType1);
-console.log(strType2);
-console.log(strType3);
 
 /**
  * Expression
  * In computer programming expression part of code that generates value
  */
-console.log(2+2); // 2+2 is expression
+console.log(2+2) // 2+2 is expression
 
-const name = 'Mahmud';
-const country = "Bangladesh";
-const profession = 'Programmer';
-const career = `Computer ${profession}`; // String interpolation
-
-console.log(name); // Mahmud
-console.log(country); // Bangladesh
-console.log(career); // Computer Programmer
+const name = 'Mahmud'
+const country = "Bangladesh"
+const profession = 'Programmer'
+const career = `Computer ${profession}` // String interpolation
 
 // String concatenation
-const name = 'Mahmud' + ' ' + 'Ahsan';
-console.log(name);
+const name = 'Mahmud' + ' ' + 'Ahsan'
+const name = 'Mahmud'.concat(' Ahsan')
 
 // Accessing characters in String
-const name = "Mark Zuckerberg";
-console.log(name.charAt(0));
+const name = "Mark Zuckerberg"
+name.charAt(0) 
+name[0] 
+
+// String Length
+const str = 'hello'
+str.length
 
 // String Comparison
-const name1 = "Mark Zuckerberg";
-const name2 = "Bill Gates";
+const name1 = "Mark Zuckerberg"
+const name2 = "Bill Gates"
 
 if (name1 < name2) {
-  console.log(`${name1} is less than ${name2}`);
+  console.log(`${name1} is less than ${name2}`)
 }
 else if (name1 > name2) {
-  console.log(`${name1} is greater than ${name2}`);
+  console.log(`${name1} is greater than ${name2}`)
 }
 else {
-  console.log(`${name1} is equal to ${name2}`);
+  console.log(`${name1} is equal to ${name2}`)
 }
 
-
 // Converting Case
-const name = "Mark Zuckerberg";
-console.log(name.toLowerCase());
-console.log(name.toUpperCase());
-
-// Substring
-console.log(name.substring(0, 5)); // Mark 
+const name = "Mark Zuckerberg"
+name.toLowerCase()
+name.toUpperCase()
 
 // Matching
-console.log(name.startsWith('Mark')); // true
-console.log(name.search('rk')); // 2
-console.log(name.slice(5)); // Zuckerberg
+name.startsWith('Mark') // true
+name.search('rk') // 2
 
-const num = 100; // number type
-console.log(num.toString(), typeof num.toString()); // 100 string
+name.indexOf('Z') // 5
+name.lastIndexOf('r') //13 look for last occurrence 
+
+// Slicing
+name.slice(5) // Zuckerberg
+
+// Substring
+name.substring(0, 5) // Mark
+
+// Replace
+// It returns a new string and match only the first
+console.log(name.replace('Mark', 'Mahmud')) // Mahmud Zuckerberg
+
+// Replacing using Regular Expression
+console.log(name.replace(/MARK/i, 'Mahmud'))
+
+// String to Array
+let str = 'Mahmud Ahsan'
+let name = str.split(' ')
+console.log(name) // [ 'Mahmud', 'Ahsan' ]
+
 ```
 
-### List
+### Array
+> An ordered collection of items which is mutable. JavaScript array is a special type of object. 
 
 ```javascript
-const lst = [1, 2, 3]
+// Empty array
+const array = []
+const array = new Array() // it's bad practice
+
+
+const array = [1, 2, 3]
+const array = new Array(1, 2, 3)
+
+// Array items accessed by index number
+array[0] // accessing first item
+array[array.length - 1] // accessing last item
+
+// Modifying array
+array[0] = 5
+
+// Adding item in a array as the last item
+array.push(10)
+array[array.length] = 10
+
+// Get the last item and remove from original array
+array.pop()
+
+// Get first item and remove from original array
+array.shift()
+
+// Adding item as the first element
+array.unshift(100)
+
+// Count items
+array.length
+
+// Deleting item from array
+delete array[1] // but it just assign undefined at index 1
+
+// Checking item existence
+array.includes(item)
+
+// Index of item
+array.indexOf(item)
+
+// Adding new items in an array
+let array = [1, 2, 3, 4]
+array.splice(4, 0, 5, 6, 7)
+/*
+The first parameter (4) defines the position where new elements should be added (spliced in).
+The second parameter (0) defines how many elements should be removed.
+The rest of the parameters (5, 6, 7) define the new elements to be added.
+** The splice() method returns an array with the deleted items:
+*/
+array.forEach(item => console.log(item)) // 1 2 3 4 5 6 7
+
+// Remove array elements using splice
+let array = [1, 2, 3, 4]
+array.splice(2, 1)
+console.log(array) // [ 1, 2, 4 ]
+
+// Merging Arrays
+let arr1 = [1, 2, 3]
+let arr2 = [4, 5, 6]
+let allArr = arr1.concat(arr2) // [ 1, 2, 3, 4, 5, 6 ]
+
+// Array slicing
+// slice() doesn't modify original array
+let arr1 = [1, 2, 3, 4, 5, 6]
+let arr2 = arr1.slice(1, 3)
+console.log(arr2) // [ 2, 3 ]
+
+// Reverse
+array.reverse()
+
+// Checking Array type
+Array.isArray(array)
+
+// Array items to String
+let array = [1, 2, 3, 4]
+let str = array.join('')
+console.log(str) // 1234
+
+// Max and Min number in an array
+let array = [100, 25, 1, 5, 10]
+Math.max.apply(null, array) // 100
+Math.min.apply(null, array) // 1
 ```
 
-**Common Methods**
+#### Array Sorting
 
-| List            |         `JavaScript` |
-| --------------- | -------------------: |
-| get first item  |        `lst.shift()` |
-| number of items |         `lst.length` |
-| item existence  | `lst.includes(item)` |
-| index of item   |  `lst.indexOf(item)` |
+```javascript
+// Sorting
+// sort() function short values as String
+let array = ['banana', 'apple', 'pine-apple', 'guava']
+array.sort() // [ 'apple', 'banana', 'guava', 'pine-apple' ]
+
+// Sorting number should by done by providing function
+let array = [100, 25, 1, 5, 10]
+array.sort((a, b) => a - b) // asc for desc b-a
+console.log(array) // [ 1, 5, 10, 25, 100 ] 
+
+// Sorting object arrays
+let people = [
+    {name: 'ABC', age: 60},
+    {name: 'XYZ', age: 25},
+    {name: 'DEF', age: 50},
+]
+
+people.sort((a, b) => a.age - b.age)
+console.log(people)
+/* Output
+[
+  { name: 'XYZ', age: 25 },
+  { name: 'DEF', age: 50 },
+  { name: 'ABC', age: 60 }
+]
+*/
+```
+
+#### Array Iterations
+
+```javascript
+// forEach method
+// Accessing each item
+
+let arr = [1, 2, 3, 4, 5]
+arr.forEach(item => {
+    console.log(item * 2)
+})
+```
+
+**Map**
+> map() function creates a new array based on the function provided.
+> It takes 3 arguments. value, index and the array
+> You can omit index and array if you no need.
+
+```javascript
+// Only even index number will be doubled
+
+let arr = [1, 2, 3, 4, 5]
+let evenSquare = arr.map((value, index, array) => {
+  if (index % 2 == 0) {
+    return value * 2
+  } else {
+    return value
+  }
+})
+console.log(evenSquare)
+```
+
+**Filter**
+> Same like map() function, returns a new array with passing the filter.
+
+```javascript
+// Odd Numbers
+let arr = [1, 2, 3, 4, 5]
+let odd = arr.filter(item => item % 2 != 0)
+console.log(odd)
+```
+
+**Reduce**
+> To produce a single value from an array.
+> reduce() function takes 4 arguments:
+
+- The total (the initial value / previously returned value)
+- The item value
+- The item index
+- The array itself
+
+```javascript
+let arr = [1, 2, 3, 4, 5]
+let sum = arr.reduce((total, item) => total + item)
+console.log(sum) // 15
+```
+
+**Some Other Methods**
+
+```javascript
+// every() method check all array values pass a test
+let arr = [1, 2, 3, 4, 5]
+arr.every(value => value > 0) // true
+
+// some() method checks if some values pass a test
+let arr = [-11, 2, 3, 4, 5]
+arr.some(value => value > 0) // true
+
+// indexOf() method returns the index of first occurrence
+let arr = [-11, 2, 3, 4, 4, 5]
+arr.indexOf(4) // 3
+
+// lastIndexOf() method returns the index of last occurrence
+let arr = [-11, 2, 3, 4, 4, 5]
+arr.lastIndexOf(4) // 4
+
+```
 
 ### Set
 
@@ -267,10 +507,9 @@ const lst = [1, 2, 3]
 
 ```js
 const setNumbers = new Set([1, 2, 3, 4, 1]);
-console.log(setNumbers);
 
+// Adding item in a set
 setNumbers.add(3);
-console.log(setNumbers);
 ```
 
 ### Object
