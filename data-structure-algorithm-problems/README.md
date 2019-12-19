@@ -2,6 +2,7 @@
 Practicing data structure and algorithm to refresh programming solving skills.
 
 ### Topics
+1. [Small Problem](/SMALL.md)
 
 1. Big-O Notation
 2. JavaScript Essentials
