@@ -466,6 +466,7 @@ console.log(odd)
 ```
 
 **Reduce**
+**array.reduce(function(total, currentValue, currentIndex, arr), initialValue)**
 > To produce a single value from an array.
 > reduce() function takes 4 arguments:
 
