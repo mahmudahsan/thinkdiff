@@ -6,10 +6,17 @@
 - [Operators](#operators)
 - [Statements Expression Comments](#statements-expression-comments)
 - [String](#string)
-- [List](#list)
 - [Condition](#condition)
 - [Iteration](#iteration)
+- [List](#list)
+- [Tuple](#tuple)
+- [Dictionary](#dictionary)
+- [Set](#set)
+- [Function](#function)
+- [Lambda](#lambda)
+- [Class](#class)
 - [Mixins](#mixins)
+- [Map Filter Reduce](#map-filter-reduce)
 - [Python 3.8 Features](#python-new-features)
 
 ### Variables
@@ -221,6 +228,147 @@ print (name[7:])
 print (name[7:-1])
 ```
 
+### Condition
+
+```python
+num = 100
+if num % 2 == 0:
+    print ("Even Number")
+    print ("Thank You")
+
+# to run this part remove multipart comment
+'''
+num = input("Please enter a number: ")
+num = int(num)
+if num % 2 == 0:
+    print ("Even Number")
+    print ("Thank You")
+else:
+    print ("Odd Number")
+    print ("Come Again")
+'''
+
+# to run this part remove multipart comment
+# if-elif-else chained condition
+'''
+num = input("Please enter a number: ")
+num = int(num)
+if num == 50:
+    print ("Half Century")
+elif num == 100:
+    print ("Century")
+elif num > 100:
+    print ("Century +")
+else:
+    print ("Unknown number")
+    
+'''
+
+# Logical operators and or
+num = 3
+if num >= 3 and num < 5:
+    print ('3 to 5')
+
+num = 6
+if num >= 3 and num < 5:
+    print ('3 to 5')
+else:
+    print ("5 +")
+    
+num = -2
+if num >= 3 or num == -2:
+    print ('3 + or -2')
+
+# Compare string
+name1 = "Ahsan"
+name2 = "ahsan"
+
+if name1 == name2:
+    print ("Same Name")
+else:
+    print ("Name doesn't match")
+    
+if name1.lower() == name2.lower():
+    print ("Same Name by lower method")
+    
+# Not equals to
+name = "Unknown Person"
+if name != "Steve Jobs":
+    print (name)
+    
+# nested condition
+x = 5
+if x < 2:
+    print ("less than 2")
+else:
+    if x == 3:
+        print ("x is 3")
+    else:
+        if x == 5:
+            print ("x is 5")
+```
+
+# Iteration
+
+```python
+# while loop 
+'''
+while condition:
+    body
+'''
+
+x = 1
+print (x)
+x += 1
+print (x)
+x += 1
+print (x)
+x += 1
+print (x)
+x += 1
+print (x)
+
+# 5 time repetition
+x = 1
+while x <= 5:
+    print (x)
+    x += 1
+    
+# infinite loop
+x = 1
+while True:
+    print (x)
+    x += 1
+    if x > 10:
+        break
+
+# Omit even number 1 to 20
+x = 0
+while x < 20:
+    x += 1
+    if x % 2 == 0:
+        continue 
+    print (x)
+    
+# for loop
+'''
+for element in iterable:
+    body
+'''
+
+# sum 1 to 10
+sum = 0
+for num in range(1, 11):
+    print (num)
+    sum += num
+print ("Sum is {sum}".format(sum=sum))
+
+# String characters by for loop
+title = "Apple Inc."
+for char in title:
+    print (char)
+```
+
 ### List
 
 > List is a mutable ordered collection of items. 
@@ -391,145 +539,643 @@ print(list1) # [1, 2, 3, 4, 5, 6]
 
 ```
 
-### Condition
+### Tuple
+> Tuple is an ordered immutable collection of items.
 
 ```python
-num = 100
-if num % 2 == 0:
-    print ("Even Number")
-    print ("Thank You")
+# Syntax
+tp = 1, 2, 'bill', 4.4, False
+print (tp, type(tp))
 
-# to run this part remove multipart comment
-'''
-num = input("Please enter a number: ")
-num = int(num)
-if num % 2 == 0:
-    print ("Even Number")
-    print ("Thank You")
-else:
-    print ("Odd Number")
-    print ("Come Again")
-'''
+# parentheses are optional
+tp = (1, 2, 'bill', 4.4, False) 
+print (tp)
 
-# to run this part remove multipart comment
-# if-elif-else chained condition
-'''
-num = input("Please enter a number: ")
-num = int(num)
-if num == 50:
-    print ("Half Century")
-elif num == 100:
-    print ("Century")
-elif num > 100:
-    print ("Century +")
-else:
-    print ("Unknown number")
+# this is not tuple
+a, b = 1, 2
+print (a)
+s = ('hi')
+print (s, type(s))
+
+# Access
+tp = 1, 2, 'bill', 4.4, False
+print (tp[0], tp[2], tp[-1], sep='|')
+
+# Iteration 
+tp = 1, 2, 'bill', 4.4, False
+for t in tp:
+    print (t)
     
-'''
-
-# Logical operators and or
-num = 3
-if num >= 3 and num < 5:
-    print ('3 to 5')
-
-num = 6
-if num >= 3 and num < 5:
-    print ('3 to 5')
-else:
-    print ("5 +")
+# Comparing
+t1 = 1, 2, 3
+t2 = 1, 2, 3  # change order and discuss
+if t1 == t2:
+    print ("t1 and t2 values are equal")
     
-num = -2
-if num >= 3 or num == -2:
-    print ('3 + or -2')
+# Immutable
+t1 = 1, 2, 3
+# t1[0] = 2 #'tuple' object does not support item assignment
 
-# Compare string
-name1 = "Ahsan"
-name2 = "ahsan"
+# Unpacking or Multiple assignment
+t1 = 5, 7, 11
+x, y, z = t1
+print (x, y, z, sep = ' | ')
 
-if name1 == name2:
-    print ("Same Name")
-else:
-    print ("Name doesn't match")
-    
-if name1.lower() == name2.lower():
-    print ("Same Name by lower method")
-    
-# Not equals to
-name = "Unknown Person"
-if name != "Steve Jobs":
-    print (name)
-    
-# nested condition
-x = 5
-if x < 2:
-    print ("less than 2")
-else:
-    if x == 3:
-        print ("x is 3")
-    else:
-        if x == 5:
-            print ("x is 5")
+# x, y = t1 # too many values to unpack
+t1 = 5, 7, 11
+x, y, _ = t1
+print (x, y, sep = ' | ') # print (x, y, _, sep = ' | ')
 ```
 
-# Iteration
+### Dictionary
+> Dictionary is an unordered, mutable collection of key:value pairs.
 
 ```python
-# while loop 
+# Syntax
 '''
-while condition:
-    body
+dict = {key : value}
 '''
 
-x = 1
-print (x)
-x += 1
-print (x)
-x += 1
-print (x)
-x += 1
-print (x)
-x += 1
-print (x)
+dict = {} # empty dictionary
+dict['name'] = 'Swift'
+dict['age']  = 55
+print ( dict['name'], '|', dict['age'] )
 
-# 5 time repetition
-x = 1
-while x <= 5:
-    print (x)
-    x += 1
+dict = {'bill' : '01010101', 'steve' : '0404040'}
+print (dict['bill'])
+print (dict['steve'])
+print (len(dict))
+
+# Modification
+shop_items_price_kg = {'rice' : 44, 'flour' : 33}
+print ( shop_items_price_kg )
+
+# Adding new item
+shop_items_price_kg['oil'] = 39
+print ( shop_items_price_kg )
+
+# Deleting item 
+del shop_items_price_kg['oil'] # removes key | value pair
+print ( shop_items_price_kg )
+
+# Editing item 
+shop_items_price_kg['rice'] = 90
+print ( shop_items_price_kg )
+
+# Iteration 
+# key and value
+asci_dict = {'a':97, 'b':98, 'c':99, 'd':100}
+
+for key, value in asci_dict.items(): 
+    print (key, value, sep='->')
     
-# infinite loop
-x = 1
-while True:
-    print (x)
-    x += 1
-    if x > 10:
-        break
+'''
+# Error because it will search only keys
+for key, value in asci_dict:
+    print (key, value, sep='->')
+'''
 
-# Omit even number 1 to 20
-x = 0
-while x < 20:
-    x += 1
-    if x % 2 == 0:
-        continue 
-    print (x)
+# Iterate key only
+for key in asci_dict: # for key in asci_dict.keys() works same
+    print (key)
+
+# Iterate value only
+for value in asci_dict.values():
+    print (value)
     
-# for loop
+# Sorted keys while iterate
+shop_items_price_kg = {
+    'rice' : 44, 
+    'flour' : 33, 
+    'oil': 32
+}
+print(shop_items_price_kg)
+for key in sorted(shop_items_price_kg.keys()): # to remove confusion we used .keys()
+    print (key, shop_items_price_kg[key])
+
+```
+
+### Set
+> A set is an unordered and unindexed collection of values.
+ 
+```python
+fruites = {'mango', 'banana', 'pine-apple'}
+print(fruites)
+print(type(fruites))
+```
+
+### Function
+
+```python
+# Define
+# sequence of statements can be defined as function
+print ('Hello World')
+for x in range(0,10):
+    print ("HI", str(x))
+    
+def welcome():
+    print ('Hello World')
+    for x in range(0,10):
+        print ("HI", str(x))
+        
+welcome()
+
+# Built in function
 '''
-for element in iterable:
-    body
+print('Something')
+len('hello world')
+max(2, 4)
 '''
 
-# sum 1 to 10
-sum = 0
-for num in range(1, 11):
-    print (num)
-    sum += num
-print ("Sum is {sum}".format(sum=sum))
+# Parameter
+def welcome(name): # name is parameter
+    print (f"Welcome {name}")
+    
+welcome('Bill') # 'Bill' is argument
+welcome('Steve')
 
-# String characters by for loop
-title = "Apple Inc."
-for char in title:
-    print (char)
+# Positional argument
+def person_details(name, age, country):
+    print (name, age, country, sep='|')
+    
+person_details('Bill', 55, 'US')
+person_details('Swift', 40, 'Canada')
+
+# Keyword argument
+def person_details(name, age, country):
+    print (name, age, country, sep='|')
+    
+## argument order doesn't matter
+person_details(name='Bill', age=55, country='US')
+person_details(age=40, country='Canada', name='Swift')
+
+# Default value 
+def person_details(name, age, country='Bangladesh'):
+    print (name, age, country, sep='|')
+    
+person_details(name='Bill', age=55, country='US')
+person_details(name='Swift', age=40) # default value keyword arg
+person_details('Alam', 30) # default value positional arg
+
+## non-default argument follows default argument
+'''
+def person_details(name='', age, country='Bangladesh'):
+    print (name, age, country, sep='|')
+'''
+
+# Return value
+def square (num):
+    return num * num
+    
+print ( square(2), square(2.2), sep='|' )
+
+def get_name(first_name, last_name):
+    return first_name + " " + last_name
+
+print ( get_name('Bill', 'Gates') )
+print ( get_name('Steve', 'Jobs'))
+
+# Optional argument
+def get_name(first_name, last_name, middle_name=''):
+    complete_name = first_name
+    if middle_name:
+        complete_name += ' ' + middle_name
+    
+    complete_name += ' ' + last_name
+    return complete_name
+
+print ( get_name('Bill', 'Gates') )
+print ( get_name('Bill', 'Gates', 'S') )
+
+print()
+# Function are first-class object 
+def str_upper(str):
+    return str.upper()
+
+print(str_upper("hello"))
+stup = str_upper
+print(stup("hello"))
+
+
+## function can be passed as argument
+def greetings(func):
+    greet = func("Welcome, Nice to meet you")
+    print(greet)
+    
+greetings(str_upper)
+
+## Functional programming
+up_list = list(map(str_upper, ["life", "is", "Cool"]))
+print(up_list)
+
+print()
+## Nested Function
+def hello_world(str):
+    def print_upper(s):
+        return s.upper()
+        
+    print(print_upper(str))
+
+hello_world("mango")
+
+print()
+# Reference type parameter
+
+## Value Type
+num = 100
+def change_num(n):
+    n += 100 
+    print ( f"Inner num: {n}")
+change_num(num)
+print ( 'Outside num: ' + str(num))
+
+## List, Dictionary 
+num_list = [1, 2, 3, 4, 5]
+num_dict = {'one': 1, 'two': 2, 'three': 3}
+def change_num_list(list, dict):
+    del list[0]
+    list[-1] = 50
+    
+    del dict['one']
+    dict['three'] = 33
+    print ("Inner List: ", list)
+    print ("Inner Dict: ", dict)
+
+print ( "Before" )
+print ( "Outer List: ", num_list)
+print ( "Outer Dict: ", num_dict)
+change_num_list(list=num_list, dict=num_dict)
+print ( "After" )
+print ( "Outer List: ", num_list)
+print ( "Outer Dict: ", num_dict)
+
+# Arbitrary number of arguments
+def students(*students_name):
+    print (students_name, type(students_name))
+    for student in students_name:
+        print (student)
+students('Bill', 'Steve', 'Jonathon', 'Jack', 'Bionic')
+students()
+students('Jack')
+
+## Positional and Arbitrary arguments mixing
+def students(captain, *other_students):
+    print ('Captain ', captain)
+    print ('Others ', other_students)
+      
+students('Mahmud', 'Fuad', 'Emon', 'Maruf', 'Arif')
+
+# Arbitrary keyword arguments 
+def students(captain, **other_students):
+    print ('Captain ', captain)
+    print ('Others ', other_students)
+    
+students(captain='Mahmud', second_captain='fuad', third_captain='emon')
+
+## Arbitrary keyword arguments are optional
+students(captain='Mahmud')
+```
+
+### Lambda
+
+```python
+# --------------------
+#      Lambda
+# --------------------
+
+## Anonymous or Inline function
+add_numbers = lambda x, y: x + y # auto return lambda expression
+print( add_numbers(2, 3) )
+
+bd_public = lambda name: "Bangladeshi Citizen: " + name
+print ( bd_public('Mahmud') )
+
+## Limitation of lambda expression
+'''
+single expression always returns a value
+we can't include other if-else logic or iteration within it
+'''
+```
+
+### Class
+> Object-oriented programming or in short OOP is a computer programming paradigm where 
+> data and related methods are encapsulated together using class.
+
+```python
+# Global varible
+restaurant_name  = '7 Eleven'
+restaurant_owner = 'Rahim'
+
+def restaurant_details(): # function
+    print (restaurant_name , restaurant_owner)
+    
+def another_restaurant():
+    # Local variable
+    restaurant_address = 'Bogra'
+    print (restaurant_name , restaurant_owner)
+    print (restaurant_address)
+
+restaurant_details()
+another_restaurant()
+# print (restaurant_address) # shows error
+# print (restaurant_name)
+
+# Syntax 
+'''
+class ClassName (ParentClass):
+    class variables
+    instance methods
+'''
+
+class Restaurant: # () parentheses optional
+    def details(self): # instance method
+        print (self.name , self.owner)
+        
+    def details_with_address(self, address):
+        # Local variable
+        self.details()
+        print (address)
+        
+## Instantiation
+restaurant1 = Restaurant()
+# creating instance variable
+restaurant1.name  = '7 Eleven'
+restaurant1.owner = 'Rahim'
+
+# calling instance method will replacee self argument by
+# instance object here restaurant1
+restaurant1.details()  
+restaurant1.details_with_address('Bogra')
+# checking object type
+print ( type(restaurant1) )
+
+print()
+## Second example 
+class Person:
+    def __init__(self, name="", age=0):
+        # constructor when an instance created
+        # if defined calls automatically during instantiation
+        # used fo setting up initial configuration
+        # self is required as first parameter
+        # self.variable available all methods
+        # variables called attributes in class
+        # __init__ is called magic method or dunder method
+        self.name = name 
+        self.age  = age 
+        
+        # auto return instance of the class
+        
+    def details(self):
+        print (self.name, self.age, sep=' | ')
+        
+bill1 = Person()
+bill1.details()
+
+bill2 = Person('Bill', 55) # self pass automatically
+bill2.details()
+print ( bill2.name, bill2.age)
+'''
+The first argument of every class method, including init, is always a reference to the current instance of the class. By convention, this argument is always named self but anything else can also be used
+'''
+
+print()
+## Third example
+people_list = []
+for x in range(0,3):
+    person = Person("Person "+str(x), 30+x)
+    people_list += [person]
+
+for x in people_list:
+    x.details()
+    
+print()
+#-------------------------------------------
+# Class variable and Instance variable Details
+class Alien:
+    legs = 5 # class variable
+    
+    def __init__(self, name):
+        self.name = name # instance variable
+        
+## Instantiation
+alien1 = Alien('Maven')
+alien2 = Alien('Woven')
+
+print(alien1.name, alien2.name) # accessing instance variable
+print(alien1.legs, alien2.legs) # accessing class variable
+
+## Updating class variable
+Alien.legs = 10
+print(alien1.legs, alien2.legs)
+
+
+## Updating class variable by instance
+alien1.legs = 1 # it creates a shadow instance variable
+print(alien1.legs, alien2.legs) # alien1 now using instance variable
+
+## removing shadow instance variable from instance
+del alien1.legs
+    
+## Proper way to update class variable by instance
+alien1.__class__.legs = 99
+print(alien1.legs, alien2.legs)
+
+#-------------------------------------------
+
+print()
+# Attribute value modification
+
+class Person:
+    def __init__(self, name, age): 
+        self.name = name 
+        self.age  = age 
+        
+    def change_name(self, name):
+        self.name = name 
+        
+    def details(self):
+        print (self.name, self.age, sep=' | ')
+        
+## Directly change
+person_x = Person(name='Stone Cold', age=49)
+person_x.details()
+
+person_x.name = "Rock"
+person_x.details()
+
+## Indirectly change by instance's method
+person_x.change_name('Triple X')
+person_x.details()
+
+# Lifecycle
+class X:
+    def __init__(self, name):
+        self.name = name 
+        print (self.name + " created")
+    def __del__(self):
+        print ( self.name + " is destoryed ")
+  
+# uncomment this to check lifecycle
+# x = X('X') 
+# y = X('Y')
+print ("HELLO WORLD")
+
+def hello():
+    x = X('hello_X') 
+    y = X('hello_Y')
+hello()
+
+##  Python garbage collection happens (by reference counting)
+
+# Inheritence
+class Math: # Parent class
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y 
+    def sum(self):
+        return self.x + self.y 
+        
+class MathExtended1 (Math): # Child class
+    def __init__(self, x, y):
+        super().__init__(x, y) # super() func makes connection to parent class with child class
+        
+    def subtract(self):
+        return self.x - self.y 
+        
+math_obj = Math(2, 4)
+print ( math_obj.sum() )
+
+math_ext_obj = MathExtended1(10, 2)
+print ( math_ext_obj.subtract() )
+
+
+## Multiple Inheritance
+class MathExtra:
+    def division(self, x, y):
+        return x / y
+
+class MathExtended2 (MathExtended1, MathExtra): # Child class
+    def __init__(self, x, y):
+        super().__init__(x, y)
+        
+    def multiplication(self):
+        return self.x * self.y 
+        
+
+math_ext2  = MathExtended2(10, 2)
+print ( "Sum ", str(math_ext2.sum()) )
+print ( "Subtract ", str(math_ext2.subtract()) )
+print ( "Multiplication ", str(math_ext2.multiplication()) )
+print ( "Division ", str(math_ext2.division(x=math_ext2.x,y=math_ext2.y)) )
+
+# Method overriding
+class Math: 
+    def __init__(self, x, y):
+        self.x = x
+        self.y = y 
+    def sum(self):
+        return self.x + self.y 
+        
+class MathExtended1 (Math): # Child class
+    def __init__(self, x, y):
+        super().__init__(x, y)
+        
+    def subtract(self):
+        return self.x - self.y 
+        
+    def sum(self): # Override
+        return self.x + self.y + 100
+        
+    def show_all(self):
+        print ("Sum: " + str(self.sum()))
+        print ("Subtract: " + str( self.subtract() ))
+        # calling method from same class need self. at the front
+'''
+# Method overloading do not need in Python
+    def sum(self, z):
+        return self.x + self.y + self.z
+'''
+    
+math_ext_obj = MathExtended1(10, 2)
+math_ext_obj.show_all()
+
+# Private and Public
+'''
+leading underscore before attributes and methods are
+private by convention
+'''
+class Math: 
+    def __init__(self, x, y):
+        self._x = x 
+        self._y = y 
+    def sum(self):
+        return self._x + self._y 
+
+math = Math(2, 4)
+print ( math._x )
+
+print()
+# Object comparison '==' vs 'is'
+# == is used to check equality
+# 'is' is used to check identity
+
+x = [1, 2, 3]
+xx = x
+
+print(x == xx)
+print(x is xx)
+
+y = list(x)
+print(x == y)
+print(x is y)
+
+print()
+# String conversion of a class by __str__ method
+l = [1, 2, 3]
+print(l)
+
+class Person:
+    def __init__(self, name):
+        self.name = name 
+        
+    def __str__(self):
+        return f'{self.__class__.__name__} class, obj name:  {self.name}'
+        
+p1 = Person("Bill")
+p2 = Person("Steve")
+
+print(p1)
+print(p2)
+```
+
+### Map Filter Reduce
+
+```python
+## syntax: map(func, iterable)
+mlist = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+
+'''
+slist = []
+for x in mlist:
+    slist.append(x * x)
+'''
+
+slist = list(map(lambda x: x * x, mlist))
+print(slist)
+
+## syntax: filter(func, iterable)
+mlist = [1, 2, 3, -4, 5, 6, 7, -2, 9]
+
+slist = list(filter(lambda x: x < 0, mlist))
+print(slist)
+
+## syntax: reduce(func, sequence)
+from functools import reduce
+
+product_price = [10, 20, 24.5, 50]
+
+total_price = reduce(lambda x, y: x+y, product_price) 
+print(total_price)
 ```
 
 ### Mixins
