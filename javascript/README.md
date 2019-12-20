@@ -303,6 +303,12 @@ let str = 'Mahmud Ahsan'
 let name = str.split(' ')
 console.log(name) // [ 'Mahmud', 'Ahsan' ]
 
+// Iterating string
+let str = "Hello World";
+for (let char of str){
+    console.log(char);
+}
+
 ```
 
 ### Array
