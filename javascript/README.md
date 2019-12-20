@@ -513,10 +513,35 @@ arr.lastIndexOf(4) // 4
 ##### Set object store unique values of any type
 
 ```js
-const setNumbers = new Set([1, 2, 3, 4, 1]);
+const sets = new Set([1, 2, 3, 4, 5]);
+
+// Number of items
+sets.size
 
 // Adding item in a set
-setNumbers.add(3);
+sets.add(6)
+
+// Checking item existence
+sets.has(5)
+
+// Remove item
+sets.delete(5)
+
+// Remove all
+sets.clear()
+
+// Iteration 1
+sets.forEach(item => {
+    console.log(item);
+})
+
+// Iteration 2
+for (let item of sets){
+    console.log(item);
+}
+
+// Convert set to array
+const arr = Array.from(sets)
 ```
 
 ### Object
