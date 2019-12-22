@@ -3,6 +3,7 @@
 2. [Palindrome](#palindrome)
 3. [Reverse an Integer](#reverse-an-integer)
 4. [Most used Character](#most-used-character)
+5. [Two Sum](#two-sum)
 
 ### Reverse a String
 
@@ -123,4 +124,28 @@ function maxChar(str) {
 
 console.log(maxChar('abcdeeeeeeeefjg')); // e
 console.log(maxChar('orange 135244')); // 4
+```
+
+### Two Sum
+> Given an array of integers, return indices of the two numbers such that they add up to a specific target.
+> You may assume that each input would have exactly one solution, and you may not use the same element twice.
+
+```
+Given nums = [2, 7, 11, 15], target = 9,
+
+Because nums[0] + nums[1] = 2 + 7 = 9,
+return [0, 1].
+```
+
+```js
+// Time: O(n), Space: O(1)
+var twoSum = function(nums, target) {
+  const length = nums.length;
+  for (let i = 0; i < length; ++i){
+    const remain = target - nums.shift();
+    if (nums.includes(remain)) {
+      return [i, nums.indexOf(remain) + i + 1];
+    }
+  }
+}
 ```
