@@ -2,13 +2,13 @@
 Practicing data structure and algorithm to refresh programming solving skills.
 
 ### Topics
-1. [Small Problem](SMALL.md)
+1. [Small Problem](small.md)
 
 1. Big-O Notation
 2. JavaScript Essentials
 3. Recursion
 4. Sets
-5. Searching
+5. [Searching](searching.md)
 6. Sorting
 7. Hash Tables
 8. Stacks
