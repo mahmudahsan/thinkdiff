@@ -8,11 +8,8 @@
     <a href="https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg">
         <img src="https://img.shields.io/badge/my-youtube channel-red.svg" alt="Youtube" />
     </a>
-    <a href="https://pythonbangla.com">
-        <img src="https://img.shields.io/badge/python-bangla.com-orange.svg" alt="pythonbangla.com" />
-    </a>
-    <a href="https://thinkdiff.net/about/">
-        <img src="https://img.shields.io/badge/about-me-yellow.svg" alt="pythonbangla.com" />
+    <a href="https://ithinkdiff.net/">
+        <img src="https://img.shields.io/badge/mobile-apps-yellow.svg" alt="ithinkdiff.net" />
     </a>
     <a href="https://twitter.com/mahmudahsan">
         <img src="https://img.shields.io/badge/contact%40-mahmudahsan-blue.svg" alt="Twitter: @mahmudahsan" />
