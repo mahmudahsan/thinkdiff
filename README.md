@@ -42,7 +42,6 @@ I created this repository to practice myself. Here I publish programming code fo
 ## My Open Source Projects
 
 ### Flutter
-
 - [Flutter Repo](https://github.com/mahmudahsan/flutter)
 
 ### React Native
@@ -65,11 +64,9 @@ I created this repository to practice myself. Here I publish programming code fo
 2. [Python Language](python-language/) | [Video](https://www.youtube.com/watch?v=llbgjR_tL2k)
 3. [Django](django/)
 
-### Mixed
-1. [My Daily Warm Up](daily-warm-up/)
-2. [Coding Problems](coding-problems/)
-3. [Concepts](concepts/)
-4. [ACM Problems I Solved while in University](https://github.com/mahmudahsan/203-ACM-Problems-Code)
+### Software Engineering
+1. [Software Engineering](https://github.com/mahmudahsan/software-engineer) 
+2. [Concepts](concepts/)
 
 ### Django
 
