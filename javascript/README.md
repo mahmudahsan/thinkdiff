@@ -10,7 +10,7 @@
 - [String](#string)
 - [Array](#array)
 - [Set](#set)
-- [Object](#object)
+- [Map / Object](#object)
 - [Destructuring](#destructuring)
 - [Spread Operator](#spread-operator)
 - [Function](#function)
@@ -545,6 +545,23 @@ const arr = Array.from(sets)
 ```
 
 ### Object
+> Object and Map is basically same. A Map object iterates its elements in insertion order — a `for...of` loop returns an array of [key, value] for each iteration.
+
+```js
+// an empty map
+let myMap = new Map()
+
+// adding element
+// key can be integer or string type
+myMap.set('foo', true) // key: value
+
+// item exist check
+myMap.has('foo') // true or false
+
+// item delete
+myMap.delete('foo')
+
+```
 
 A regular JavaScript object.
 ```js
