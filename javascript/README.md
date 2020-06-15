@@ -9,8 +9,9 @@
 - [Comment](#comment)
 - [String](#string)
 - [Array](#array)
+- [Map](#map)
 - [Set](#set)
-- [Map / Object](#object)
+- [Object](#object)
 - [Destructuring](#destructuring)
 - [Spread Operator](#spread-operator)
 - [Function](#function)
@@ -544,8 +545,8 @@ for (let item of sets){
 const arr = Array.from(sets)
 ```
 
-### Object
-> Object and Map is basically same. A Map object iterates its elements in insertion order — a `for...of` loop returns an array of [key, value] for each iteration.
+### Map
+Object and Map is almost same with some difference. A Map object iterates its elements in insertion order — a `for...of` loop returns an array of [key, value] for each iteration. For more referencce: [MDN Map](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
 ```js
 // an empty map
@@ -563,6 +564,7 @@ myMap.delete('foo')
 
 ```
 
+### Object
 A regular JavaScript object.
 ```js
 const Person = {
