@@ -64,7 +64,7 @@ I created this repository to practice myself. Here I publish programming code fo
 ***
 
 ### Mixed
-1. [Coding Practice](conding-practice/)
+1. [Coding Practice](coding-practice/)
 2. [Concepts](concepts/)
 
 ### Django
