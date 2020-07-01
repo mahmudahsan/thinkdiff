@@ -1,19 +1,18 @@
 # Coding Practice
-Here I write notes while I practice coding.
+Here I write notes or code snippet while I practice coding. I mainly use `JavaScript` to practice coding beside my regular `Swift` programming language usage. 
 
 ***
 ### Programming Language Reference
 1. [JavaScript](https://github.com/mahmudahsan/thinkdiff/tree/master/javascript)
-2. [Pythoh](https://github.com/mahmudahsan/thinkdiff/tree/master/python-language)
+2. [Python](https://github.com/mahmudahsan/thinkdiff/tree/master/python-language)
 3. [Dart](https://github.com/mahmudahsan/flutter/tree/master/dart)
 ***
 
-***
 ### Data Structure 
 - Array
 - Set
 - HashMap
-- LinkedList
+- [LinkedList](linked-list.md)
 - Stack
 - Queue
 - Trees
