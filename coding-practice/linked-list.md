@@ -4,6 +4,9 @@
 **Two types of Linked List**
 1. [Singly Linked List](#singly-linked-list)
 2. Doubly Linked List
+3. [Reverse a Singly Linked List](#reverse-a-singly-linked-list)
+
+***
 
 #### Singly Linked List
 
@@ -123,5 +126,52 @@ Find Item 5: false
 3
 1
 Size: 2
+
+```
+
+### Reverse a Singly Linked List
+```js
+class SinglyLinkedList {
+  // .... including previous all code
+  reverse() {
+    let curr = this.head 
+    let prev = null
+
+    while (curr) {
+      const temp = curr.next
+      curr.next = prev
+      prev = curr
+      if (!temp) {
+        break
+      }
+      curr = temp
+    }
+    this.head = curr
+  }
+}
+```
+
+> Testing
+```js
+const list = new SinglyLinkedList()
+list.add(1)
+list.add(2)
+list.add(3)
+list.traverse()
+
+console.log("After Reversing")
+list.reverse()
+list.traverse()
+```
+
+> Output
+```js
+3
+2
+1
+After Reversing
+1
+2
+3
 
 ```
