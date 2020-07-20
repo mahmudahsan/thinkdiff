@@ -47,5 +47,6 @@ Here I write notes or code snippet while I practice coding. I mainly use `JavaSc
 ### External Reference:
 1. [Coding Interview University](https://github.com/jwasham/coding-interview-university)
 2. [Javascript Algorithm](https://github.com/trekhleb/javascript-algorithms)
-3. [Developer Roadmaps](https://roadmap.sh/)
+3. [Interviews](https://github.com/kdn251/interviews)
+4. [Developer Roadmaps](https://roadmap.sh/)
 ***
