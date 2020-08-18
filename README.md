@@ -67,6 +67,7 @@ I created this repository to practice myself. Here I publish programming code fo
 ### Mixed
 1. [Coding Practice](coding-practice/)
 2. [Concepts](concepts/)
+3. [Useful Git Commands](https://github.com/mahmudahsan/thinkdiff/blob/master/gitcommands.md)
 
 ### Django
 1. [Django](django/)
