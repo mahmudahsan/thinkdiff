@@ -36,7 +36,7 @@ I created this repository to practice myself. Here I publish programming code fo
 ### Python Tutorials
 - [How to use Python pipenv in mac and windows](https://medium.com/p/how-to-use-python-pipenv-in-mac-and-windows-1c6dc87b403e)
 - [How to Use Python SQLite3 using SQLAlchemy](https://medium.com/p/how-to-use-python-sqlite3-using-sqlalchemy-158f9c54eb32)
-- [How to Make Python Executable in Windows PyInstaller Webbrowser](https://medium.com/@mahmudahsan/how-to-make-python-executable-in-windows-pyinstaller-webbrowser-f7ad8e988dea)
+- [How to Make Python Executable in Windows using PyInstaller](https://medium.com/@mahmudahsan/how-to-make-python-executable-in-windows-pyinstaller-webbrowser-f7ad8e988dea)
 - [How To Scrap Data from JavaScript-based Website Using Python, Selenium, and Headless Web Driver](https://medium.com/p/how-to-scrap-data-from-javascript-based-website-using-python-selenium-and-headless-web-driver-531c7fe0c01f)
 - [How to Run JavaScript in Python for Web Scraping or Website Testing](https://medium.com/@mahmudahsan/how-to-run-javascript-in-python-web-scraping-web-testing-16bd04894360)
 
