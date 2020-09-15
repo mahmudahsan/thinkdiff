@@ -20,15 +20,12 @@
 
 I created this repository to practice myself. Here I publish programming code for myself or for my tutorials published in my blog or my youtube channel.
 
-## My Udemy Courses 
-1. [Mastering Dart Programming With Flutter Development](https://www.udemy.com/dart-flutter-course/?couponCode=ITHINKDIFF)
-2. [Web Scraping in Python with BeautifulSoup & Scrapy Framework](https://www.udemy.com/web-scraping-in-python/?couponCode=ITHINKDIFF.NET)
-3. [Master Python Programming in 5 Hours](https://www.udemy.com/python-beginner-to-advanced-with-web-scraping-projects/?couponCode=ITHINKDIFF.NET)
 
 ## Websites
 
 1. [My Website](https://thinkdiff.net)
 2. [My Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg)
+3. [My Articles on Medium](https://medium.com/@mahmudahsan)
 
 ## FREE Programming Video Tutorials
 
@@ -36,6 +33,12 @@ I created this repository to practice myself. Here I publish programming code fo
 - [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
 - [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
 
+### Python Tutorials
+- [How to use Python pipenv in mac and windows](https://medium.com/p/how-to-use-python-pipenv-in-mac-and-windows-1c6dc87b403e)
+- [How to Use Python SQLite3 using SQLAlchemy](https://medium.com/p/how-to-use-python-sqlite3-using-sqlalchemy-158f9c54eb32)
+- [How to Make Python Executable in Windows PyInstaller Webbrowser](https://medium.com/@mahmudahsan/how-to-make-python-executable-in-windows-pyinstaller-webbrowser-f7ad8e988dea)
+- [How To Scrap Data from JavaScript-based Website Using Python, Selenium, and Headless Web Driver](https://medium.com/p/how-to-scrap-data-from-javascript-based-website-using-python-selenium-and-headless-web-driver-531c7fe0c01f)
+- [How to Run JavaScript in Python for Web Scraping or Website Testing](https://medium.com/@mahmudahsan/how-to-run-javascript-in-python-web-scraping-web-testing-16bd04894360)
 
 ## My Open Source Projects
 
