@@ -40,6 +40,7 @@ I created this repository to practice myself. Here I publish programming code fo
 - [How To Scrap Data from JavaScript-based Website Using Python, Selenium, and Headless Web Driver](https://medium.com/p/how-to-scrap-data-from-javascript-based-website-using-python-selenium-and-headless-web-driver-531c7fe0c01f)
 - [How to Run JavaScript in Python for Web Scraping or Website Testing](https://medium.com/@mahmudahsan/how-to-run-javascript-in-python-web-scraping-web-testing-16bd04894360)
 - [How to Collect News by Web Scraping using Python](https://medium.com/@mahmudahsan/how-to-do-web-scraping-using-python-urllib-beautifulsoup-logging-d0b70c8222ae)
+- [What’s New in Python 3.8](https://medium.com/@mahmudahsan/upgrade-your-skills-by-python-3-8-aef7f182e3bf)
 
 ## My Open Source Projects
 
