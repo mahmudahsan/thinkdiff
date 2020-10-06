@@ -4,6 +4,7 @@
 3. [Reverse an Integer](#reverse-an-integer)
 4. [Most used Character](#most-used-character)
 5. [Two Sum](#two-sum)
+6. [Convert integer to Binary](#integer-to-binary)
 
 ### Reverse a String
 
@@ -148,4 +149,16 @@ var twoSum = function(nums, target) {
     }
   }
 }
+```
+
+### Integer To Binary
+> Given an integer number returns a binary String
+
+Swift Implementation
+```swift
+func intToBinary(_ N: Int) -> String {
+    return String(N, radix: 2)
+}
+
+assert(intToBinary(2) == "10")
 ```
