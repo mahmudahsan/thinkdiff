@@ -8,6 +8,7 @@
 
 ### Reverse a String
 
+#### `javascript`
 ```javascript
 // Time: O(n), Space: O(n)
 function reverse(str) {
@@ -64,6 +65,7 @@ dooG si efiL
 > // palindrome('abba') is true
 > // palindrome('bcecb') is true
 
+#### `javascript`
 ```javascript
 // Solution 1
 // Time: O(n), Space: O(n)
@@ -124,6 +126,7 @@ assert(palindrome("abcba") == true)
 
 ### Reverse an Integer
 
+#### `javascript`
 ```javascript
 function reverseInt(num) {
     let mNum = parseInt(num.toString()
@@ -163,6 +166,7 @@ assert(revInt(-123) == -321)
 
 ### Most used Character
 
+#### `javascript`
 ```javascript
 // Time: O(n), Space: O(n)
 function maxChar(str) {
