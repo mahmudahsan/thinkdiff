@@ -98,6 +98,30 @@ console.log(isPalindrome('bcecb')); // true
 console.log(isPalindrome('abxhkbba')); // false
 ```
 
+#### `Swift`
+```swift
+func palindrome(_ str: String) -> Bool {
+    let arrStr = Array(str)
+    let mid = arrStr.count / 2
+    var i = 0
+    
+    while i < mid {
+        if arrStr[i] != arrStr[arrStr.count - i - 1] {
+            return false
+        }
+        i += 1
+    }
+    
+    return true
+}
+
+assert(palindrome("love") == false)
+assert(palindrome("a") == true)
+assert(palindrome("aba") == true)
+assert(palindrome("abba") == true)
+assert(palindrome("abcba") == true)
+```
+
 ### Reverse an Integer
 
 ```javascript
