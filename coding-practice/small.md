@@ -142,6 +142,25 @@ console.log(reverseInt(12345)); // 54321
 console.log(reverseInt(-577490)) // -94775
 ```
 
+#### `Swift`
+```swift
+func revInt(_ n: Int) -> Int {
+    var N = abs(n)
+    var rev = 0
+    
+    while N > 0 {
+        let lastDigit = N % 10
+        N = N / 10
+        rev = rev * 10 + lastDigit
+    }
+    return n < 0 ? -rev : rev
+}
+
+assert(revInt(10) == 1)
+assert(revInt(102) == 201)
+assert(revInt(-123) == -321)
+```
+
 ### Most used Character
 
 ```javascript
