@@ -236,6 +236,7 @@ Because nums[0] + nums[1] = 2 + 7 = 9,
 return [0, 1].
 ```
 
+#### `JavaScript`
 ```js
 // Time: O(n), Space: O(1)
 var twoSum = function(nums, target) {
@@ -246,6 +247,33 @@ var twoSum = function(nums, target) {
       return [i, nums.indexOf(remain) + i + 1];
     }
   }
+}
+```
+
+#### `Swift`
+```swift
+// Time: O(nLog(n)) | Space O(n)
+func twoNumberSum(array: [Int], targetSum: Int) -> [Int] {
+    let sortedArray = array.sorted(by: <)
+    
+    var left = 0
+    var right = sortedArray.count - 1
+    
+    while left < right {
+        let sum = sortedArray[left] + sortedArray[right]
+        
+        if sum == targetSum {
+            return [left, right]
+        }
+        else if sum < targetSum {
+            left += 1
+        }
+        else if sum > targetSum {
+            right -= 1
+        }
+    }
+    
+    return []
 }
 ```
 
