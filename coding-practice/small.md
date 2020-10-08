@@ -32,6 +32,25 @@ console.log(reverse('Apple'));
 console.log(reverse(""));
 console.log(reverse('Life is Good'));
 ```
+#### `Swift`
+```swift
+func reverseStr(_ str: String) -> String {
+    let arr = Array(str)
+    var result = ""
+    
+    var i = arr.count - 1
+    while i >= 0 {
+        result += String(arr[i])
+        i -= 1
+    }
+    
+    return result
+}
+
+assert(reverseStr("love") == "evol")
+assert(reverseStr("a") == "a")
+assert(reverseStr("loKe") == "eKol")
+```
 
 Output:
 ```
