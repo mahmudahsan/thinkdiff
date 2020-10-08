@@ -1,5 +1,5 @@
 # Coding Practice
-Here I write notes or code snippet while I practice coding. I mainly use `JavaScript` to practice coding beside my regular `Swift` programming language usage. 
+Here I write notes or code snippet while I practice coding. I use either `JavaScript` or `Swift` programming languages to practice coding. I mainly work with `Swift` but sometimes I often work with `JavaScript`. 
 
 ***
 ### Programming Language Reference
