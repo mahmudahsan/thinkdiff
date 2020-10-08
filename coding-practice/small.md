@@ -189,6 +189,38 @@ console.log(maxChar('abcdeeeeeeeefjg')); // e
 console.log(maxChar('orange 135244')); // 4
 ```
 
+#### `Swift`
+> For same value it prefers the character alphabetically comes before.
+
+```swift
+func maxChar(_ str: String) -> String {
+    let strArr = Array(str)
+    var dict = [String: Int]()
+    
+    for x in strArr {
+        let key = String(x)
+        dict[key] = (dict[key] ?? 0 ) + 1
+    }
+    
+    var mostUsedChar = ""
+    var mostUsedVal = 0
+    
+    for (k, v) in dict {
+        if v > mostUsedVal {
+            mostUsedChar = k
+            mostUsedVal = v
+        }
+        else if v == mostUsedVal && k < mostUsedChar {
+            mostUsedChar = k
+        }
+    }
+    return mostUsedChar
+}
+
+assert(maxChar("abccccd") == "c")
+assert(maxChar("abcde") == "a")
+```
+
 ### Two Sum
 > Given an array of integers, return indices of the two numbers such that they add up to a specific target.
 > You may assume that each input would have exactly one solution, and you may not use the same element twice.
