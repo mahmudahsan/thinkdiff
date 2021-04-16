@@ -23,15 +23,13 @@ I created this repository to practice myself. Here I publish programming code fo
 
 ## Websites
 
-1. [My Website](https://thinkdiff.net)
+1. [My Writings](https://thinkdiff.net)
 2. [My Youtube Channel](https://www.youtube.com/channel/UCtHlgyUw0wLE5Ous9swfFlg)
-3. [My Articles on Medium](https://medium.com/@mahmudahsan)
 
 ## FREE Programming Video Tutorials
 
 - [Flutter and Dart Tutorials / Projects / Code](https://github.com/mahmudahsan/flutter)
 - [Learn Python Programming Full Course FREE](https://youtu.be/llbgjR_tL2k)
-- [বাংলায় পাইথন প্রোগ্রামিং](https://pythonbangla.com)
 
 ### Python Tutorials
 - [How to use Python pipenv in mac and windows](https://medium.com/p/how-to-use-python-pipenv-in-mac-and-windows-1c6dc87b403e)
@@ -62,7 +60,6 @@ I created this repository to practice myself. Here I publish programming code fo
 - [Pythonbangla.com](https://github.com/mahmudahsan/python-bangla-react): Youtube video tutorials playlist in good shape.
 
 ### Python, Django
-1. [Pythonbangla.com](https://github.com/mahmudahsan/pythonbangla.com): Youtube video tutorials playlist in good shape.
 2. [Web Scraping](https://github.com/mahmudahsan/webscraping): alJazeera and goodreads website scraping techniques
 
 ### Programming Language Reference
